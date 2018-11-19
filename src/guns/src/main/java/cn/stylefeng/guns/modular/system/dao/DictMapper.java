@@ -17,6 +17,7 @@ package cn.stylefeng.guns.modular.system.dao;
 
 import cn.stylefeng.guns.modular.system.model.Dict;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -30,6 +31,7 @@ import java.util.Map;
  * @author stylefeng
  * @since 2017-07-11
  */
+
 public interface DictMapper extends BaseMapper<Dict> {
 
     /**
