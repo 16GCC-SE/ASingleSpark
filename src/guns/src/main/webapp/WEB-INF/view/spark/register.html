@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(/static/img/spark/background.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .center {
+            background-color: #2aabd2;
+            border-radius: 20px;
+            width: 500px;
+            height: 600px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .input > input:focus {
+            box-shadow: 0 0 0 1px #2b669a;
+        }
+
+        .input > input {
+            width: 250px;
+            height: 30px;
+            background: white;
+            outline: none;
+            border-bottom-right-radius: 10px;
+            border-top-right-radius: 10px;
+            border: 2px solid #dddddd;
+            font-size: 15px;
+            color: gray;
+            font-weight: 600;
+        }
+
+        .input > span {
+            padding: 1px;
+            display: inline-flex;
+            vertical-align: top;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 30px;
+            width: 100px;
+            background: gainsboro;
+            border-bottom-left-radius: 10px;
+            border-top-left-radius: 10px;
+            border: 2px solid #dddddd;
+            color: black;
+        }
+
+        .input {
+            margin-top: 10px;
+        }
+
+        .input > button {
+            margin-top: 30px;
+            width: 356px;
+            height: 36px;
+            background-color: orange;
+            border: 2px solid #dddddd;
+            color: white;
+            outline: none;
+        }
+
+        .input>button:active{
+            background-color: yellow;
+
+        }
+
+
+        .inside-border {
+            border-radius: 15px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+        }
+
+        .agreement {
+            padding-top: 15px;
+            width: 360px;
+            color: gray;
+        }
+
+        .agreement> input {
+            margin-top: 2px;
+            margin-right: 10px;
+            vertical-align: top;
+            width: 18px;
+            height: 18px;
+            border: 1px solid #000000;
+            border-radius: 50%;
+        }
+        .agreement >span>a{
+            color: black;
+            font-weight: 900;
+            text-decoration: none;
+        }
+        .dentifying-code{
+            width: 356px;
+            text-align: right;
+        }
+        .dentifying-code>a{
+            color: gray;
+            text-decoration: none;
+            font-weight: 700;
+
+        }
+
+    </style>
+
+    <script>
+        var time=30;
+        var timer;
+        function reduceTime() {
+            document.getElementById("getCode").innerHTML=time+"S重新获取验证码";
+            time--;
+            if(time<0){
+                document.getElementById("getCode").innerHTML="获取验证码";
+                time=30;
+                document.getElementById("getCode").setAttribute("onclick","setCodeTimer ()");
+                document.getElementById("getCode").setAttribute("href","#");
+                clearInterval(timer);
+            }
+        }
+
+        function setCodeTimer () {
+            timer=setInterval("reduceTime()",1000);
+            document.getElementById("getCode").removeAttribute("onclick");
+            document.getElementById("getCode").removeAttribute("href");
+
+        }
+
+    </script>
+</head>
+<body>
+<div class="center">
+
+    <div class="inside-border">
+        <div class="input">
+            <span><h>用户名</h></span><input type="text">
+        </div>
+        <div class="input">
+            <span><h>密码</h></span><input type="password">
+        </div>
+
+        <div class="input">
+            <span><h>确认密码</h></span><input type="password">
+        </div>
+        <div class="input">
+            <span><h>手机号</h></span><input type="text">
+        </div>
+        <div class="input">
+            <span><h>验证码</h></span><input type="text">
+        </div>
+        <div  id="dentifying-code" class="dentifying-code">
+
+            <a id="getCode" href="#" onclick="setCodeTimer()">获取验证码</a>
+
+        </div>
+        <div class="input">
+            <button type="submit">注册</button>
+        </div>
+        <div class="agreement">
+            <input type="checkbox"/><span>注册帐号即表示您同意并愿意遵守PartTime  <a href="#">用户协议</a> 和 <a href="#">隐私政策</a></span>
+        </div>
+
+    </div>
+
+
+</div>
+
+</body>
+</html>
