@@ -18,9 +18,11 @@ package cn.stylefeng.guns.modular.system.controller;
 import cn.stylefeng.guns.modular.system.service.INoticeService;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestPart;
 
 import java.util.List;
 import java.util.Map;

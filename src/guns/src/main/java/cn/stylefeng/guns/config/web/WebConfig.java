@@ -27,6 +27,7 @@ import com.alibaba.druid.support.spring.stat.BeanTypeAutoProxyCreator;
 import com.alibaba.druid.support.spring.stat.DruidStatInterceptor;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
+import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.springframework.aop.Advisor;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.JdkRegexpMethodPointcut;
@@ -36,6 +37,7 @@ import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.RequestContextListener;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -58,9 +60,18 @@ public class WebConfig implements WebMvcConfigurer {
     private GunsProperties gunsProperties;
 
 
+
+    /**
+     * 配置简单的页面跳转
+     * @param registry
+     */
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
-        registry.addViewController("/spark/register").setViewName("spark/register.html");
+
+        registry.addViewController("/spark/index").setViewName("/spark/index.html");
+        registry.addViewController("/spark/details_of_job").setViewName("/spark/details_of_job.html");
+        registry.addViewController("/spark/register").setViewName("/spark/register.html");
+
     }
 
     /**
@@ -95,6 +106,7 @@ public class WebConfig implements WebMvcConfigurer {
      */
     @Bean
     public ServletRegistrationBean druidServletRegistration() {
+
         ServletRegistrationBean registration = new ServletRegistrationBean(new StatViewServlet());
         registration.addUrlMappings("/druid/*");
         return registration;
@@ -202,4 +214,6 @@ public class WebConfig implements WebMvcConfigurer {
         defaultKaptcha.setConfig(config);
         return defaultKaptcha;
     }
+
+
 }

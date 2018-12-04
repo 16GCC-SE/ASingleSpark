@@ -66,6 +66,7 @@ public class JwtTokenUtil {
      * 获取jwt接收者
      */
     public static String getAudienceFromToken(String token) {
+
         return getClaimFromToken(token).getAudience();
     }
 

@@ -15,6 +15,7 @@
  */
 package cn.stylefeng.guns.config;
 
+import cn.stylefeng.guns.generator.modular.controller.CodeController;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
@@ -40,6 +41,7 @@ public class SwaggerConfig {
 
     @Bean
     public Docket createRestApi() {
+
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())
                 .select()
