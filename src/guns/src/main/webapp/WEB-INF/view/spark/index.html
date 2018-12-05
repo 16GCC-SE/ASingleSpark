@@ -19,15 +19,59 @@
              background: #FFFFFF;
         }
 
+        .selected{
+            margin-top: 5px;
+            padding:4px ;
+            background-color: yellow;
+        }
+
+        .nav.navbar-right > li > a {
+            color: gray;
+        }
+
+        .navbar-default .navbar-nav>li>a {
+            color: gray;
+        }
+        .panel-title{
+            font-size:initial;
+        }
+        .tab{
+            padding:4px ;
+        }
+
+        .panel-body>ul>li{
+            margin-top: 10px;
+
+        }
+        body {
+            font-size: initial;
+
+        }
+        .job-type{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 35px;width: 35px;
+            border-radius:30px;
+
+        }
+        .job-type>span{
+            font-size: 11px;
+            color: #FFFFFF;
+        }
 
 
 
     </style>
+    <script>
+
+    </script>
 </head>
 <body>
 
 <div id="header">
-    <nav class="navbar navbar-default" style="background-color: #dff0d8">
+    <nav class="navbar navbar-default" style="background-color: #f8ac59;font-size: 15px">
         <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -50,7 +94,7 @@
 
         <div id="top">
             <div id="top-top" class="row">
-                <a href="#" class="pull-left"><img style="height: 51px;width: 184px" src="/static/img/spark/0.jpg"></a>
+                <a href="#" class="pull-left"><img style="height: 51px;width: 184px" src="/static/img/spark/777.png"></a>
                 <div class="col-lg-6 " style="margin-top: 12px">
                     <div class="input-group">
                         <input type="text" class="form-control" placeholder="请输入搜索内容">
@@ -64,7 +108,7 @@
                             style="padding: 6px 12px">进入兼职管理
                     </button>
                     <button type="button" class="btn btn-success btn-lg pull-right"
-                            style="padding: 6px 12px ;margin-right: 10px"><a href="/spark/details_of_job">发布兼职</a>
+                            style="padding: 6px 12px ;margin-right: 10px">发布兼职
                     </button>
                 </div>
             </div>
@@ -80,38 +124,38 @@
                     <h3 class="panel-title">最新兼职</h3>
                 </div>
                 <div class="panel-body">
-                    <ul style="font-size: 15px;list-style: none;">
+                    <ul style="font-size: 16px;list-style: none;">
                         <li><span>类&nbsp;&nbsp;型:</span>
-                            <a href="/" class="tab">不限</a>
-                            <a href="/" class="selected">日结兼职</a>
-                            <a href="/" class="tab">短期兼职</a>
-                            <a href="/" class="tab">长期兼职</a>
-                            <a href="/" class="tab">周末兼职</a>
-                            <a href="/" class="tab">全职招聘</a>
-                            <a href="/" class="tab">寒假工</a>
-                            <a href="/" class="tab">暑假工</a>
+                            <a href="#" class="tab">不限</a>
+                            <a href="#" class="selected">日结兼职</a>
+                            <a href="#" class="tab">短期兼职</a>
+                            <a href="#" class="tab">长期兼职</a>
+                            <a href="#" class="tab">周末兼职</a>
+                            <a href="#" class="tab">全职招聘</a>
+                            <a href="#" class="tab">寒假工</a>
+                            <a href="#" class="tab">暑假工</a>
                         </li>
                         <li><span>种&nbsp;&nbsp;类:</span>
-                            <a href="/" rel="nofollow" class="selected">不限</a>
-                            <a href="/" class="tab">其他</a> <a href="/dbx_xiaoshou_5/" class="tab">销售</a> <a href="/dbx_anbao_5/" class="tab">安保</a> <a href="/dbx_liyi_5/" class="tab">礼仪</a> <a href="/dbx_cuxiao_5/" class="tab">促销</a> <a href="/dbx_fanyi_5/" class="tab">翻译</a> <a href="/dbx_kefu_5/" class="tab">客服</a> <a href="/dbx_yanchu_5/" class="tab">演出</a> <a href="/dbx_jiajiao_5/" class="tab">家教</a> <a href="/dbx_mote_5/" class="tab">模特</a> <a href="/dbx_paidan_5/" class="tab">派单</a> <a href="/dbx_wenyuan_5/" class="tab">文员</a> <a href="/dbx_sheji_5/" class="tab">设计</a> <a href="/dbx_xiaonei_5/" class="tab">校内</a> <a href="/dbx_linshigong_5/" class="tab">临时工</a> <a href="/dbx_fuwuyuan_5/" class="tab">服务员</a><a href="/dbx_shixi_5/" class="tab">实习</a>
-                            <a href="/" class="tab">送餐员</a>
-                            <a href="" class="tab">调研</a>
+                            <a href="#" rel="nofollow" class="selected">不限</a>
+                            <a href="#" class="tab">其他</a> <a href="/dbx_xiaoshou_5/" class="tab">销售</a> <a href="/dbx_anbao_5/" class="tab">安保</a> <a href="/dbx_liyi_5/" class="tab">礼仪</a> <a href="/dbx_cuxiao_5/" class="tab">促销</a> <a href="/dbx_fanyi_5/" class="tab">翻译</a> <a href="/dbx_kefu_5/" class="tab">客服</a> <a href="/dbx_yanchu_5/" class="tab">演出</a> <a href="/dbx_jiajiao_5/" class="tab">家教</a> <a href="/dbx_mote_5/" class="tab">模特</a> <a href="/dbx_paidan_5/" class="tab">派单</a> <a href="/dbx_wenyuan_5/" class="tab">文员</a> <a href="/dbx_sheji_5/" class="tab">设计</a> <a href="/dbx_xiaonei_5/" class="tab">校内</a> <a href="/dbx_linshigong_5/" class="tab">临时工</a> <a href="/dbx_fuwuyuan_5/" class="tab">服务员</a><a href="/dbx_shixi_5/" class="tab">实习</a>
+                            <a href="#" class="tab">送餐员</a>
+                            <a href="#" class="tab">调研</a>
                         </li>
 
                         <li><span>区&nbsp;&nbsp;域:</span>
-                            <a href="/" rel="nofollow" class="selected">不限</a>
-                            <a href="/" class="tab">天河</a>
-                            <a href="/" class="tab">荔湾</a>
-                            <a href="/" class="tab">越秀</a>
-                            <a href="/" class="tab">海珠</a>
-                            <a href="/" class="tab">花都</a>
-                            <a href="/" class="tab">番禺</a>
-                            <a href="/" class="tab">从化</a>
-                            <a href="/" class="tab">增城</a>
-                            <a href="/" class="tab">黄埔</a>
-                            <a href="/" class="tab">白云</a>
-                            <a href="/" class="tab">南沙</a>
-                            <a href="/" class="tab">萝岗</a>
+                            <a href="#" rel="nofollow" class="selected">不限</a>
+                            <a href="#" class="tab">天河</a>
+                            <a href="#" class="tab">荔湾</a>
+                            <a href="#" class="tab">越秀</a>
+                            <a href="#" class="tab">海珠</a>
+                            <a href="#" class="tab">花都</a>
+                            <a href="#" class="tab">番禺</a>
+                            <a href="#" class="tab">从化</a>
+                            <a href="#" class="tab">增城</a>
+                            <a href="#" class="tab">黄埔</a>
+                            <a href="#" class="tab">白云</a>
+                            <a href="#" class="tab">南沙</a>
+                            <a href="#" class="tab">萝岗</a>
                         </li>
                     </ul>
                 </div>
@@ -129,16 +173,75 @@
 
                     <tr>
                         <td>
-                            <img src="/static/img/spark/0.jpg" style="height:36px;width: 130px">
+                            <div class="job-type" style="background-color: deeppink;">
+                                <span>礼仪</span>
+                            </div>
                         </td>
                         <td>
-                            <a href="#">广州中小学生体检协助兼职</a>
+                            <a href="#">coser礼仪300元天</a>
                         </td>
                         <td >
-                            <span title="黄埔"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
+                            <span ><i class="glyphicon glyphicon-map-marker"></i>&nbsp;花都</span>
                         </td>
                         <td>
-                            <span title="256"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
+                            <span ><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;100</span>
+                        </td>
+                        <td>
+                            <i class="glyphicon glyphicon-time"></i> 刚刚
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="job-type" style="background-color: purple;">
+                                <span>快递</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#">广州顺丰快递兼职</a>
+                        </td>
+                        <td >
+                            <span><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
+                        </td>
+                        <td>
+                            <span ><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
+                        </td>
+                        <td>
+                            <i class="glyphicon glyphicon-time"></i> 刚刚
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="job-type" style="background-color: blue;">
+                                <span>临时工</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#">日结轻松活动兼职100元/天</a>
+                        </td>
+                        <td >
+                            <span ><i class="glyphicon glyphicon-map-marker"></i>&nbsp;从化</span>
+                        </td>
+                        <td>
+                            <span><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;100</span>
+                        </td>
+                        <td>
+                            <i class="glyphicon glyphicon-time"></i> 刚刚
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="job-type" style="background-color: green;">
+                                <span>派单</span>
+                            </div>
+                        </td>
+                        <td>
+                            <a href="#">大学城派单兼职</a>
+                        </td>
+                        <td >
+                            <span ><i class="glyphicon glyphicon-map-marker"></i>&nbsp;番禺</span>
+                        </td>
+                        <td>
+                            <span ><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;500</span>
                         </td>
                         <td>
                             <i class="glyphicon glyphicon-time"></i> 12分钟前
@@ -146,16 +249,18 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="/static/img/spark/0.jpg" style="height:36px;width: 130px">
+                            <div class="job-type" style="background-color: plum;">
+                                <span>客服</span>
+                            </div>
                         </td>
                         <td>
-                            <a href="#">广州中小学生体检协助兼职</a>
+                            <a href="#">京东客服兼职</a>
                         </td>
                         <td >
-                            <span title="黄埔"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
+                            <span><i class="glyphicon glyphicon-map-marker"></i>&nbsp;白云</span>
                         </td>
                         <td>
-                            <span title="256"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
+                            <span ><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
                         </td>
                         <td>
                             <i class="glyphicon glyphicon-time"></i> 12分钟前
@@ -163,16 +268,18 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="/static/img/spark/0.jpg" style="height:36px;width: 130px">
+                            <div class="job-type" style="background-color: #2aabd2;">
+                                <span>其他</span>
+                            </div>
                         </td>
                         <td>
                             <a href="#">广州中小学生体检协助兼职</a>
                         </td>
                         <td >
-                            <span title="黄埔"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
+                            <span ><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
                         </td>
                         <td>
-                            <span title="256"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
+                            <span><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
                         </td>
                         <td>
                             <i class="glyphicon glyphicon-time"></i> 12分钟前
@@ -180,70 +287,21 @@
                     </tr>
                     <tr>
                         <td>
-                            <img src="/static/img/spark/0.jpg" style="height:36px;width: 130px">
+                            <div class="job-type" style="background-color: #2aabd2;">
+                                <span>其他</span>
+                            </div>
                         </td>
                         <td>
-                            <a href="#">广州中小学生体检协助兼职</a>
+                            <a href="#">广州天河客运站协助兼职</a>
                         </td>
                         <td >
-                            <span title="黄埔"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
+                            <span ><i class="glyphicon glyphicon-map-marker"></i>&nbsp;天河</span>
                         </td>
                         <td>
-                            <span title="256"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
+                            <span><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;326</span>
                         </td>
                         <td>
-                            <i class="glyphicon glyphicon-time"></i> 12分钟前
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="/static/img/spark/0.jpg" style="height:36px;width: 130px">
-                        </td>
-                        <td>
-                            <a href="#">广州中小学生体检协助兼职</a>
-                        </td>
-                        <td >
-                            <span title="黄埔"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
-                        </td>
-                        <td>
-                            <span title="256"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
-                        </td>
-                        <td>
-                            <i class="glyphicon glyphicon-time"></i> 12分钟前
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="/static/img/spark/0.jpg" style="height:36px;width: 130px">
-                        </td>
-                        <td>
-                            <a href="#">广州中小学生体检协助兼职</a>
-                        </td>
-                        <td >
-                            <span title="黄埔"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
-                        </td>
-                        <td>
-                            <span title="256"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
-                        </td>
-                        <td>
-                            <i class="glyphicon glyphicon-time"></i> 12分钟前
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <img src="/static/img/spark/0.jpg" style="height:36px;width: 130px">
-                        </td>
-                        <td>
-                            <a href="#">广州中小学生体检协助兼职</a>
-                        </td>
-                        <td >
-                            <span title="黄埔"><i class="glyphicon glyphicon-map-marker"></i>&nbsp;黄埔</span>
-                        </td>
-                        <td>
-                            <span title="256"><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;256</span>
-                        </td>
-                        <td>
-                            <i class="glyphicon glyphicon-time"></i> 12分钟前
+                            <i class="glyphicon glyphicon-time"></i> 20分钟前
                         </td>
                     </tr>
 
