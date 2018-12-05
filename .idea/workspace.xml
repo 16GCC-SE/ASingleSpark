@@ -1,628 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="添加了登录页面">
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/404.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/500.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/breadcrumb.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/cards.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/carousel.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/collapse.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/forms.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/jumbotron.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/list-group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/navs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/pagination.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/popovers.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/progress.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/scrollspy.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/switches.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/tables.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/tabs.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/base/tooltips.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/blank.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/buttons/brand-buttons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/buttons/button-group.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/buttons/buttons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/buttons/dropdowns.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/charts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/colors.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/crud.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/css/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/css/style.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/css/style.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/css/style.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/icons/coreui-icons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/icons/flags.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/icons/font-awesome.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/icons/simple-line-icons.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/avatars/8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/brand/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/brand/sygnet.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/img/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/charts.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/charts.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/colors.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/colors.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/main.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/popovers.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/popovers.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/tooltips.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/tooltips.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/widgets.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/js/widgets.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/notifications/alerts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/notifications/badge.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/notifications/modals.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/typography.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/coreui-plugin-chartjs-custom-tooltips/js/custom-tooltips.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/coreui/js/coreui.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/coreui/js/coreui.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/icons/css/coreui-icons.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/icons/css/coreui-icons.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/icons/fonts/CoreUI-Icons-Linear-Free.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/icons/fonts/CoreUI-Icons-Linear-Free.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/icons/fonts/CoreUI-Icons-Linear-Free.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/@coreui/icons/fonts/CoreUI-Icons-Linear-Free.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/bootstrap/js/bootstrap.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/chart.js/js/Chart.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/css/flag-icon.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ae.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/af.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ai.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/al.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/am.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ao.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/aq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/as.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/at.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/au.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/aw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ax.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/az.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ba.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/be.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/br.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/by.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/bz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ca.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ci.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ck.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/co.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/cz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/de.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/dj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/dk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/dm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/do.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/dz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ec.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/eg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/eh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/er.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/es-ct.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/es.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/et.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/eu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/fi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/fj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/fk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/fm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/fo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/fr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ga.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gb-eng.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gb-nir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gb-sct.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gb-wls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/gy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/hk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/hm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/hn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/hr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ht.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/hu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/id.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ie.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/il.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/im.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/in.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/io.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/iq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/is.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/it.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/je.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/jm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/jo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/jp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ke.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/kg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/kh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ki.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/km.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/kn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/kp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/kr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/kw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ky.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/kz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/la.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/lb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/lc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/li.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/lk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/lr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/lt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/lu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/lv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ly.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ma.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/md.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/me.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ml.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ms.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/my.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/mz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/na.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/nc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ne.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/nf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ng.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ni.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/nl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/no.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/np.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/nr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/nu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/nz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/om.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ph.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ps.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/pw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/py.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/qa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/re.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ro.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/rs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ru.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/rw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/se.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/si.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/so.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ss.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/st.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/sz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/td.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/th.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/to.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/tz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ua.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ug.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/um.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/un.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/us.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/uy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/uz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/va.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/vc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ve.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/vg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/vi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/vn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/vu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/wf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ws.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/ye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/yt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/za.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/zm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/1x1/zw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ad.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ae.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/af.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ag.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ai.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/al.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/am.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ao.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/aq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ar.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/as.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/at.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/au.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/aw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ax.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/az.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ba.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/be.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/br.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/by.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/bz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ca.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ch.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ci.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ck.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/co.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/cz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/de.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/dj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/dk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/dm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/do.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/dz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ec.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ee.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/eg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/eh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/er.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/es-ct.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/es.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/et.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/eu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/fi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/fj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/fk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/fm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/fo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/fr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ga.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gb-eng.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gb-nir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gb-sct.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gb-wls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ge.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/gy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/hk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/hm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/hn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/hr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ht.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/hu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/id.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ie.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/il.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/im.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/in.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/io.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/iq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ir.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/is.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/it.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/je.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/jm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/jo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/jp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ke.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/kg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/kh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ki.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/km.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/kn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/kp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/kr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/kw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ky.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/kz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/la.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/lb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/lc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/li.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/lk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/lr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ls.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/lt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/lu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/lv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ly.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ma.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/md.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/me.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ml.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mp.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mq.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ms.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/my.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/mz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/na.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/nc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ne.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/nf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ng.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ni.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/nl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/no.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/np.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/nr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/nu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/nz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/om.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pe.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ph.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ps.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/pw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/py.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/qa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/re.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ro.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/rs.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ru.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/rw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sa.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sb.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sd.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/se.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sh.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/si.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/so.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ss.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/st.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sx.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/sz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/td.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/th.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tj.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tk.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tl.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/to.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tr.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tv.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/tz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ua.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ug.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/um.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/un.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/us.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/uy.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/uz.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/va.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/vc.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ve.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/vg.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/vi.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/vn.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/vu.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/wf.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ws.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/ye.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/yt.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/za.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/zm.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/flag-icon-css/flags/4x3/zw.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/jquery/js/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/pace-progress/css/pace.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/pace-progress/css/pace.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/pace-progress/css/pace.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/pace-progress/css/pace.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/pace-progress/js/pace.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/perfect-scrollbar/js/perfect-scrollbar.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/popper.js/js/popper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/popper.js/js/popper.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/vendors/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/widgets.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/GunsApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/GunsApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/SwaggerConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/BlackboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/BlackboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/css/spark/xxx.css" beforeDir="false" />
+    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="添加了注册页面">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/777.png" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/guns/target/classes/static/css/spark/xxx.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/GunsApplication.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/GunsApplication.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/SwaggerConfig.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/SwaggerConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/BlackboardController.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/BlackboardController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/pom.xml" afterPath="$PROJECT_DIR$/src/guns/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/guns/target/classes/application.yml" afterPath="$PROJECT_DIR$/src/guns/target/classes/application.yml" />
     </list>
     <ignored path="$PROJECT_DIR$/src/guns/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -728,12 +119,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
+            <state relative-caret-position="-48">
+              <caret line="139" column="81" lean-forward="true" selection-start-line="139" selection-start-column="81" selection-end-line="139" selection-end-column="81" />
               <folding>
                 <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#td#0;n#tr#6;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -779,8 +180,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="177" column="39" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="39" />
+            <state relative-caret-position="840">
+              <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -849,8 +251,10 @@
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/IndexService.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/guns/pom.xml" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" />
       </list>
@@ -1170,8 +574,10 @@
       <workItem from="1543194633007" duration="2457000" />
       <workItem from="1543200089037" duration="11200000" />
       <workItem from="1543464991663" duration="8406000" />
-      <workItem from="1543805328103" duration="2887000" />
-      <workItem from="1544016128035" duration="2643000" />
+      <workItem from="1543805328103" duration="4983000" />
+      <workItem from="1543937345876" duration="1339000" />
+      <workItem from="1544006014738" duration="1324000" />
+      <workItem from="1544009428791" duration="6219000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -1222,11 +628,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544016393274</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="添加了注册页面">
+      <created>1544017028565</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1544017028565</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加了注册页面">
+      <created>1544017162320</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1544017162320</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="51609000" />
+    <option name="totallyTimeSpent" value="59944000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1323,6 +743,16 @@
             <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#6;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1342,8 +772,75 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="28" column="29" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+        <state relative-caret-position="840">
+          <caret line="28" column="29" lean-forward="true" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/巧兼职原型设计/777.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/巧兼职原型设计/800.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="22" column="37" lean-forward="false" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#6;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3720">
+          <caret line="124" column="41" lean-forward="false" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/boy.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4050">
+          <caret line="177" column="39" lean-forward="false" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1352,29 +849,112 @@
         <state relative-caret-position="228">
           <caret line="13" column="25" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="25" />
           <folding>
-            <element signature="e#370#371#0" expanded="true" />
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#6;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="177" column="39" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="39" />
+        <state relative-caret-position="4050">
+          <caret line="177" column="39" lean-forward="false" selection-start-line="177" selection-start-column="35" selection-end-line="177" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/boy.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2340">
+          <caret line="124" column="41" lean-forward="false" selection-start-line="124" selection-start-column="41" selection-end-line="124" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="840">
+          <caret line="28" column="29" lean-forward="false" selection-start-line="28" selection-start-column="29" selection-end-line="28" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/巧兼职原型设计/800.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docs/巧兼职原型设计/777.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/alert.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/0.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="97" column="21" lean-forward="true" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-380">
-          <caret line="16" column="32" selection-start-line="16" selection-start-column="32" selection-end-line="16" selection-end-column="32" />
+        <state relative-caret-position="360">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="26" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/dist/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="39" column="70" lean-forward="true" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+        <state relative-caret-position="-48">
+          <caret line="139" column="81" lean-forward="true" selection-start-line="139" selection-start-column="81" selection-end-line="139" selection-end-column="81" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#1;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#2;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#3;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#4;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#5;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#td#0;n#tr#6;n#table#0;n#div#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
