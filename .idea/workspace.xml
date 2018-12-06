@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="修改兼职不发的css文件路劲位置不对问题">
+    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="完善测试用例">
+      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/test.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/spark/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/datasource/SingleDataSourceConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/datasource/SingleDataSourceConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/service/impl/DeptServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/service/impl/DeptServiceImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/css/login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/css/login.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/UserTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/css/style.css" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/guns/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,6 +16,9 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2091100891">
@@ -33,14 +34,14 @@
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="29" />
-          <entry key="css" value="5" />
+          <entry key="css" value="6" />
           <entry key="gif" value="3" />
-          <entry key="html" value="9" />
+          <entry key="html" value="13" />
           <entry key="ico" value="1" />
           <entry key="java" value="208" />
-          <entry key="js" value="4" />
+          <entry key="js" value="6" />
           <entry key="md" value="3" />
-          <entry key="png" value="3" />
+          <entry key="png" value="4" />
           <entry key="properties" value="1" />
           <entry key="sql" value="1" />
           <entry key="txt" value="2" />
@@ -52,11 +53,11 @@
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="29" />
-          <entry key="CSS" value="5" />
-          <entry key="HTML" value="9" />
-          <entry key="Image" value="7" />
+          <entry key="CSS" value="6" />
+          <entry key="HTML" value="13" />
+          <entry key="Image" value="8" />
           <entry key="JAVA" value="208" />
-          <entry key="JavaScript" value="4" />
+          <entry key="JavaScript" value="6" />
           <entry key="Markdown" value="3" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="1" />
@@ -67,21 +68,21 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="2" />
+          <entry key="css" value="55" />
           <entry key="dummy" value="9" />
-          <entry key="html" value="23" />
+          <entry key="html" value="98" />
           <entry key="java" value="84" />
-          <entry key="txt" value="150" />
+          <entry key="txt" value="160" />
           <entry key="xml" value="7" />
           <entry key="yml" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="2" />
-          <entry key="HTML" value="23" />
+          <entry key="CSS" value="55" />
+          <entry key="HTML" value="98" />
           <entry key="JAVA" value="84" />
-          <entry key="PLAIN_TEXT" value="159" />
+          <entry key="PLAIN_TEXT" value="169" />
           <entry key="XML" value="7" />
           <entry key="YAML" value="15" />
         </counts>
@@ -90,37 +91,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="783">
-              <caret line="73" column="79" selection-start-line="73" selection-start-column="79" selection-end-line="73" selection-end-column="79" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="16" column="73" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="73" />
-              <folding>
-                <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login_v2.html">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+            <state relative-caret-position="189">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="67" selection-end-column="11" />
+              <folding>
+                <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -128,7 +108,62 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1377" />
+            <state relative-caret-position="2349">
+              <caret line="7338" column="1" lean-forward="true" selection-start-line="7338" selection-start-column="1" selection-end-line="7338" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/js/contabs.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8638" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/js/hplus.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="158" column="33" lean-forward="true" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_theme.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1539" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="70" selection-start-line="70" selection-end-line="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login_v2.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1350">
+              <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+              <folding>
+                <element signature="e#1867#1874#0" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -136,65 +171,7 @@
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="459">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/warpper/UserWarpper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="601">
-              <caret line="51" column="55" lean-forward="true" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
-              <folding>
-                <element signature="e#1263#1264#0" expanded="true" />
-                <element signature="e#1291#1292#0" expanded="true" />
-                <element signature="e#1349#1350#0" expanded="true" />
-                <element signature="e#1376#1377#0" expanded="true" />
-                <element signature="e#1446#1447#0" expanded="true" />
-                <element signature="e#1479#1480#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/common/constant/factory/IConstantFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="98" column="11" selection-start-line="98" selection-start-column="11" selection-end-line="98" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/common/constant/factory/ConstantFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="245" column="18" selection-start-line="245" selection-start-column="18" selection-end-line="245" selection-end-column="18" />
-              <folding>
-                <element signature="e#2327#2328#0" expanded="true" />
-                <element signature="e#2396#2397#0" expanded="true" />
-                <element signature="e#8002#8003#0" expanded="true" />
-                <element signature="e#8050#8051#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="44" selection-start-line="44" selection-end-line="44" />
-              <folding>
-                <element signature="e#420#815#0" />
-                <element signature="e#839#1227#0" />
-                <element signature="e#1251#1700#0" />
-                <element signature="e#1717#1758#0" />
-                <element signature="e#1784#2011#0" />
-                <element signature="e#2032#2100#0" />
-              </folding>
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -207,6 +184,8 @@
         <option value="JavaScript File" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="CSS File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -225,6 +204,13 @@
       <find>UserDto</find>
       <find>PageFactory</find>
       <find>MutiStrFac</find>
+      <find>block</find>
+      <find>black</find>
+      <find>nav</find>
+      <find>fixed-sidebar</find>
+      <find>gray-bg</find>
+      <find>skin-1</find>
+      <find>skin</find>
     </findStrings>
     <replaceStrings>
       <replace>39.108.158.15</replace>
@@ -249,7 +235,6 @@
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/IndexService.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html" />
         <option value="$PROJECT_DIR$/src/guns/src/main/resources/application.yml" />
@@ -261,6 +246,10 @@
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login_v2.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/test.css" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/html.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" />
       </list>
     </option>
   </component>
@@ -318,224 +307,159 @@
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="docs" type="462c0819:PsiDirectoryNode" />
+              <item name="巧兼职原型设计" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="base" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="cache" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-              <item name="properties" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="context" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="converter" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="datascope" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-              <item name="listener" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="exception" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="feign" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="metadata" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mutidatasource" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mutidatasource" type="462c0819:PsiDirectoryNode" />
-              <item name="annotion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="mutidatasource" type="462c0819:PsiDirectoryNode" />
-              <item name="aop" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="page" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="reqres" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="treebuild" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: cn.stylefeng.roses:kernel-core:1.1.0" type="70bed36:NamedLibraryElementNode" />
-              <item name="kernel-core-1.1.0.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="core" type="462c0819:PsiDirectoryNode" />
-              <item name="xss" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.4.6" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.4.6" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.4.6.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.4.6" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.4.6.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="ibatis" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.mybatis:mybatis:3.4.6" type="70bed36:NamedLibraryElementNode" />
-              <item name="mybatis-3.4.6.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="ibatis" type="462c0819:PsiDirectoryNode" />
-              <item name="plugin" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -546,6 +470,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -553,14 +478,15 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544069062150" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544087577764" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/guns" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -585,8 +511,7 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/README.md</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login_v2.html</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -594,8 +519,6 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/docs/1544062190.png</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/companylogo.jpg</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -865,7 +788,7 @@
       <workItem from="1543200089037" duration="11200000" />
       <workItem from="1543464991663" duration="8406000" />
       <workItem from="1543805328103" duration="2887000" />
-      <workItem from="1543925674138" duration="34724000" />
+      <workItem from="1543925674138" duration="42951000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -930,11 +853,25 @@
       <option name="project" value="LOCAL" />
       <updated>1544068279296</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完善测试用例">
+      <created>1544069091772</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1544069091772</updated>
+    </task>
+    <task id="LOCAL-00011" summary="完善测试用例">
+      <created>1544069392651</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1544069392651</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="83690000" />
+    <option name="totallyTimeSpent" value="91917000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -946,11 +883,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Designer" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20149253" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24871466" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -960,10 +897,11 @@
       <window_info id="设计师" order="7" />
       <window_info id="Favorites" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32790446" />
+      <window_info anchor="bottom" id="Problems" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.7828447" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9662618" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.70792615" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -984,7 +922,7 @@
       <window_info anchor="right" id="控制板" order="3" />
       <window_info anchor="right" id="Properties" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.15138593" />
+      <window_info anchor="right" id="Maven Projects" order="6" visible="true" weight="0.047557842" />
       <window_info anchor="right" id="Database" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Theme Preview" order="9" />
@@ -1008,65 +946,14 @@
     <MESSAGE value="添加html文件到框架上" />
     <MESSAGE value="修改兼职不发的css文件路劲位置不对问题" />
     <MESSAGE value="提交登陆页面以及测试用例（半成品）" />
-    <option name="LAST_COMMIT_MESSAGE" value="提交登陆页面以及测试用例（半成品）" />
+    <MESSAGE value="完善测试用例" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善测试用例" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/mapping/LoginLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="62" selection-start-line="2" selection-start-column="62" selection-end-line="2" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/mapping/RelationMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/NoticeMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/model/OperationLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/model/Menu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/model/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/model/Dept.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/model/LoginLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/model/Notice.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -1316,7 +1203,7 @@
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/warpper/UserWarpper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="601">
-          <caret line="51" column="55" lean-forward="true" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
+          <caret line="51" column="55" selection-start-line="51" selection-start-column="55" selection-end-line="51" selection-end-column="55" />
           <folding>
             <element signature="e#1263#1264#0" expanded="true" />
             <element signature="e#1291#1292#0" expanded="true" />
@@ -1348,13 +1235,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="783">
-          <caret line="73" column="79" selection-start-line="73" selection-start-column="79" selection-end-line="73" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="513">
@@ -1379,7 +1259,7 @@
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="432">
-          <caret line="16" column="73" lean-forward="true" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="73" />
+          <caret line="16" column="73" selection-start-line="15" selection-start-column="4" selection-end-line="16" selection-end-column="73" />
           <folding>
             <element signature="n#style#0;n#h4#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#2;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1391,22 +1271,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1377" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="459">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/docs/巧兼职原型设计/888.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login_v2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="56" column="23" lean-forward="true" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+        <state relative-caret-position="1350">
+          <caret line="56" column="23" selection-start-line="56" selection-start-column="23" selection-end-line="56" selection-end-column="23" />
+          <folding>
+            <element signature="e#1867#1874#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="70" selection-start-line="70" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/test.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3807">
+          <caret line="141" column="1" selection-start-line="141" selection-start-column="1" selection-end-line="141" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_theme.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1539" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/js/contabs.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/js/hplus.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="158" column="33" lean-forward="true" selection-start-line="158" selection-start-column="16" selection-end-line="158" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="38" column="41" selection-start-line="38" selection-start-column="41" selection-end-line="38" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2349">
+          <caret line="7338" column="1" lean-forward="true" selection-start-line="7338" selection-start-column="1" selection-end-line="7338" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/html.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret lean-forward="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="67" selection-end-column="11" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
