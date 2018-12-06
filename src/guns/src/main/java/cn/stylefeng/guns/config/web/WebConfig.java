@@ -71,6 +71,7 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addViewController("/spark/index").setViewName("/spark/index.html");
         registry.addViewController("/spark/details_of_job").setViewName("/spark/details_of_job.html");
         registry.addViewController("/spark/register").setViewName("/spark/register.html");
+        registry.addViewController("/spark/login").setViewName("/spark/login_v2.html");
 
     }
 

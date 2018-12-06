@@ -76,6 +76,8 @@ public class SingleDataSourceConfig {
         return new DataScopeInterceptor();
     }
 
+
+
     /**
      * 乐观锁mybatis插件
      */
