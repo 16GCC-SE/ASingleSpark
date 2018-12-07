@@ -4,28 +4,30 @@ body, button, input, select, textarea, pre {font: 14px/1.2 "微软雅黑" ,Arial
 
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {margin: 0;padding: 0;}
 
-.header {height: 35px;background-color: #fff;border-bottom: 1px solid #e3e3e3;}
+.header {height: 48px;background-color: #e4e4e4;border-bottom: 1px solid #e3e3e3;}
 
-.me {line-height: 35px;float:left;margin-right: 30px; color: #fff;
-font-size: 18px;}
+/*.me {line-height: 35px;float:left;margin-right: 30px; color: #fff;*/
+/*font-size: 18px;}*/
 
-.me a {margin: 0 10px;position: relative;}
+/*.me a {margin: 0 10px;position: relative;}*/
 
 .navigation_box, .navigation_box a {color: #6c6c6c;font-size: 13px;}
 
 .w_main {width: 1000px;margin: auto;}
 
-.logo_wrap {line-height: 35px;margin: 0 100px;}
+.logo_wrap {line-height: 48px;margin: 0 100px;}
 
-.logo_wrap .logo {color: #f3573f;font-size: 15px;float: left;height: 23px;margin-bottom: 2px;margin-right: 250px;}
+.logo_wrap .logo {color: #f3573f;font-size: 15px;float: left;height: 40px;margin-bottom: 2px;margin-right: 250px;}
 
-.logo_wrap .logo img {display: block;height: 35px;}
+.logo_wrap .logo img {display: block;height: 48px;}
 
 a {text-decoration: none;}
 
-.channel_box {line-height: 35px;float: right;margin-right: 30px;}
+.channel_box {line-height: 48px;float: right;margin-right: 50px;}
 
-.channel_box a {margin: 0 10px;position: relative;}
+.channel_box a {margin: 0 15px;position: relative;font-size:15px;}
+
+.channel_box a:hover{background-color: orange;color: #FFFFFF;display:inline-block;width: 100px;text-align: center;}
 
 .cooperation_box_alt {display: none;}
 
@@ -192,7 +194,7 @@ ul, ol {list-style: none;}
 
 .content_ad_box .p1 {color: #ff923a;font-size: 16px;background-color: #fff7ec;padding: 0 15px;line-height: 50px;}
 
-.content_box .app_wrap {position: relative;margin-bottom: 20px;background: #fff;}
+.content_box .must_read {position: relative;margin-bottom: 20px;background: #fff;margin-left:6px;}
 
 a {text-decoration: none;}
 
