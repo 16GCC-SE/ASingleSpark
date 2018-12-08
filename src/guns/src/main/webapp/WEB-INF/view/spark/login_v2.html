@@ -20,7 +20,14 @@
     </script>
     <script src="${ctxPath}/static/js/jquery.min.js?v=2.1.4"></script>
     <script src="${ctxPath}/static/js/bootstrap.min.js?v=3.3.6"></script>
-
+    <style type="text/css">
+        .icon {
+            width: 1em; height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor;
+            overflow: hidden;
+        }
+    </style>
 </head>
 
 <body class="signin">
@@ -84,7 +91,7 @@
                             <input id="smsCode" type="text" autocomplete="off" tabindex="3" maxlength="6">
                             <i class="icon password-icon"></i>
                         </div>
-                        <a name="Logon_index_denglu033" href="javascript:void(0)" style="text-align: right" class="send-sms" sa-data="{'eletp':'获取短信验证码','eleid':'13'}" >获取验证码</a>
+                        <a name="Logon_index_denglu033" href="javascript:void(0)" style="text-align: right"; class="send-sms" sa-data="{'eletp':'获取短信验证码','eleid':'13'}" >获取验证码</a>
                         <div class="login-help clearfix">
                             <a class="login-switch" href="javascript:void(0)" sa-data="{'eletp':'账户登录','eleid':'4'}"><i></i>账号密码登录</a>
                             <a id="FORGET_PWD" href="javascript:void(0);" onclick="javascript:forgetPwdClick(); return false;" name="Logon_index_denglu001" class="forget-password" sa-data="{'eletp':'忘记密码','eleid':'6'}" style="text-align: right">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -92,6 +99,19 @@
                         </div>
                         <button   style="background: #0e9aef;background-color: #0e9aef; width:100px;color: white;font-size: 14px" sa-data="{'eletp':'短信验证码登录（按钮）','eleid':'24'}" >登 录</button>
                     </div>
+                    <div class="bind-login">
+                        <span class="title">使用以下账号登录</span>
+                        <div class="common clearfix">
+                            <a name="Logon_index_denglu027" href="javascript:void(0);" onclick="javascript:alipayLogin(); return false;" class="alipay" sa-data="{'eletp':'支付宝联合登录','eleid':'7'}">
+                                <i class="iconfont icon-zhifupingtai-zhifubao"></i>支付宝</a>
+
+                        </div>
+                        <div class="more">
+                            <!--    <a name="Logon_index_denglu012" href="javascript:void(0);" onclick="javascript:memberCardLogin(); return false;">门店会员卡</a>-->
+                            <!--<a name="Logon_index_denglu015" href="javascript:void(0);" onclick="javascript:pptvLogin(); return false;">PPTV</a>-->
+                        </div>
+                    </div>
+
                 </form>
             </div>
             </div>
@@ -102,6 +122,7 @@
 
 
     <script type="text/javascript" src="https://res.suning.cn/project/passport/login/b2c_V7/js/??SFE.lion.dialog.min.js,security.min.js,login.min.js?v=20181018"></script>
+    <script src="./iconfont.js"></script>
     <script type="text/javascript">
 
         //忘记密码
