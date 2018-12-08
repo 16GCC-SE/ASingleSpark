@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3ff4c510-c03d-49be-bc79-514b8306a0a7" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" />
     </list>
     <ignored path="$PROJECT_DIR$/src/guns/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -166,7 +164,7 @@
       <file leaf-file-name="appeal.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/appeal.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-56">
+            <state relative-caret-position="76">
               <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
               <folding>
                 <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
@@ -731,7 +729,7 @@
       <workItem from="1544193365162" duration="4542000" />
       <workItem from="1544231774287" duration="8898000" />
       <workItem from="1544244705268" duration="19484000" />
-      <workItem from="1544264598225" duration="416000" />
+      <workItem from="1544264598225" duration="596000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -824,11 +822,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544264877934</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="提交兼职平台申诉页面初版">
+      <created>1544265119708</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1544265119708</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="111601000" />
+    <option name="totallyTimeSpent" value="111781000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -904,7 +909,8 @@
     <MESSAGE value="提交登陆页面以及测试用例（半成品）" />
     <MESSAGE value="完善测试用例" />
     <MESSAGE value="兼职平台申诉页面初版" />
-    <option name="LAST_COMMIT_MESSAGE" value="兼职平台申诉页面初版" />
+    <MESSAGE value="提交兼职平台申诉页面初版" />
+    <option name="LAST_COMMIT_MESSAGE" value="提交兼职平台申诉页面初版" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1273,7 +1279,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/appeal.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-56">
+        <state relative-caret-position="76">
           <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
           <folding>
             <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
