@@ -33,6 +33,13 @@
     </properties>
 
     <dependencies>
+        <!--html解析器-->
+        <dependency>
+            <!-- jsoup HTML parser library @ http://jsoup.org/ -->
+            <groupId>org.jsoup</groupId>
+            <artifactId>jsoup</artifactId>
+            <version>1.10.2</version>
+        </dependency>
 
         <!--代码生成器-->
         <dependency>
