@@ -1,4 +1,5 @@
-package cn.stylefeng.guns.student;
+package cn.stylefeng.guns.modular.spark.util;
+
 
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
@@ -11,6 +12,7 @@ import java.net.*;
 import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
 
 public class StudentAuthentication {
     private String baseURL="http://jwxw.gzcc.cn/";
@@ -29,9 +31,6 @@ public class StudentAuthentication {
     private String cookie;
     private String name;
     private String Location;
-
-
-
     private String[][] classTable=new String[8][13];
 
 
