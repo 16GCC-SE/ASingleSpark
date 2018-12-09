@@ -18,7 +18,9 @@ public class StudentAuthentication {
     private String baseURL="http://jwxw.gzcc.cn/";
     private String captchaURL=baseURL+"CheckCode.aspx";
     private String submitURL=baseURL+"default2.aspx";
-    private String save_img_url="/Users/liliguang/Desktop/img.gif";
+    private String saveBaseURL="C:/Users/Administrator/Desktop/test/";
+    private String save_img_url=saveBaseURL+"img.gif";
+    private String save_head_img_url=saveBaseURL+"head.jpg";
     private String indexURL;
     private Map<Integer,byte[]> captchaImg=new HashMap<>();
     private String studentID="201606110062";
@@ -299,6 +301,7 @@ public class StudentAuthentication {
                         for(String index:numbers){
                             classTable[i+1][Integer.parseInt(index)]=strings[i];
                         }
+
                     }
                 }
             }
@@ -348,7 +351,7 @@ public class StudentAuthentication {
             String imgSrc=document.select("#xszp").first().attr("src");
             System.out.println(phone);
             //存取头像
-            URL urls = new URL(baseURL+"readimagexs.aspx?xh=201606110062&timestamp=1228806584&secret=88ab488619a3763d7294616da6ef9772");
+            URL urls = new URL(baseURL+imgSrc);
             HttpURLConnection openConnection = (HttpURLConnection) urls.openConnection();
             openConnection.setRequestMethod("GET");
             openConnection.setReadTimeout(5000);
@@ -359,7 +362,7 @@ public class StudentAuthentication {
             byte[] by = new byte[50000];
 
             // 将验证码保存到本地
-            FileOutputStream file = new FileOutputStream("/Users/liliguang/Desktop/head.jpg");
+            FileOutputStream file = new FileOutputStream(save_head_img_url);
             int len = 0;
             while ((len = in.read(by)) != -1) {
                 file.write(by, 0, len);
