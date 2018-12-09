@@ -26,7 +26,8 @@ public class StudentAuthentication {
     private String cookie;
     private String name;
     private String Location;
-    private String gnmkdm;
+    private String classTableGnmkdm="N121601";
+    private String personInfoGnmkdm="N121501";
 
 
     private String[][] classTable=new String[8][13];
@@ -40,6 +41,7 @@ public class StudentAuthentication {
             test.load();
             test.getNameByUrl();
             test.getKB();
+            test.getPersonInfo();
         } catch (Exception e) {
             System.out.println("捕獲異常");
             e.printStackTrace();
@@ -183,13 +185,6 @@ public class StudentAuthentication {
         }
     }
 
-// 请输入验证码:j5jj
-
-// check = j5jj
-
-// 参数列表:__VIEWSTATE=dDwyODE2NTM0OTg7Oz74kxBxGi3w7jUfyZCkgy%2FB%2BRGrKQ%3D%3D&txtUserName=<span style="color: #ff0000;">13150227</span>&TextBox2=<span style="color: #ff0000;">*****(密码)</span>&txtSecretCode=j5jj&RadioButtonList1=%D1%A7%C9%FA&Button1=&lbLanguage=&hidPdrs=&hidsc=
-
-// 返回码:302
 
 
     /**
@@ -217,12 +212,14 @@ public class StudentAuthentication {
             matcher.find();
             this.name = sb.substring(matcher.start() + 3, matcher.end());
             System.out.println(name);
-            //匹配gnmkdm
+            //匹配gnmkdm(有错)
+            /*
             Pattern pattern_two = Pattern.compile("gnmkdm=[a-zA-Z0-9]*");
             Matcher matcher_two = pattern_two.matcher(sb.toString());
             matcher_two.find();
-            this.gnmkdm = sb.substring(matcher_two.start() + 7, matcher_two.end());
+            String gnmkdm = sb.substring(matcher_two.start() + 7, matcher_two.end());
             System.out.println(gnmkdm);
+            */
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
@@ -235,17 +232,12 @@ public class StudentAuthentication {
 
 
     /**
-
      * 获取课表
-
      */
-
     public void getKB() throws UnsupportedEncodingException {
-
-
         System.out.println("读取课表");
         String url = "http://jwxw.gzcc.cn/tjkbcx.aspx?xh=" + studentID + "&xm="
-                + URLEncoder.encode(this.name, "GB2312") + "&gnmkdm="+this.gnmkdm;
+                + URLEncoder.encode(this.name, "GB2312") + "&gnmkdm="+this.classTableGnmkdm;
         System.out.println("获取课表的参数: " + url);
         URL Url;
         try {
@@ -311,6 +303,70 @@ public class StudentAuthentication {
                 }
             }
             System.out.println(classDetailList);
+        } catch (MalformedURLException e) {
+            e.printStackTrace();
+        } catch (ProtocolException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    /**
+     * 获取个人信息
+     * xsgrxx.aspx
+     */
+    public void getPersonInfo() throws UnsupportedEncodingException {
+        System.out.println("读取个人信息");
+        String url = baseURL+"xsgrxx.aspx?xh=" + studentID + "&xm="
+                + URLEncoder.encode(this.name, "GB2312") + "&gnmkdm="+this.personInfoGnmkdm;
+        System.out.println("获取课表的参数: " + url);
+        URL Url;
+        try {
+            Url = new URL(url);
+            HttpURLConnection conn = (HttpURLConnection) Url.openConnection();
+            conn.setRequestMethod("GET");
+            conn.setReadTimeout(3000);
+            conn.setRequestProperty("Cookie", cookie);
+            conn.setRequestProperty("Referer", indexURL);
+            conn.setInstanceFollowRedirects(false);
+            conn.setDoOutput(true);
+            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream(),"gb2312"));
+            StringBuffer sb = new StringBuffer();
+            String temp;
+            while ((temp = read.readLine()) != null) {
+                sb.append(temp);
+            }
+            System.out.println(sb.toString());
+            //打印出含有课表的网页源码
+            Document document = Jsoup.parse(sb.toString());
+            //获取到tobdy包含信息的标签
+            String phone=document.select("#TELNUMBER").first().val();
+            String email=document.select("#dzyxdz").first().val();
+            String schoolDate=document.select("#lbl_rxrq").first().val();
+            String imgSrc=document.select("#xszp").first().attr("src");
+            System.out.println(phone);
+            //存取头像
+            URL urls = new URL(baseURL+"readimagexs.aspx?xh=201606110062&timestamp=1228806584&secret=88ab488619a3763d7294616da6ef9772");
+            HttpURLConnection openConnection = (HttpURLConnection) urls.openConnection();
+            openConnection.setRequestMethod("GET");
+            openConnection.setReadTimeout(5000);
+            // cookie一同提交(ASP.NET_SessionId=4kusfii0urpbrazkhxvuas45,只需要等号后面的一串数据)
+            openConnection.setRequestProperty("Cookie", cookie);
+            InputStream in = openConnection.getInputStream();
+            //必须使用字节流，不能使用字符流，不然图片无法打开
+            byte[] by = new byte[50000];
+
+            // 将验证码保存到本地
+            FileOutputStream file = new FileOutputStream("/Users/liliguang/Desktop/head.jpg");
+            int len = 0;
+            while ((len = in.read(by)) != -1) {
+                file.write(by, 0, len);
+            }
+            file.close();
+            in.close();
+
         } catch (MalformedURLException e) {
             e.printStackTrace();
         } catch (ProtocolException e) {
