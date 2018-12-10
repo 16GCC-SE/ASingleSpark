@@ -2,42 +2,50 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Insert title here</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="favicon.ico">
-    <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/plugins/summernote/summernote.css" rel="stylesheet">
-    <link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
-    <link href="css/style.css?v=4.1.0" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style type="text/css">
+    <title>兼职发布</title>
+    <link rel="shortcut icon" href="${ctxPath}/static/favicon.ico">
+    <link href="${ctxPath}/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="${ctxPath}/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="${ctxPath}/static/css/style.css?v=4.1.0" rel="stylesheet">
+    <style>
+
+            .textarea {
+            resize: none;
+            width: 400px;
+            padding: 5px 5px;
+            font-size: 13px;
+                height: 50px;
+            margin-top: -5px;
+            border: 1px solid #ccc;
+        }
+            .textarea:focus,
+        .textarea:active{
+            height: 150px;
+        }
     </style>
+
+
 </head>
 <body>
-<header class="header">
-    <div class="clearfix" style="background: #F3F3FA;border: 1px solid #000;padding: 10px;">
-        <section class="container">
-            <div class="pull-left">
-                <span class="city">广州</span> <span rel="nofollow"
-                                                   href="http://www.jianzhimao.com/ctrlcity/changeCity.html">[切换城市]</span>
-            </div>
-            <div class="pull-right">
-                <a class="aa" rel="nofollow" href="http://www.jianzhimao.com" style="padding:20px">首页</a>
-                <a class="aa" rel="nofollow" href="http://www.jianzhimao.com/ctrlCooperate/qghz.html" id="cooperation"
-                   style="padding:20px">申请社团赞助</a>
-                <a class="aa" rel="nofollow" href="http://www.jianzhimao.com/ctrlindex/enterprise.html"
-                   style="padding:20px">企业服务</a>
-                <a class="aa" rel="nofollow" href="/ctrlenprise/companyinfo" id="user_name" title="15017366306"
-                   style="padding:20px">15017366306</a>
-                <a class="aa" rel="nofollow" href="/ctrlcity/loginOut" style="padding:20px">退出 </a>
-            </div>
-        </section>
-    </div>
-</header>
+<div id="header">
+    <nav class="navbar navbar-default" style="background-color: #f2f2f2;font-size: 15px;">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="mouseHover" style="margin-left: 15px"><a href="#"><span style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">申请社区赞助</a></li>
+                    <li><a href="#">企业服务</a></li>
+                    <li><a href="/spark/register">注册</a></li>
+                    <li style="margin-right: 15px"><a href="#">登录</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div>
 <header class="w_main">
     <div class="clearfix">
         <section class="container">
@@ -161,7 +169,8 @@
                 </select>
             </div>
         </div>
-        <div class="form-group draggable ui-draggable">
+
+        <div class="form-group draggable" style="padding-bottom:40px">
             <label class="col-sm-2 control-label">&nbsp;*工作福利:</label>
 
             <div class="col-sm-5">
@@ -177,6 +186,16 @@
                     <input type="checkbox" value="option2" id="inlineCheckbox5">免费培训</label>
             </div>
         </div>
+
+        <div class="form-group draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*兼职类型:</label>
+
+                <div>
+                    <textarea class="textarea" id="descp" rows="10" maxlength="2000" placeholder="请对工作内容、要求、时间、地址、福利、薪资计算及结算方式，进行详细描述" style="width: 375px;margin-left: 15px"></textarea>
+                </div>
+
+        </div>
+
 
     </section>
 
@@ -392,5 +411,19 @@
             <p>&nbsp;</p>
         </div>
     </section>
+
+<!-- 全局js -->
+<script src="${ctxPath}/static/js/jquery.min.js?v=2.1.4"></script>
+<script src="${ctxPath}/static/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="${ctxPath}/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="${ctxPath}/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="${ctxPath}/static/js/plugins/layer/layer.js"></script>
+
+<!-- 自定义js -->
+<script src="${ctxPath}/static/js/hplus.js?v=4.1.0"></script>
+<script type="text/javascript" src="${ctxPath}/static/js/contabs.js"></script>
+
+<!-- 第三方插件 -->
+<script src="${ctxPath}/static/js/plugins/pace/pace.min.js"></script>
 </body>
 </html>
