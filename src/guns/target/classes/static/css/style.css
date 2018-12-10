@@ -7332,11 +7332,7 @@ body.skin-1 {
 }
 
 
-.navbar-default .nav > li > a:hover,
-.navbar-default .nav > li > a:focus {
-    background: orange;
-    color: #fff;
-}
+
 
 
 .skin-1 .nav.nav-tabs > li.active > a {
@@ -7902,4 +7898,14 @@ body.skin-3 {
 .tab-menu-selected {
     background-color: #293846 !important;
     color: white !important;
+}
+
+/*导航条样式*/
+.navbar-default .nav > li > a:hover,
+.navbar-default .nav > li > a:focus {
+    background: orange;
+    color: #fff;
+}
+.nav > li > a {
+    font-weight: 500;
 }

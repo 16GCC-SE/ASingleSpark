@@ -6,6 +6,8 @@ import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.nodes.TextNode;
 import org.jsoup.select.Elements;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 import java.io.*;
 import java.net.*;
@@ -13,46 +15,50 @@ import java.util.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-
+/**
+ * 由于工具类拥有状态所以使用多例
+ */
+@Component
+@Scope("prototype")
 public class StudentAuthentication {
-    private String baseURL="http://jwxw.gzcc.cn/";
-    private String captchaURL=baseURL+"CheckCode.aspx";
-    private String submitURL=baseURL+"default2.aspx";
-    private String saveBaseURL="C:/Users/Administrator/Desktop/test/";
-    private String save_img_url=saveBaseURL+"img.gif";
-    private String save_head_img_url=saveBaseURL+"head.jpg";
-    private String studentID="201606110062";
-    private String studentPassword="llg1997729";
-    private String classTableGnmkdm="N121601";
-    private String personInfoGnmkdm="N121501";
-    private Map<Integer,byte[]> captchaImg=new HashMap<>();
+    private String baseURL = "http://jwxw.gzcc.cn/";
+    private String captchaURL = baseURL + "CheckCode.aspx";
+    private String submitURL = baseURL + "default2.aspx";
+    private String saveBaseURL = "C:/Users/Administrator/Desktop/test/";
+    private String save_img_url = saveBaseURL + "img.gif";
+    private String save_head_img_url = saveBaseURL + "head.jpg";
+    private String studentID = "201606110062";
+    private String studentPassword = "llg1997729";
+    private String classTableGnmkdm = "N121601";
+    private String personInfoGnmkdm = "N121501";
+    private Map<Integer, byte[]> captchaImg = new HashMap<>();
     private String viewState;
     private String indexURL;
     private String cookie;
     private String name;
     private String Location;
-    private String[][] classTable=new String[8][13];
+    private String[][] classTable = new String[8][13];
 
 
-    public static void main(String[] args) {
-        StudentAuthentication test=new StudentAuthentication();
+    public void launch() {
         try {
-            test.getCookie();
-            test.SaveImg();
-            test.load();
-            test.getNameByUrl();
-            test.getKB();
-            test.getPersonInfo();
+            getCookie();
+            SaveImg();
+            load();
+            getNameByUrl();
+            getKB();
+            getPersonInfo();
         } catch (Exception e) {
             System.out.println("捕獲異常");
             e.printStackTrace();
         }
     }
+
     /**
      * 输出为:
      * ASP.NET_SessionId=4kusfii0urpbrazkhxvuas45
      * 隐藏字段 = dDwyODE2NTM0OTg7Oz74kxBxGi3w7jUfyZCkgy/B+RGrKQ==
-     *
+     * <p>
      * _VIEWSTATE存在于首页的源码中
      */
     public void getCookie() {
@@ -92,6 +98,7 @@ public class StudentAuthentication {
         }
 
     }
+
     /**
      * 存储验证码到本地
      */
@@ -121,7 +128,7 @@ public class StudentAuthentication {
             file.close();
             in.close();
             //将验证码保存到数组
-            captchaImg.put(len,by);
+            captchaImg.put(len, by);
             System.out.println("读取验证码完毕!");
         } catch (MalformedURLException e) {
             e.printStackTrace();
@@ -129,8 +136,10 @@ public class StudentAuthentication {
             e.printStackTrace();
         }
     }
+
     /**
      * 登陆
+     *
      * @throws IOException
      */
     public void load() throws IOException {
@@ -165,7 +174,7 @@ public class StudentAuthentication {
         //打印返回码
         System.out.println("返回码:" + conn.getResponseCode());
         //打印服务器返回的跳转网址
-        Location=conn.getHeaderField("Location");
+        Location = conn.getHeaderField("Location");
         System.out.println("Location :" + Location);
         BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream()));
         String temp;
@@ -175,7 +184,7 @@ public class StudentAuthentication {
             ab.append(temp);
         }
         if (conn.getResponseCode() != 302) {
-        //getError为自定义函数，提取出错误信息
+            //getError为自定义函数，提取出错误信息
             System.out.println("错误");
             return;
         }
@@ -183,10 +192,11 @@ public class StudentAuthentication {
 
     /**
      * 获取名字
+     *
      * @param
      * @return
      */
-    public String getNameByUrl( ) {
+    public String getNameByUrl() {
         indexURL = baseURL + Location;
         try {
             URL Url = new URL(indexURL);
@@ -194,7 +204,7 @@ public class StudentAuthentication {
             conn.setRequestMethod("GET");
             conn.setReadTimeout(2000);
             conn.setRequestProperty("Cookie", cookie);
-            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream(),"gb2312"));
+            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream(), "gb2312"));
             StringBuffer sb = new StringBuffer();
             String temp;
             while ((temp = read.readLine()) != null) {
@@ -217,19 +227,20 @@ public class StudentAuthentication {
         } catch (MalformedURLException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
-        } catch (IOException e  ) {
+        } catch (IOException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
         return null;
     }
+
     /**
      * 获取课表
      */
     public void getKB() throws UnsupportedEncodingException {
         System.out.println("读取课表");
         String url = "http://jwxw.gzcc.cn/tjkbcx.aspx?xh=" + studentID + "&xm="
-                + URLEncoder.encode(this.name, "GB2312") + "&gnmkdm="+this.classTableGnmkdm;
+                + URLEncoder.encode(this.name, "GB2312") + "&gnmkdm=" + this.classTableGnmkdm;
         System.out.println("获取课表的参数: " + url);
         URL Url;
         try {
@@ -241,7 +252,7 @@ public class StudentAuthentication {
             conn.setRequestProperty("Referer", indexURL);
             conn.setInstanceFollowRedirects(false);
             conn.setDoOutput(true);
-            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream(),"gb2312"));
+            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream(), "gb2312"));
             StringBuffer sb = new StringBuffer();
             String temp;
             while ((temp = read.readLine()) != null) {
@@ -249,14 +260,14 @@ public class StudentAuthentication {
             }
             //打印出含有课表的网页源码
             Document document = Jsoup.parse(sb.toString());
-            Element element=document.getElementById("Table6");
-            Elements elements=element.children();
-            Element tbody=elements.last();
-            StringBuffer html=new StringBuffer();
+            Element element = document.getElementById("Table6");
+            Elements elements = element.children();
+            Element tbody = elements.last();
+            StringBuffer html = new StringBuffer();
             //获取每一节的所有课程信息并且加上#做分隔
-            for(Element element1:tbody.children()){
-                for(Element element2:element1.children()){
-                    for(TextNode textNode:element2.textNodes()){
+            for (Element element1 : tbody.children()) {
+                for (Element element2 : element1.children()) {
+                    for (TextNode textNode : element2.textNodes()) {
                         html.append(textNode.text());
                     }
                     html.append("#");
@@ -266,29 +277,29 @@ public class StudentAuthentication {
             //匹配截取每一节的信息并保存到list
             Pattern pattern = Pattern.compile("(?<=节#).*(?=#-END-)");
             Matcher matcher = pattern.matcher(html.toString());
-            List<String> classList=new ArrayList();
-            while(matcher.find()){
+            List<String> classList = new ArrayList();
+            while (matcher.find()) {
                 classList.add(matcher.group());
             }
             //剔除分隔符后的课表
-            List<String[]> classDetailList=new ArrayList();
-            for(String s:classList){
-                String [] strings=s.split("#");
+            List<String[]> classDetailList = new ArrayList();
+            for (String s : classList) {
+                String[] strings = s.split("#");
                 classDetailList.add(strings);
             }
             //截取每一个课表所占的节数，例如（3,4）
             Pattern pp = Pattern.compile("(?<=\\()[0-9],[0-9]+(?=\\))|(?<=\\()[0-9]+(?=\\))");
-            for(String[] strings:classDetailList){
+            for (String[] strings : classDetailList) {
                 //剔除空的字符串
-                if(strings.length<7)continue;
-                for(int i=0;i<strings.length;i++){
-                    if(strings[i].length()>1){
+                if (strings.length < 7) continue;
+                for (int i = 0; i < strings.length; i++) {
+                    if (strings[i].length() > 1) {
                         Matcher mm = pp.matcher(strings[i]);
                         mm.find();
-                        String[] numbers=mm.group().split(",");
+                        String[] numbers = mm.group().split(",");
                         //保存到二维数组组成的课表上
-                        for(String index:numbers){
-                            classTable[i+1][Integer.parseInt(index)]=strings[i];
+                        for (String index : numbers) {
+                            classTable[i + 1][Integer.parseInt(index)] = strings[i];
                         }
                     }
                 }
@@ -310,8 +321,8 @@ public class StudentAuthentication {
      */
     public void getPersonInfo() throws UnsupportedEncodingException {
         System.out.println("读取个人信息");
-        String url = baseURL+"xsgrxx.aspx?xh=" + studentID + "&xm="
-                + URLEncoder.encode(this.name, "GB2312") + "&gnmkdm="+this.personInfoGnmkdm;
+        String url = baseURL + "xsgrxx.aspx?xh=" + studentID + "&xm="
+                + URLEncoder.encode(this.name, "GB2312") + "&gnmkdm=" + this.personInfoGnmkdm;
         System.out.println("获取课表的参数: " + url);
         URL Url;
         try {
@@ -323,7 +334,7 @@ public class StudentAuthentication {
             conn.setRequestProperty("Referer", indexURL);
             conn.setInstanceFollowRedirects(false);
             conn.setDoOutput(true);
-            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream(),"gb2312"));
+            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream(), "gb2312"));
             StringBuffer sb = new StringBuffer();
             String temp;
             while ((temp = read.readLine()) != null) {
@@ -333,13 +344,13 @@ public class StudentAuthentication {
             //打印出含有课表的网页源码
             Document document = Jsoup.parse(sb.toString());
             //获取到tobdy包含信息的标签
-            String phone=document.select("#TELNUMBER").first().val();
-            String email=document.select("#dzyxdz").first().val();
-            String schoolDate=document.select("#lbl_rxrq").first().val();
-            String imgSrc=document.select("#xszp").first().attr("src");
+            String phone = document.select("#TELNUMBER").first().val();
+            String email = document.select("#dzyxdz").first().val();
+            String schoolDate = document.select("#lbl_rxrq").first().val();
+            String imgSrc = document.select("#xszp").first().attr("src");
             System.out.println(phone);
             //存取头像
-            URL urls = new URL(baseURL+imgSrc);
+            URL urls = new URL(baseURL + imgSrc);
             HttpURLConnection openConnection = (HttpURLConnection) urls.openConnection();
             openConnection.setRequestMethod("GET");
             openConnection.setReadTimeout(5000);

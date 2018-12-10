@@ -41,7 +41,7 @@
             <version>1.10.2</version>
         </dependency>
 
-        <!--代码生成器-->
+        <!--&lt;!&ndash;代码生成器&ndash;&gt;-->
         <dependency>
             <groupId>cn.stylefeng.guns</groupId>
             <artifactId>guns-generator</artifactId>

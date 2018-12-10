@@ -12,7 +12,6 @@
 
         th,tr,td{
             vertical-align: middle!important;
-
         }
 
 
@@ -24,6 +23,11 @@
         .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
             background-color: orange;
         }
+
+        /*.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {*/
+            /*color: #fff;*/
+            /*background-color: #ed5565;*/
+        /*}*/
 
         .selected{
             margin-top: 5px;
@@ -51,6 +55,8 @@
         }
         body {
             font-size: initial;
+            /*background-image: url("/static/img/spark/index_bgk.png");*/
+            /*!*background-size: cover;*!*/
 
         }
         .job-type{
@@ -78,7 +84,7 @@
 <body >
 
 <div id="header">
-    <nav class="navbar navbar-default" style="background-color: #EAEAEA;font-size: 15px;">
+    <nav class="navbar navbar-default" style="background-color: #f2f2f2;font-size: 15px;">
         <div class="container">
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -101,17 +107,18 @@
 
         <div id="top">
             <div id="top-top" class="row">
-                <a href="#" class="pull-left"><img style="height: 51px;width: 184px" src="/static/img/spark/777.png"></a>
+                <a href="#" class="pull-left"><img style="height: 50px;width: 120px;margin-top: 10px;margin-left: 5px;" src="/static/img/spark/index_logo.png"></a>
+                <a href="#" class="pull-left"><img style="height: 50px;width: 120px" src="/static/img/spark/index_font.png"></a>
                 <div class="col-lg-6 " style="margin-top: 12px">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="请输入搜索内容">
+                        <input type="text" class="form-control" style="left: 50px;">
                         <span class="input-group-btn">
                        <button class="btn btn-warning" type="button">搜索</button>
                     </span>
                     </div>
                 </div>
                 <div style="margin-top:10px ">
-                    <button type="button" class="btn btn-warning btn-lg pull-right"
+                    <button type="button"  class="btn btn-warning btn-lg pull-right"
                             style="padding: 6px 12px">进入兼职管理
                     </button>
                     <button type="button" class="btn btn-success btn-lg pull-right"
@@ -176,9 +183,9 @@
                     <li role="presentation"><a href="#">最高薪资</a></li>
                     <li role="presentation"><a href="#">最多人看</a></li>
                 </ul>
-                <table class="table table-hover table-striped " style="margin-top: 10px;">
+                <table class="table table-hover table-striped" style="margin-top: 10px;">
 
-                    <tr>
+                    <tr >
                         <td>
                             <div class="job-type" style="background-color: deeppink;">
                                 <span>礼仪</span>
@@ -197,7 +204,7 @@
                             <i class="glyphicon glyphicon-time"></i> 刚刚
                         </td>
                     </tr>
-                    <tr>
+                    <tr >
                         <td>
                             <div class="job-type" style="background-color: purple;">
                                 <span>快递</span>

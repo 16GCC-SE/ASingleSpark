@@ -32,6 +32,7 @@ import org.springframework.aop.Advisor;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.JdkRegexpMethodPointcut;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
@@ -59,7 +60,8 @@ public class WebConfig implements WebMvcConfigurer {
     @Autowired
     private GunsProperties gunsProperties;
 
-
+    @Value("${spark.student.kptcha.upload-path}")
+    private String studentKptchaUploadPath;
 
     /**
      * 配置简单的页面跳转
@@ -85,7 +87,7 @@ public class WebConfig implements WebMvcConfigurer {
         if (gunsProperties.getSwaggerOpen()) {
             registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
             registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
-            registry.addResourceHandler("/**").addResourceLocations("file:E:/kptcha/");
+            registry.addResourceHandler("/**").addResourceLocations(studentKptchaUploadPath);
         }
     }
 

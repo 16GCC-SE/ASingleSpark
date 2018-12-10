@@ -7,6 +7,7 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/src/guns/pom.xml" />
+        <option value="$PROJECT_DIR$/src/guns-generator/pom.xml" />
       </list>
     </option>
   </component>

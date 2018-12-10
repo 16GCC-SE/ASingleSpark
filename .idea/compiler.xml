@@ -7,10 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="guns" />
+        <module name="guns-generator" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="guns" target="1.8" />
+      <module name="guns-generator" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

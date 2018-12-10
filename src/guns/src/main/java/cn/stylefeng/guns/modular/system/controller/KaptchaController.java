@@ -54,27 +54,19 @@ public class KaptchaController {
     @RequestMapping("")
     public void index(HttpServletRequest request, HttpServletResponse response) {
         HttpSession session = request.getSession();
-
         response.setDateHeader("Expires", 0);
-
         // Set standard HTTP/1.1 no-cache headers.
         response.setHeader("Cache-Control", "no-store, no-cache, must-revalidate");
-
         // Set IE extended HTTP/1.1 no-cache headers (use addHeader).
         response.addHeader("Cache-Control", "post-check=0, pre-check=0");
-
         // Set standard HTTP/1.0 no-cache header.
         response.setHeader("Pragma", "no-cache");
-
         // return a jpeg
         response.setContentType("image/jpeg");
-
         // create the text for the image
         String capText = producer.createText();
-
         // store the text in the session
         session.setAttribute(Constants.KAPTCHA_SESSION_KEY, capText);
-
         // create the image with the text
         BufferedImage bi = producer.createImage(capText);
         ServletOutputStream out = null;
@@ -83,7 +75,6 @@ public class KaptchaController {
         } catch (IOException e) {
             e.printStackTrace();
         }
-
         // write the data out
         try {
             ImageIO.write(bi, "jpg", out);

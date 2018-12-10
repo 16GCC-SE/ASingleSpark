@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/ASingleSpark.iml" filepath="$PROJECT_DIR$/.idea/ASingleSpark.iml" />
       <module fileurl="file://$PROJECT_DIR$/src/guns/guns.iml" filepath="$PROJECT_DIR$/src/guns/guns.iml" />
+      <module fileurl="file://$PROJECT_DIR$/src/guns-generator/guns-generator.iml" filepath="$PROJECT_DIR$/src/guns-generator/guns-generator.iml" />
     </modules>
   </component>
 </project>
