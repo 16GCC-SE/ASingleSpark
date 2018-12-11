@@ -61,7 +61,7 @@ import java.util.UUID;
 /**
  * 系统管理员控制器
  *
- * @author fengshuonan
+ * @author 李利光
  * @Date 2017年1月11日 下午1:08:17
  */
 @Controller
@@ -91,9 +91,14 @@ public class SparkUserMgrController extends BaseController {
         if (theUser != null) {
             throw new ServiceException(BizExceptionEnum.USER_ALREADY_REG);
         }
-        //TODO 判断平台角色
-        String sparkRole=ConstantFactory.me().getDictsByName("平台角色",user.getSparkRole());
-
+        //TODO 赋予平台角色
+        if(user.getSparkRole()==1){
+            user.setRoleid(Integer.toString(8));
+        }else if(user.getSparkRole()==2){
+            user.setRoleid(Integer.toString(9));
+        }else if(user.getSparkRole()==3){
+            user.setRoleid(Integer.toString(10));
+        }
         // 完善账号信息
         user.setSalt(ShiroKit.getRandomSalt(5));
         user.setPassword(ShiroKit.md5(user.getPassword(), user.getSalt()));

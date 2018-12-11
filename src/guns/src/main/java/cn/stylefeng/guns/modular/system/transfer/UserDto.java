@@ -31,8 +31,10 @@ public class UserDto {
     private Integer id;
     @NotNull
     private String account;
+    @NotNull
     private String password;
     private String salt;
+    @NotNull
     private String name;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
@@ -47,6 +49,7 @@ public class UserDto {
     private Integer version;
     private String avatar;
     //平台角色
+    @NotNull
     private Integer sparkRole;
 
     public Integer getSparkRole() {
