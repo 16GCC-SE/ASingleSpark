@@ -1,6 +1,7 @@
 package cn.stylefeng.guns.system;
 
 import cn.stylefeng.guns.base.BaseJunit;
+import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
 import cn.stylefeng.guns.modular.system.dao.DictMapper;
 import cn.stylefeng.guns.modular.system.service.IDictService;
 import org.junit.Assert;
@@ -40,6 +41,7 @@ public class DictTest extends BaseJunit {
 
     @Test
     public void deleteTest() {
+
         this.dictService.delteDict(16);
     }
 

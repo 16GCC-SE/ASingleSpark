@@ -15,10 +15,10 @@
 
                 <div class="col-sm-6">
                             <#input id="email" name="电子邮箱" underline="true"/>
-                            <#input id="enrollmentDate" name="入学日期" underline="true"/>
+                            <#input id="enrollmentDate" type="text" name="入学日期" underline="true"/>
                             <#input id="sysUserId" name="sys_user表的用户id" underline="true"/>
-                            <#input id="gmtCreate" name="数据创建时间" underline="true"/>
-                            <#input id="gmtModified" name="数据修改时间" underline="true"/>
+                            <#input id="gmtCreate" type="text" name="数据创建时间" underline="true"/>
+                            <#input id="gmtModified" type="text" name="数据修改时间" underline="true"/>
                 </div>
             </div>
 
@@ -33,4 +33,15 @@
     </div>
 </div>
 <script src="${ctxPath}/static/modular/spark/studentUserDetail/studentUserDetail_info.js"></script>
+<script>
+    laydate.render({
+        elem: '#gmtCreate'
+    });
+    laydate.render({
+        elem: '#gmtModified'
+    });
+    laydate.render({
+        elem: '#enrollmentDate'
+    });
+</script>
 @}

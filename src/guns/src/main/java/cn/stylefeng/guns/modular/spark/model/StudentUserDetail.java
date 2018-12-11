@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 
 /**
@@ -27,7 +29,7 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      * 学号
      */
     @TableField("student_id")
-    private Integer studentId;
+    private String studentId;
     /**
      * 密码
      */
@@ -53,6 +55,7 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      * 入学日期
      */
     @TableField("enrollment_date")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date enrollmentDate;
     /**
      * sys_user表的用户id
@@ -63,11 +66,13 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      * 数据创建时间
      */
     @TableField("gmt_create")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtCreate;
     /**
      * 数据修改时间
      */
     @TableField("gmt_modified")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtModified;
 
 
@@ -79,11 +84,11 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
         this.id = id;
     }
 
-    public Integer getStudentId() {
+    public String getStudentId() {
         return studentId;
     }
 
-    public void setStudentId(Integer studentId) {
+    public void setStudentId(String studentId) {
         this.studentId = studentId;
     }
 

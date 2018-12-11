@@ -27,7 +27,6 @@ import com.alibaba.druid.support.spring.stat.BeanTypeAutoProxyCreator;
 import com.alibaba.druid.support.spring.stat.DruidStatInterceptor;
 import com.google.code.kaptcha.impl.DefaultKaptcha;
 import com.google.code.kaptcha.util.Config;
-import org.apache.tomcat.util.http.fileupload.FileUtils;
 import org.springframework.aop.Advisor;
 import org.springframework.aop.support.DefaultPointcutAdvisor;
 import org.springframework.aop.support.JdkRegexpMethodPointcut;
@@ -38,7 +37,6 @@ import org.springframework.boot.web.servlet.ServletListenerRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.http.ResponseEntity;
 import org.springframework.web.context.request.RequestContextListener;
 import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
@@ -75,7 +73,6 @@ public class WebConfig implements WebMvcConfigurer {
         registry.addViewController("/spark/register").setViewName("/spark/register.html");
         registry.addViewController("/spark/login").setViewName("/spark/login_v2.html");
         registry.addViewController("/spark/release").setViewName("/spark/release.html");
-
         registry.addViewController("/spark/appeal").setViewName("/spark/appeal.html");
     }
 

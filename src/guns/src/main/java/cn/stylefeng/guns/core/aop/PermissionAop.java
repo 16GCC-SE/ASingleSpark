@@ -55,7 +55,6 @@ public class PermissionAop {
         Permission permission = method.getAnnotation(Permission.class);
         Object[] permissions = permission.value();
         if (permissions.length == 0) {
-
             //检查全体角色
             boolean result = check.checkAll();
             if (result) {
