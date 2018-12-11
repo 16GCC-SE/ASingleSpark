@@ -74,14 +74,13 @@ public class SparkUserMgrController extends BaseController {
     /**
      * 添加平台用户
      */
-    @PostMapping("/add")
+    @RequestMapping("/add")
     @BussinessLog(value = "添加管理员", key = "account", dict = UserDict.class)
     @ApiOperation(value = "注册兼职平台新用户", httpMethod = "POST", notes = "注册兼职平台新用户", response = ResponseData.class)
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "form",name = "sparkRole",value = "平台用户角色",dataType = "Integer" ),
     })
-    @ResponseBody
-    public ResponseData add(@Valid UserDto user, BindingResult result) {
+    public String add(@Valid @ModelAttribute UserDto user, BindingResult result) {
 
         if (result.hasErrors()) {
             throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
@@ -91,7 +90,7 @@ public class SparkUserMgrController extends BaseController {
         if (theUser != null) {
             throw new ServiceException(BizExceptionEnum.USER_ALREADY_REG);
         }
-        //TODO 赋予平台角色
+        //赋予平台角色
         if(user.getSparkRole()==1){
             user.setRoleid(Integer.toString(8));
         }else if(user.getSparkRole()==2){
@@ -105,6 +104,6 @@ public class SparkUserMgrController extends BaseController {
         user.setStatus(ManagerStatus.OK.getCode());
         user.setCreatetime(new Date());
         this.userService.insert(UserFactory.createUser(user));
-        return SUCCESS_TIP;
+        return REDIRECT+"/spark/index";
     }
 }

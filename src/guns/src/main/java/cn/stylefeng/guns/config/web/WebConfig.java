@@ -68,10 +68,10 @@ public class WebConfig implements WebMvcConfigurer {
     @Override
     public void addViewControllers(ViewControllerRegistry registry) {
 
-        registry.addViewController("/spark/index").setViewName("/spark/index.html");
+//        registry.addViewController("/spark/index").setViewName("/spark/index.html");
         registry.addViewController("/spark/details_of_job").setViewName("/spark/details_of_job.html");
         registry.addViewController("/spark/register").setViewName("/spark/register.html");
-        registry.addViewController("/spark/login").setViewName("/spark/login_v2.html");
+//        registry.addViewController("/spark/login").setViewName("/spark/login.html");
         registry.addViewController("/spark/release").setViewName("/spark/release.html");
         registry.addViewController("/spark/appeal").setViewName("/spark/appeal.html");
     }

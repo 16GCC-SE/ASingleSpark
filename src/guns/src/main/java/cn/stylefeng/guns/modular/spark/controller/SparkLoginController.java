@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package cn.stylefeng.guns.modular.system.controller;
+package cn.stylefeng.guns.modular.spark.controller;
 
 import cn.stylefeng.guns.core.common.exception.InvalidKaptchaException;
 import cn.stylefeng.guns.core.common.node.MenuNode;
@@ -44,11 +44,12 @@ import static cn.stylefeng.roses.core.util.HttpContext.getIp;
 /**
  * 登录控制器
  *
- * @author fengshuonan
- * @Date 2017年1月10日 下午8:25:24
+ * @author 李利光
+ * @Date 2018年12月11日22:13:27
  */
 @Controller
-public class LoginController extends BaseController {
+@RequestMapping("/spark")
+public class SparkLoginController extends BaseController {
 
     @Autowired
     private IMenuService menuService;
@@ -59,7 +60,7 @@ public class LoginController extends BaseController {
     /**
      * 跳转到主页
      */
-    @RequestMapping(value = "/", method = RequestMethod.GET)
+    @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(Model model) {
         //获取菜单列表
         List<Integer> roleList = ShiroKit.getUser().getRoleList();
@@ -68,19 +69,7 @@ public class LoginController extends BaseController {
             model.addAttribute("tips", "该用户没有角色，无法登陆");
             return "/login.html";
         }
-        List<MenuNode> menus = menuService.getMenusByRoleIds(roleList);
-        List<MenuNode> titles = MenuNode.buildTitle(menus);
-        titles = ApiMenuFilter.build(titles);
-
-        model.addAttribute("titles", titles);
-
-        //获取用户头像
-        Integer id = ShiroKit.getUser().getId();
-        User user = userService.selectById(id);
-        String avatar = user.getAvatar();
-        model.addAttribute("avatar", avatar);
-
-        return "/index.html";
+        return "/spark/index.html";
     }
 
     /**
@@ -89,9 +78,9 @@ public class LoginController extends BaseController {
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
         if (ShiroKit.isAuthenticated() || ShiroKit.getUser() != null) {
-            return REDIRECT + "/";
+            return REDIRECT + "/spark/index";
         } else {
-            return "/login.html";
+            return "/spark/login.html";
         }
     }
 
@@ -104,7 +93,6 @@ public class LoginController extends BaseController {
         String username = super.getPara("username").trim();
         String password = super.getPara("password").trim();
         String remember = super.getPara("remember");
-
         //验证验证码是否正确
         if (KaptchaUtil.getKaptchaOnOff()) {
             String kaptcha = super.getPara("kaptcha").trim();
@@ -130,9 +118,9 @@ public class LoginController extends BaseController {
         super.getSession().setAttribute("username", shiroUser.getAccount());
         LogManager.me().executeLog(LogTaskFactory.loginLog(shiroUser.getId(), getIp()));
         ShiroKit.getSession().setAttribute("sessionFlag", true);
+        
 
-
-        return REDIRECT + "/";
+        return REDIRECT + "/spark/index";
     }
 
     /**
@@ -143,6 +131,6 @@ public class LoginController extends BaseController {
         LogManager.me().executeLog(LogTaskFactory.exitLog(ShiroKit.getUser().getId(), getIp()));
         ShiroKit.getSubject().logout();
         deleteAllCookie();
-        return REDIRECT + "/login";
+        return REDIRECT + "/spark/index";
     }
 }
