@@ -71,11 +71,9 @@ public class SparkLoginController extends BaseController {
      */
     @RequestMapping(value = "/login", method = RequestMethod.GET)
     public String login() {
-        if (ShiroKit.isAuthenticated() || ShiroKit.getUser() != null) {
-            return REDIRECT + "/spark/index";
-        } else {
+
             return "/spark/login.html";
-        }
+
     }
 
     /**

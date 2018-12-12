@@ -42,11 +42,11 @@
         </dependency>
 
         <!--&lt;!&ndash;代码生成器&ndash;&gt;-->
-        <dependency>
-            <groupId>cn.stylefeng.guns</groupId>
-            <artifactId>guns-generator</artifactId>
-            <version>1.0.0</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>cn.stylefeng.guns</groupId>-->
+            <!--<artifactId>guns-generator</artifactId>-->
+            <!--<version>1.0.0</version>-->
+        <!--</dependency>-->
 
         <!--核心组件-->
         <dependency>
