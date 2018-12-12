@@ -24,9 +24,9 @@
 </head>
 
 <body class="signin">
-    <div class="signinpanel">
+    <div class="signinpanel" >
         <div class="row">
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
                 <div class="signin-info">
                     <div class="logopanel m-b">
                         <h1>巧兼职</h1>
@@ -38,23 +38,23 @@
                             商家或个人可发布兼职信息并且在发布的同时需要提前缴纳兼职所对应的酬劳+手续费进入学校对应的公共账户存储，保证资金的确定性。
                             发布信息范围按照学校为单位来计算，每个学校都应该对兼职信息进行审核判断。当兼职信息审核通过后相对应学校的学生才可以发现兼职信息并且进行兼职报名。</li>
                     </ul>
-                    <strong>还没有账号？ <a href="#">立即注册&raquo;</a></strong>
+                    <strong>还没有账号？ <a href="/spark/register">立即注册&raquo;</a></strong>
                 </div>
             </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 ">
                 <form class="m-t" role="form" action="${ctxPath}/spark/login" method="post">
                     <h4 class="no-margins">登录：</h4>
                     <p class="m-t-md">登录到巧兼职平台</p>
                     <div class="username-login" style="display: block;">
                         <div class="username-box">
                             <div class="input-box" id="showErrorUsernameDiv">
-                                <input id="userName" type="text" class="form-control uname" placeholder="请输入用户名" autocomplete="off" value="" tabindex="1">
+                                <input id="userName" name="username" type="text" class="form-control uname" placeholder="请输入用户名" autocomplete="off" value="" tabindex="1">
                                 <i class="clear"></i>
                             </div>
                             <div class="email-list hide"></div>
                         </div>
                         <div class="password-box">
-                            <input id="password" type="password" class="form-control pword m-b" placeholder="请输入密码" autocomplete="off" tabindex="2">
+                            <input id="password" name="password" type="password" class="form-control pword m-b" placeholder="请输入密码" autocomplete="off" tabindex="2">
                             <i class="clear"></i>
                         </div>
                         @if(kaptcha.getKaptchaOnOff() == true){

@@ -62,13 +62,7 @@ public class SparkLoginController extends BaseController {
      */
     @RequestMapping(value = "/index", method = RequestMethod.GET)
     public String index(Model model) {
-        //获取菜单列表
-        List<Integer> roleList = ShiroKit.getUser().getRoleList();
-        if (roleList == null || roleList.size() == 0) {
-            ShiroKit.getSubject().logout();
-            model.addAttribute("tips", "该用户没有角色，无法登陆");
-            return "/login.html";
-        }
+
         return "/spark/index.html";
     }
 

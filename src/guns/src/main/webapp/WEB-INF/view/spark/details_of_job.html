@@ -3,26 +3,34 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="${ctxPath}/static/css/spark/job_detail.css">
+    <link rel="shortcut icon" href="${ctxPath}/static/favicon.ico">
+    <link href="${ctxPath}/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="${ctxPath}/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="${ctxPath}/static/css/style.css?v=4.1.0" rel="stylesheet">
     <title>DetailsOfJob</title>
 </head>
 
 <body>
 
-<header class="header">
-    <nav class="navigation_box">
-        <div class="logo_wrap">
-            <a  href="/spark/index" class="logo"><img src="../../../static/img/spark/headlogo.png" alt="兼职logo"></a>
-        </div>
-        <div class="channel_box">
-            <a rel="nofollow" href="/spark/index">首页</a>
-            <a rel="nofollow" href="/spark/index">申请社团赞助</a>
-            <a href="/spark/index">企业服务</a>
-            <a href="/spark/register">注册</a>
-            <a href="/spark/login">登录</a>
+<div id="header">
+    <nav class="navbar navbar-default" style="background-color: #f2f2f2;font-size: 15px;">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="mouseHover" style="margin-left: 15px"><a href="#"><span style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li ><a href="#">首页</a></li>
+                    <li ><a href="#">申请社区赞助</a></li>
+                    <li><a href="#">企业服务</a></li>
+                    <li><a href="/spark/register">注册</a></li>
+                    <li style="margin-right: 15px"><a href="#" >登录</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
         </div>
     </nav>
-
-</header>
+</div>
 
 <section class="container">
     <article class="w_main">
