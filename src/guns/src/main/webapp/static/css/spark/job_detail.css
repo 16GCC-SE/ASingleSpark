@@ -4,30 +4,28 @@ body, button, input, select, textarea, pre {font: 14px/1.2 "微软雅黑" ,Arial
 
 body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fieldset, lengend, button, input, textarea, th, td {margin: 0;padding: 0;}
 
-.header {height: 48px;background-color: #e4e4e4;border-bottom: 1px solid #e3e3e3;}
+.header {height: 35px;background-color: #fff;border-bottom: 1px solid #e3e3e3;}
 
-/*.me {line-height: 35px;float:left;margin-right: 30px; color: #fff;*/
-/*font-size: 18px;}*/
+.me {line-height: 35px;float:left;margin-right: 30px; color: #fff;
+font-size: 18px;}
 
-/*.me a {margin: 0 10px;position: relative;}*/
+.me a {margin: 0 10px;position: relative;}
 
 .navigation_box, .navigation_box a {color: #6c6c6c;font-size: 13px;}
 
 .w_main {width: 1000px;margin: auto;}
 
-.logo_wrap {line-height: 48px;margin: 0 100px;}
+.logo_wrap {line-height: 35px;margin: 0 100px;}
 
-.logo_wrap .logo {color: #f3573f;font-size: 15px;float: left;height: 40px;margin-bottom: 2px;margin-right: 250px;}
+.logo_wrap .logo {color: #f3573f;font-size: 15px;float: left;height: 23px;margin-bottom: 2px;margin-right: 250px;}
 
-.logo_wrap .logo img {display: block;height: 48px;}
+.logo_wrap .logo img {display: block;height: 35px;}
 
 a {text-decoration: none;}
 
-.channel_box {line-height: 48px;float: right;margin-right: 50px;}
+.channel_box {line-height: 35px;float: right;margin-right: 30px;}
 
-.channel_box a {margin: 0 15px;position: relative;font-size:15px;}
-
-.channel_box a:hover{background-color: orange;color: #FFFFFF;display:inline-block;width: 100px;text-align: center;}
+.channel_box a {margin: 0 10px;position: relative;}
 
 .cooperation_box_alt {display: none;}
 
@@ -35,9 +33,9 @@ a {text-decoration: none;}
 
 .content_box .p_left {float: left;width: 700px;}
 
-.m-crumb {background: #fff;font-size: 14px;padding: 10px 30px;}
+.m-crumb {background: #fff;font-size: 14px;padding: 10px 30px;font-size: 15px;}
 
-.icon-angle-right{display: inline;width: auto;height: auto;line-height: normal;vertical-align: baseline;background-image: none;background-position: 0 0;
+.icon-angle-right{display: inline;width: auto;height: auto;line-height: normal;vertical-align: baseline;background-image: none;background-position: 0% 0%;
 background-repeat: repeat;margin-top: 0;}
 
 .content_wrap {margin: 8px 0;padding: 10px;line-height: 26px;background-color: #fff;}
@@ -116,7 +114,7 @@ ul.job_item {width: 100%;height: auto;padding: 0;margin: 20px 0;}
 .m-tab_about .tab_tit {border-bottom: 1px solid #ddd;}
 
 .content_box .p_left {float: left;width: 700px;}
-.m-crumb {background: #fff;font-size: 14px;padding: 10px 30px;}
+.m-crumb {background: #fff;font-size: 14px;padding: 10px 30px;font-size: 15px;}
 
 .content_wrap {margin: 8px 0;padding: 10px;line-height: 26px;background-color: #fff;}
 
@@ -143,7 +141,7 @@ ul.job_item {width: 100%;height: auto;padding: 0;margin: 20px 0;}
 a {text-decoration: none;}
 
 .company_info p {font-size: 16px;color: #aaa;line-height: 1.5;margin-top: 10px;display: -webkit-box;text-overflow: ellipsis;overflow: hidden;text-overflow: ellipsis;
-display: -webkit-box;overflow: hidden;-webkit-box-orient: vertical;}
+display: -webkit-box;-webkit-line-clamp: 4;overflow: hidden;-webkit-box-orient: vertical;}
 
 .company_info p .label {color: #333;}
 
@@ -151,9 +149,9 @@ display: -webkit-box;overflow: hidden;-webkit-box-orient: vertical;}
 
 .content_list_box {float: left;width: 700px;}
 
-ul.job_item > li {padding: 25px 0;margin: 0;margin-bottom: 0px;width: 100%;overflow: hidden;background: #f8f8fa;margin-bottom: 14px;}
+ul.job_item > li {padding: 25px 0;margin: 0;width: 100%;overflow: hidden;background: #f8f8fa;}
 
-ul.job_item > li {padding: 25px 0;margin: 0;margin-bottom: 0px;width: 100%;overflow: hidden;background: #f8f8fa;margin-bottom: 14px;}
+ul.job_item > li {padding: 25px 0;margin: 0;width: 100%;overflow: hidden;background: #f8f8fa;}
 
 ul.job_item > li .flex_right {width: 500px;float: left;}
 
@@ -194,7 +192,7 @@ ul, ol {list-style: none;}
 
 .content_ad_box .p1 {color: #ff923a;font-size: 16px;background-color: #fff7ec;padding: 0 15px;line-height: 50px;}
 
-.content_box .must_read {position: relative;margin-bottom: 20px;background: #fff;margin-left:6px;}
+.content_box .app_wrap {position: relative;margin-bottom: 20px;background: #fff;}
 
 a {text-decoration: none;}
 
@@ -238,13 +236,11 @@ fieldset, img {border: none;}
 
 .container_footer .link_block a {color: #727272;margin-right: 5px;}
 
-.container .link_block {border: none;border-bottom-color: currentcolor;border-bottom-style: none;border-bottom-width: medium;}
-
 article, aside, footer, header, nav, section {display: block;}
 
 .footer1 {width: 100%;height: 50px;display: block;box-sizing: border-box;padding: 10px 0;background: #ff923a;clear:both;text-align:center;}
 
-.cp_right {margin-top: 16px;font-size: 12px;color: #ffc9a9;clear:both;}
+ .cp_right {margin-top: 16px;font-size: 12px;color: #ffc9a9;clear:both;}
 
 img {border: none;}
 

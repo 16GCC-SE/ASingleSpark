@@ -3,34 +3,31 @@
 <head>
     <meta charset="UTF-8">
 	<link rel="stylesheet" href="${ctxPath}/static/css/spark/job_detail.css">
-    <link rel="shortcut icon" href="${ctxPath}/static/favicon.ico">
-    <link href="${ctxPath}/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="${ctxPath}/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
-    <link href="${ctxPath}/static/css/style.css?v=4.1.0" rel="stylesheet">
     <title>DetailsOfJob</title>
 </head>
 
 <body>
 
-<div id="header">
-    <nav class="navbar navbar-default" style="background-color: #f2f2f2;font-size: 15px;">
-        <div class="container">
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li class="mouseHover" style="margin-left: 15px"><a href="#"><span style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="#">首页</a></li>
-                    <li ><a href="#">申请社区赞助</a></li>
-                    <li><a href="#">企业服务</a></li>
-                    <li><a href="/spark/register">注册</a></li>
-                    <li style="margin-right: 15px"><a href="#" >登录</a></li>
-                </ul>
-            </div><!-- /.navbar-collapse -->
+<header class="header">
+    <nav class="navigation_box">
+        <div class="logo_wrap">
+            <a  href="#" class="logo"><img src="../../../static/img/spark/headlogo.png" alt="兼职logo"></a>
+        </div>
+		<div class="me">
+			<a target="_blank" href="#" >关于我们</a>
+			<a target="_blank" href="#">加入我们</a>
+			<a target="_blank" href="#">企业推广</a>
+			<a target="_blank" href="#">帮助中心</a>
+		</div>
+        <div class="channel_box">
+			
+            <a rel="nofollow" href="#">首页</a>
+            <a rel="nofollow" href="#">申请社团赞助</a>
+            <a rel="nofollow" href="#"class="selected">登录</a>
         </div>
     </nav>
-</div>
+
+</header>
 
 <section class="container">
     <article class="w_main">
@@ -55,7 +52,7 @@
                         <div class="apply_wrap" >
                             <div class="btn_theme" id="go_to_apply" >报名兼职</div>
                             <div class="apply_box">
-                                  >微信扫码快速报名<br>
+                                <p>微信扫码快速报名<br>
                                 及时反馈录用情况</p>
                                 <div class="qrcode" id="qrcode"></div>
                             </div>
@@ -122,10 +119,10 @@
 
                 </div>
 
-                <!--  新增公司介绍 其他兼职列表 -->
+                <!--  20151120 新增公司介绍 其他兼职列表 -->
                 <!--publisherType==4显示短信报名-->
 
-                <!-- 新增公司介绍 其他兼职列表 -->
+                <!--  20151120 新增公司介绍 其他兼职列表 -->
                 <div class="m-tab_about tab_wrap"  >
                     <div class="tab_tit">
                         <ul class="clearfix">
@@ -138,7 +135,7 @@
                     <div class="tab_con">
                         <div  class="gsjs_con company_wrap" style="word-wrap:break-word;">
                             <div class="company_img">
-                                <img src="../../../static/img/spark/companylogo.jpg"/>
+                                <img src="../../../static/img/spark/headlogo.png"/>
                             </div>
                             <div class="company_info">
                                 <a href="#" target="_blank" class="com_name">唯品会（中国）有限公司</a>
@@ -212,12 +209,6 @@
                                 <p><span class="theme_color">16元/小时</span>
                                     | <span class="link_text">临时工</span> | 发布时间：2018-11-07</p>
                             </li>
-
-                            <li class="">
-                                <a href="#" target="blank"><h2>珠江新城急聘服务员</h2></a>
-                                <p><span class="theme_color">18元/小时</span> | <span class="link_text">服务员</span> | 发布时间：2018-09-13</p>
-                            </li>
-
                         </ul>
                     </div>
 
@@ -226,7 +217,7 @@
                 <!-- 20170207 你可能感兴趣的兼职end -->
             </div>
             <div class="p_right">     
-				<div class="must_read">
+				<div class="app_wrap">
 					<a class="app-download" target="_blank" href="#" rel="nofollow" >
 						<img src="../../../static/img/spark/alert.jpg" width="280" alt="兼职防骗指南">
 					</a>
@@ -326,7 +317,6 @@
 </footer>
 
 </section>
-
 
 </body>
 
