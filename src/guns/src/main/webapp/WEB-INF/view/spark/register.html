@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="${ctxPath}/static/js/jquery.min.js?v=2.1.4"></script>
     <title>注册</title>
     <style>
 
@@ -154,6 +156,35 @@
             background-color:#00aced;
         }
 
+        .error{
+
+            box-shadow: 0 0 0 1px #cc0000;
+        }
+        /*.error:active{*/
+            /*box-shadow: 0 0 0 1px #cc0000!important;*/
+        /*}*/
+        /*.error:focus{*/
+            /*box-shadow: 0 0 0 1px #cc0000!important;*/
+        /*}*/
+
+
+        input::-webkit-input-placeholder{
+            font-weight: 200;
+            color:red;
+        }
+        input::-moz-placeholder{   /* Mozilla Firefox 19+ */
+            font-weight: 200;
+            color:red;
+        }
+        input:-moz-placeholder{    /* Mozilla Firefox 4 to 18 */
+            font-weight: 200;
+            color:red;
+        }
+        input:-ms-input-placeholder{  /* Internet Explorer 10-11 */
+            font-weight: 200;
+            color:red;
+        }
+
 
     </style>
 
@@ -184,6 +215,103 @@
 
 
 
+        function doCheck() {
+            var a=0;
+            var username=$("#username").val();
+            var password=$("#password").val();
+            var cpassword=$("#cpassword").val();
+            var phone=$("#phone").val();
+            var code=$("#code").val();
+
+
+                if(username==null||username.trim()==""){
+                    $("#username").attr("placeholder","请输入以字母开头的用户");
+                    $("#username").attr("class","error");
+                    a++;
+
+                }
+                if(password==null||password.trim()==""){
+                    $("#password").attr("placeholder","请输入密码");
+                    $("#password").attr("class","error");
+                    a++;
+
+                }
+                if(cpassword==null||cpassword.trim()==""){
+                    $("#cpassword").attr("placeholder","请输入确认密码");
+                    $("#cpassword").attr("class","error");
+                    a++;
+
+
+                }
+
+            if(phone==null||phone.trim()==""){
+                $("#phone").attr("placeholder","请输入手机号");
+                $("#phone").attr("class","error");
+                a++;
+
+
+            }
+
+            if(phone==null||phone.trim()==""){
+                $("#code").attr("placeholder","请输入手机号");
+                $("#code").attr("class","error");
+                a++;
+            }
+            if((password!=null||password.trim()!="")&&(cpassword!=null||cpassword.trim()!="")){
+                if(password!=cpassword){
+                    $("#cpassword").attr("placeholder","前后密码不一致");
+                    $("#cpassword").attr("class","error");
+                    $("#password").attr("placeholder","前后密码不一致");
+                    $("#password").attr("class","error");
+                    $("#password").prop("value","");
+                    $("#cpassword").prop("value","");
+                     a++;
+
+                }
+
+            }
+
+
+//                if(!email.match(reg)){
+//                    a++;
+////            alert("邮箱格式不正确");
+//
+//                }
+               if(a>0){
+                    return false;
+               }else {
+                   return true;
+               }
+
+
+
+
+
+
+        }
+
+
+        //    function doCheckUser() {
+        //        var username=$("#username").val();
+        //        var age=18;
+        //        $.ajax({
+        //            url:"/doCheckUser.jsp",
+        //            data:{"username":username,
+        //                "questions":JSON.stringify([{"choice":JSON.stringify([1,2,3]), "completion":JSON.stringify([1,2,9])}]),
+        //            },
+        //            success:function (data) {
+        //                if(data.trim()=="true"){
+        //                    $("#username").next().text("用户名已存在");
+        //                    $("#username").next().show(600);
+        //                }
+        //                else {
+        //                    $("#username").next().hide(600);
+        //                }
+        //            }
+        //
+        //        });
+        //    }
+
     </script>
 </head>
 <body>
@@ -194,15 +322,16 @@
     </div>
 
     <div class="inside-border">
+        <form method="post" action="#">
         <div class="input">
-            <span><h>用户名</h></span><input type="text">
+            <span><h>用户名</h></span><input id="username" type="text">
         </div>
         <div class="input">
-            <span><h>密码</h></span><input type="password">
+            <span><h>密码</h></span><input id="password" type="password"  >
         </div>
 
         <div class="input">
-            <span><h>确认密码</h></span><input type="password">
+            <span><h>确认密码</h></span><input id="cpassword" type="password">
         </div>
 
 
@@ -211,16 +340,16 @@
 
             <select id="hf-sel" name="hf-sel" style="width: 254px;height: 36px;padding-top: 1px;padding-bottom: 1px;">
                 <option value="1">学生</option>
-                <option value="2">老师</option>
-                <option value="3">管理员</option>
+                <option value="2">商家</option>
+                <option value="3">学校</option>
             </select>
         </div>
         <div class="input">
-            <span><h>手机号</h></span><input type="text">
+            <span><h>手机号</h></span><input id="phone" type="text" >
         </div>
         <div class="input">
             <span ><h>验证码</h></span>
-            <input style="width: 150px;
+            <input id="code" style="width: 150px;
             height: 30px;  border-bottom-right-radius: 0px;
             border-top-right-radius: 0px;"  type="text">
             <button  id="btn-getcode" onclick="setCodeTimer()">获取验证码</button>
@@ -230,16 +359,21 @@
             <a  id="getCode" ></a>
         </div>
         <div class="input">
-            <button id="btn-register" type="submit">注册</button>
+            <button id="btn-register"  onclick="return doCheck()">注册</button>
         </div>
         <div class="agreement">
             <input type="checkbox"/><span>注册帐号即表示您同意并愿意遵守PartTime  <a href="#">用户协议</a> 和 <a href="#">隐私政策</a></span>
         </div>
-
+        </form>
     </div>
+
 
 
 </div>
 
+
+
+
+<!--pattern="^(0|86|17951)?1[0-9]{10}" oninvalid="setCustomValidity('请输入11位手机号');-->
 </body>
 </html>
