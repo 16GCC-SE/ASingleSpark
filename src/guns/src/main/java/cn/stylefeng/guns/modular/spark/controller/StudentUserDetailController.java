@@ -1,5 +1,6 @@
 package cn.stylefeng.guns.modular.spark.controller;
 
+import cn.stylefeng.guns.core.common.annotion.Permission;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -16,7 +17,7 @@ import cn.stylefeng.guns.modular.spark.service.IStudentUserDetailService;
  * 学生认证控制器
  *
  * @author fengshuonan
- * @Date 2018-12-10 09:58:52
+ * @Date 2018-12-10 20:18:09
  */
 @Controller
 @RequestMapping("/spark/studentUserDetail")
@@ -78,7 +79,7 @@ public class StudentUserDetailController extends BaseController {
      */
     @RequestMapping(value = "/delete")
     @ResponseBody
-    public Object delete(@RequestParam Integer studentUserDetailId) {
+    public Object delete(@RequestParam Long studentUserDetailId) {
         studentUserDetailService.deleteById(studentUserDetailId);
         return SUCCESS_TIP;
     }

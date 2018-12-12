@@ -2,41 +2,54 @@
 <html lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Insert title here</title>
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="shortcut icon" href="favicon.ico"> <link href="css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
-    <link href="css/font-awesome.css?v=4.4.0" rel="stylesheet">
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="css/plugins/summernote/summernote.css" rel="stylesheet">
-    <link href="css/plugins/summernote/summernote-bs3.css" rel="stylesheet">
-    <link href="css/style.css?v=4.1.0" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <style type="text/css">
+    <title>兼职发布</title>
+    <link rel="shortcut icon" href="${ctxPath}/static/favicon.ico">
+    <link href="${ctxPath}/static/css/bootstrap.min.css?v=3.3.6" rel="stylesheet">
+    <link href="${ctxPath}/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
+    <link href="${ctxPath}/static/css/style.css?v=4.1.0" rel="stylesheet">
+    <style>
+
+            .textarea {
+            resize: none;
+            width: 400px;
+            padding: 5px 5px;
+            font-size: 13px;
+                height: 50px;
+            margin-top: -5px;
+            border: 1px solid #ccc;
+        }
+            .textarea:focus,
+        .textarea:active{
+            height: 150px;
+        }
     </style>
+
+
 </head>
 <body>
-<header class="header">
-    <div class="clearfix"  style="background: #F3F3FA;border: 1px solid #000;padding: 10px;">
-        <section class="container">
-            <div class="pull-left">
-                <span class="city">广州</span> <span rel="nofollow" href="http://www.jianzhimao.com/ctrlcity/changeCity.html">[切换城市]</span>
-            </div>
-            <div class="pull-right">
-            <a class="aa" rel="nofollow" href="http://www.jianzhimao.com" style="padding:20px">首页</a>
-            <a class="aa" rel="nofollow" href="http://www.jianzhimao.com/ctrlCooperate/qghz.html" id="cooperation"style="padding:20px">申请社团赞助</a>
-            <a class="aa" rel="nofollow" href="http://www.jianzhimao.com/ctrlindex/enterprise.html"style="padding:20px">企业服务</a>
-            <a class="aa" rel="nofollow" href="/ctrlenprise/companyinfo"  id="user_name" title="15017366306"style="padding:20px">15017366306</a>
-            <a class="aa" rel="nofollow" href="/ctrlcity/loginOut"style="padding:20px">退出 </a>
-            </div>
-    </section>
-    </div>
-</header>
+<div id="header">
+    <nav class="navbar navbar-default" style="background-color: #f2f2f2;font-size: 15px;">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="mouseHover" style="margin-left: 15px"><a href="#"><span style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">申请社区赞助</a></li>
+                    <li><a href="#">企业服务</a></li>
+                    <li><a href="/spark/register">注册</a></li>
+                    <li style="margin-right: 15px"><a href="#">登录</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </nav>
+</div>
 <header class="w_main">
     <div class="clearfix">
         <section class="container">
-            <div class="pull-left"  style="margin-top: 40px; margin-left: 20px;margin-bottom: 10px;">
+            <div class="pull-left" style="margin-top: 40px; margin-left: 20px;margin-bottom: 10px;">
                 <a class="logo left"> <img src="/static/img/spark/777.png" style=" width: 150px;height: 50px;"></a>
                 <font size="6" color="#FF8000">发布兼职</font>
             </div>
@@ -52,13 +65,18 @@
     </section>
 </header>
 <section class="container" style="margin-bottom:50px;margin-top:20px">
-    <div class="clearfix" style="background: #FFCC33;border: 1px solid #000;padding: 5px;margin-bottom: 20px;">注：企业发布兼职信息须经过平台审核，<a class="blue">审核需时30-180分钟</a>（工作时间：9:00-21:00），通过后即可发布到平台。</div>
+    <div class="clearfix" style="background: #FFCC33;border: 1px solid #000;padding: 5px;margin-bottom: 20px;">
+        注：企业发布兼职信息须经过平台审核，<a class="blue">审核需时30-180分钟</a>（工作时间：9:00-21:00），通过后即可发布到平台。
+    </div>
 </section>
 
 <section class="container">
     <div class="w_main content_box">
-        <P><img src="http://img5.cache.netease.com/edu/2011/10/19/201110191540513956d.jpg" height=150 width=150 align=left border=0 style="margin-right:40px;margin-bottom:10px"><div class="public_box">
-        <i class="icon-remove notic_close_btn" id="notic_close_btn"></i></div>
+        <P><img src="http://img5.cache.netease.com/edu/2011/10/19/201110191540513956d.jpg" height=150 width=150
+                align=left border=0 style="margin-right:40px;margin-bottom:10px">
+        </P>
+        <div class="public_box">
+            <i class="icon-remove notic_close_btn" id="notic_close_btn"></i></div>
         <div class="public_tips clearfix">
             <div>
                 <h5>温馨提示：</h5>
@@ -68,78 +86,81 @@
 
         </div>
     </div>
+</section>
 
-    </P>
 
-    <div class="clearfix"  style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">填写详情</div>
-    <section class="container" style="width:50%">
-    <div class="form-group draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*兼职类型:</label>
-        <div class="col-sm-9">
-            <select class="form-control" name="">
-                <option>其他</option>
-                <option>销售</option>
-                <option>安保</option>
-                <option>礼仪</option>
-                <option>促销</option>
-                <option>翻译</option>
-                <option>客服</option>
-                <option>演出</option>
-                <option>家教</option>
-                <option>模特</option>
-                <option>派单</option>
-                <option>文员</option>
-                <option>设计</option>
-                <option>校内</option>
-                <option>临时工</option>
-                <option>服务员</option>
-                <option>实习</option>
-                <option>送餐员</option>
-                <option>调研</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*兼职标题:</label>
-        <div class="col-sm-9">
-            <input type="text" name="" class="form-control" placeholder="请输入文本">
-        </div>
-    </div>
-    <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*招聘人数:</label>
-        <div class="col-sm-9">
-            <input type="text" name="" class="form-control" placeholder="请输入文本">
-        </div>
-    </div>
-    <div class="form-group draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*结算周期:</label>
-        <div class="col-sm-9">
-            <select class="form-control" name="">
-                <option value="0" selected="">纯工资结算</option>
-                <option value="1">纯提成结算</option>
-                <option value="2">工资+提成结算</option>
-            </select>
-        </div>
-    </div>
-    <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*基本工资:</label>
-        <div class="col-sm-9">
-            <input type="text" name="" class="form-control" placeholder="请输入文本">
-        </div>
-    </div>
-    <div class="form-group draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*工作种类:</label>
-        <div class="col-sm-9">
-            <select class="form-control" name="">
-                <option value="0" selected="">长兼职</option>
-                <option value="1">短兼职</option>
 
-            </select>
+    <section class="container">
+        <div class="clearfix"
+             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">填写详情
         </div>
-    </div>
         <div class="form-group draggable" style="padding-bottom:40px">
-            <label class="col-sm-3 control-label">&nbsp;*性别要求:</label>
-            <div class="col-sm-9">
+            <label class="col-sm-2 control-label">&nbsp;*兼职类型:</label>
+            <div class="col-sm-4">
+                <select class="form-control" name="">
+                    <option>其他</option>
+                    <option>销售</option>
+                    <option>安保</option>
+                    <option>礼仪</option>
+                    <option>促销</option>
+                    <option>翻译</option>
+                    <option>客服</option>
+                    <option>演出</option>
+                    <option>家教</option>
+                    <option>模特</option>
+                    <option>派单</option>
+                    <option>文员</option>
+                    <option>设计</option>
+                    <option>校内</option>
+                    <option>临时工</option>
+                    <option>服务员</option>
+                    <option>实习</option>
+                    <option>送餐员</option>
+                    <option>调研</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*兼职标题:</label>
+            <div class="col-sm-4">
+                <input type="text" name="" class="form-control" placeholder="请输入文本">
+            </div>
+        </div>
+        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*招聘人数:</label>
+            <div class="col-sm-4">
+                <input type="text" name="" class="form-control" placeholder="请输入文本">
+            </div>
+        </div>
+        <div class="form-group draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*结算周期:</label>
+            <div class="col-sm-4">
+                <select class="form-control" name="">
+                    <option value="0" selected="">纯工资结算</option>
+                    <option value="1">纯提成结算</option>
+                    <option value="2">工资+提成结算</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*基本工资:</label>
+            <div class="col-sm-4">
+                <input type="text" name="" class="form-control" placeholder="请输入文本">
+            </div>
+        </div>
+        <div class="form-group draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*工作种类:</label>
+            <div class="col-sm-4">
+                <select class="form-control" name="">
+                    <option value="0" selected="">长兼职</option>
+                    <option value="1">短兼职</option>
+
+                </select>
+            </div>
+        </div>
+        <div class="form-group draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*性别要求:</label>
+            <div class="col-sm-4">
                 <select class="form-control" name="">
                     <option value="0" selected="">男女不限</option>
                     <option value="1">男</option>
@@ -148,10 +169,11 @@
                 </select>
             </div>
         </div>
-        <div class="form-group draggable ui-draggable">
-            <label class="col-sm-3 control-label">&nbsp;*工作福利:</label>
 
-            <div class="col-sm-9">
+        <div class="form-group draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*工作福利:</label>
+
+            <div class="col-sm-5">
                 <label class="checkbox-inline">
                     <input type="checkbox" value="option1" id="inlineCheckbox1">包吃</label>
                 <label class="checkbox-inline">
@@ -165,32 +187,45 @@
             </div>
         </div>
 
-</section>
-    <div class="clearfix"  style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">工作对接</div>
-    <section class="container" style="width:50%">
+        <div class="form-group draggable" style="padding-bottom:40px">
+            <label class="col-sm-2 control-label">&nbsp;*兼职类型:</label>
+
+                <div>
+                    <textarea class="textarea" id="descp" rows="10" maxlength="2000" placeholder="请对工作内容、要求、时间、地址、福利、薪资计算及结算方式，进行详细描述" style="width: 375px;margin-left: 15px"></textarea>
+                </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="container">
+        <div class="clearfix"
+             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">工作对接
+        </div>
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
-            <label class="col-sm-3 control-label">&nbsp;*简历邮箱:</label>
-            <div class="col-sm-9">
+            <label class="col-sm-2 control-label">&nbsp;*简历邮箱:</label>
+            <div class="col-sm-4">
                 <input type="text" name="" class="form-control" placeholder="请输入文本">
             </div>
         </div>
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*咨询电话:</label>
-        <div class="col-sm-9">
-            <input type="text" name="" class="form-control" placeholder="请输入文本">
+            <label class="col-sm-2 control-label">&nbsp;*咨询电话:</label>
+            <div class="col-sm-4">
+                <input type="text" name="" class="form-control" placeholder="请输入文本">
+            </div>
         </div>
-    </div>
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
-        <label class="col-sm-3 control-label">&nbsp;*联系人:</label>
-        <div class="col-sm-9">
-            <input type="text" name="" class="form-control" placeholder="请输入文本">
+            <label class="col-sm-2 control-label">&nbsp;*联系人:</label>
+            <div class="col-sm-4">
+                <input type="text" name="" class="form-control" placeholder="请输入文本">
+            </div>
         </div>
-    </div>
         <div class="g-b10">
             <span> * 巧兼职报名: 应聘者直接发送简历至您的“<span class="blue">巧兼职企业账号-&gt;我的发布</span>”，并同步发送邮件通知</span>
         </div>
         <div class="form-group draggable ui-draggable">
-            <div class="col-sm-9">
+            <div class="col-sm-5">
                 <label class="radio-inline">
                     <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios">默认使用巧兼职报名</label>
                 <label class="radio-inline">
@@ -201,180 +236,194 @@
             </div>
         </div>
     </section>
-    <div class="clearfix"  style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">工作地点</div>
-    <section class="container" style="width:50%">
-    <ul class="nav nav-tabs">
-        <li class="active"><a href="#">*工作地点:</a></li>
 
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                广东 <span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">广东</a></li>
+    <section class="container" style="margin-bottom: 30px">
+        <div class="clearfix"
+             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">工作地点
+        </div>
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#">*工作地点:</a></li>
 
-                <li><a href="#">湖北</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    广东 <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">广东</a></li>
 
-                <li><a href="#">上海市</a></li>
+                    <li><a href="#">湖北</a></li>
 
-                <li><a href="#">北京市</a></li>
+                    <li><a href="#">上海市</a></li>
 
-                <li><a href="#">江苏</a></li>
-                <li><a href="#">重庆市</a></li>
+                    <li><a href="#">北京市</a></li>
 
-                <li><a href="#">湖南</a></li>
+                    <li><a href="#">江苏</a></li>
+                    <li><a href="#">重庆市</a></li>
 
-                <li><a href="#">浙江</a></li>
+                    <li><a href="#">湖南</a></li>
 
-                <li><a href="#">河北</a></li>
+                    <li><a href="#">浙江</a></li>
 
-                <li><a href="#">安徽</a></li>
+                    <li><a href="#">河北</a></li>
 
-                <li><a href="#">贵州</a></li>
+                    <li><a href="#">安徽</a></li>
 
-                <li><a href="#">云南</a></li>
+                    <li><a href="#">贵州</a></li>
 
-                <li><a href="#">西藏</a></li>
+                    <li><a href="#">云南</a></li>
 
-                <li><a href="#">陕西</a></li>
+                    <li><a href="#">西藏</a></li>
 
-                <li><a href="#">甘肃</a></li>
+                    <li><a href="#">陕西</a></li>
 
-                <li><a href="#">青海</a></li>
+                    <li><a href="#">甘肃</a></li>
 
-                <li><a href="#">宁夏</a></li>
+                    <li><a href="#">青海</a></li>
 
-                <li><a href="#">河南</a></li>
+                    <li><a href="#">宁夏</a></li>
 
-                <li><a href="#">山东</a></li>
+                    <li><a href="#">河南</a></li>
 
-                <li><a href="#">江西</a></li>
+                    <li><a href="#">山东</a></li>
 
-                <li><a href="#">山西</a></li>
+                    <li><a href="#">江西</a></li>
 
-                <li><a href="#">辽宁</a></li>
+                    <li><a href="#">山西</a></li>
 
-                <li><a href="#">吉林</a></li>
+                    <li><a href="#">辽宁</a></li>
 
-                <li><a href="#">黑龙江</a></li>
+                    <li><a href="#">吉林</a></li>
 
-                <li><a href="#">福建</a></li>
+                    <li><a href="#">黑龙江</a></li>
 
-                <li><a href="#">香港</a></li>
+                    <li><a href="#">福建</a></li>
 
-                <li><a href="#">新疆</a></li>
+                    <li><a href="#">香港</a></li>
 
-                <li><a href="#">四川</a></li>
+                    <li><a href="#">新疆</a></li>
 
-                <li><a href="#">广西</a></li>
+                    <li><a href="#">四川</a></li>
 
-                <li><a href="#">天津市</a></li>
+                    <li><a href="#">广西</a></li>
 
-                <li><a href="#">贵州</a></li>
+                    <li><a href="#">天津市</a></li>
 
-                <li><a href="#">海南</a></li>
-                             
+                    <li><a href="#">贵州</a></li>
 
-            </ul>
-        </li>
-        <li class="dropdown">
-            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                广州<span class="caret"></span>
-            </a>
-            <ul class="dropdown-menu">
-                <li><a href="#">广州</a></li>
+                    <li><a href="#">海南</a></li>
 
-                <li><a href="#">深圳</a></li>
 
-                <li><a href="#">佛山</a></li>
+                </ul>
+            </li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    广州<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">广州</a></li>
 
-                <li><a href="#">汕头</a></li>
+                    <li><a href="#">深圳</a></li>
 
-                <li><a href="#">中山</a></li>
+                    <li><a href="#">佛山</a></li>
 
-                <li><a href="#">揭阳</a></li>
+                    <li><a href="#">汕头</a></li>
 
-                <li><a href="#">清远</a></li>
+                    <li><a href="#">中山</a></li>
 
-                <li><a href="#">阳江</a></li>
+                    <li><a href="#">揭阳</a></li>
 
-                <li><a href="#">河源</a></li>
+                    <li><a href="#">清远</a></li>
 
-                <li><a href="#">汕尾</a></li>
+                    <li><a href="#">阳江</a></li>
 
-                <li><a href="#">梅州</a></li>
+                    <li><a href="#">河源</a></li>
 
-                <li><a href="#">惠州</a></li>
+                    <li><a href="#">汕尾</a></li>
 
-                <li><a href="#">韶关</a></li>
+                    <li><a href="#">梅州</a></li>
 
-                <li><a href="#">珠海</a></li>
+                    <li><a href="#">惠州</a></li>
 
-                <li><a href="#">云浮</a></li>
+                    <li><a href="#">韶关</a></li>
 
-                <li><a href="#">江门</a></li>
+                    <li><a href="#">珠海</a></li>
 
-                <li><a href="#">湛江</a></li>
+                    <li><a href="#">云浮</a></li>
 
-                <li><a href="#">茂名</a></li>
+                    <li><a href="#">江门</a></li>
 
-                <li><a href="#">潮州</a></li>
+                    <li><a href="#">湛江</a></li>
 
-                <li><a href="#">肇庆</a></li>
+                    <li><a href="#">茂名</a></li>
 
-                <li><a href="#">东莞</a></li>
-            </ul>
-        </li>
+                    <li><a href="#">潮州</a></li>
 
-    </ul>
-    <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            天河<span class="caret"></span>
-        </a>
-        <ul class="dropdown-menu">
-            <li><a href="#">天河</a></li>
+                    <li><a href="#">肇庆</a></li>
 
-            <li><a href="#">荔湾</a></li>
+                    <li><a href="#">东莞</a></li>
+                </ul>
+            </li>
 
-            <li><a href="#">越秀</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                    天河<span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">天河</a></li>
 
-            <li><a href="#">海珠</a></li>
+                    <li><a href="#">荔湾</a></li>
 
-            <li><a href="#">花都</a></li>
+                    <li><a href="#">越秀</a></li>
 
-            <li><a href="#">番禺</a></li>
+                    <li><a href="#">海珠</a></li>
 
-            <li><a href="#">从化</a></li>
+                    <li><a href="#">花都</a></li>
 
-            <li><a href="#">增城</a></li>
+                    <li><a href="#">番禺</a></li>
 
-            <li><a href="#">黄埔</a></li>
+                    <li><a href="#">从化</a></li>
 
-            <li><a href="#">白云</a></li>
+                    <li><a href="#">增城</a></li>
 
-            <li><a href="#">南沙</a></li>
+                    <li><a href="#">黄埔</a></li>
 
-            <li><a href="#">萝岗</a></li>
+                    <li><a href="#">白云</a></li>
+
+                    <li><a href="#">南沙</a></li>
+
+                    <li><a href="#">萝岗</a></li>
+                </ul>
+            </li>
         </ul>
-    </li>
 
     </section>
-</section>
-<section class="container" style="width:50%">
-<div class="row">
-    <div>
-        <label class="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="agreementId" checked="checked"> 我已阅读并同意<a href="#" id="xieyi_btn" class="blue" style="text-decoration: underline;">兼职猫发布兼职协议</a>。</label>
-    </div>
-</div>
-<div class="row">
-    <div>
-        <button type="button" class="btn btn-warning">点击发布</button>
-    </div>
-    <p>&nbsp;</p>
+    <section class="container">
+        <div class="row" style="margin-left: 100px;margin-bottom: 50px">
+            <div>
+                <label class="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="agreementId" checked="checked"> 我已阅读并同意<a
+                        href="#" id="xieyi_btn" class="blue" style="text-decoration: underline;">兼职猫发布兼职协议</a>。</label>
+            </div>
+            <div>
+                <button type="button" class="btn btn-warning">点击发布</button>
+            </div>
+            <p>&nbsp;</p>
 
-    <p>&nbsp;</p>
-</div>
-</section>
-</div>
+            <p>&nbsp;</p>
+        </div>
+    </section>
+
+<!-- 全局js -->
+<script src="${ctxPath}/static/js/jquery.min.js?v=2.1.4"></script>
+<script src="${ctxPath}/static/js/bootstrap.min.js?v=3.3.6"></script>
+<script src="${ctxPath}/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="${ctxPath}/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="${ctxPath}/static/js/plugins/layer/layer.js"></script>
+
+<!-- 自定义js -->
+<script src="${ctxPath}/static/js/hplus.js?v=4.1.0"></script>
+<script type="text/javascript" src="${ctxPath}/static/js/contabs.js"></script>
+
+<!-- 第三方插件 -->
+<script src="${ctxPath}/static/js/plugins/pace/pace.min.js"></script>
 </body>
 </html>

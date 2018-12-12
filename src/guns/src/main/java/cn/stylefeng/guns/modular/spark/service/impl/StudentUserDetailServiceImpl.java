@@ -1,7 +1,8 @@
 package cn.stylefeng.guns.modular.spark.service.impl;
 
-import cn.stylefeng.guns.modular.spark.model.StudentUserDetail;
+
 import cn.stylefeng.guns.modular.spark.dao.StudentUserDetailMapper;
+import cn.stylefeng.guns.modular.spark.model.StudentUserDetail;
 import cn.stylefeng.guns.modular.spark.service.IStudentUserDetailService;
 import com.baomidou.mybatisplus.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;

@@ -69,35 +69,35 @@ public class SqlConfig {
         Menu list = createSubMenu(menu);
         list.setCode(contextConfig.getBizEnName() + "_list");
         list.setName(contextConfig.getBizChName() + "列表");
-        list.setUrl("/" + contextConfig.getBizEnName() + "/list");
+        list.setUrl("/spark/" + contextConfig.getBizEnName() + "/list");
         menus.add(list);
 
         //添加
         Menu add = createSubMenu(menu);
         add.setCode(contextConfig.getBizEnName() + "_add");
         add.setName(contextConfig.getBizChName() + "添加");
-        add.setUrl("/" + contextConfig.getBizEnName() + "/add");
+        add.setUrl("/spark/" + contextConfig.getBizEnName() + "/add");
         menus.add(add);
 
         //更新
         Menu update = createSubMenu(menu);
         update.setCode(contextConfig.getBizEnName() + "_update");
         update.setName(contextConfig.getBizChName() + "更新");
-        update.setUrl("/" + contextConfig.getBizEnName() + "/update");
+        update.setUrl("/spark/" + contextConfig.getBizEnName() + "/update");
         menus.add(update);
 
         //删除
         Menu delete = createSubMenu(menu);
         delete.setCode(contextConfig.getBizEnName() + "_delete");
         delete.setName(contextConfig.getBizChName() + "删除");
-        delete.setUrl("/" + contextConfig.getBizEnName() + "/delete");
+        delete.setUrl("/spark/" + contextConfig.getBizEnName() + "/delete");
         menus.add(delete);
 
         //详情
         Menu detail = createSubMenu(menu);
         detail.setCode(contextConfig.getBizEnName() + "_detail");
         detail.setName(contextConfig.getBizChName() + "详情");
-        detail.setUrl("/" + contextConfig.getBizEnName() + "/detail");
+        detail.setUrl("/spark/" + contextConfig.getBizEnName() + "/detail");
         menus.add(detail);
     }
 

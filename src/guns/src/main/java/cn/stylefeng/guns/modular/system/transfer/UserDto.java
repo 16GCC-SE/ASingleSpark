@@ -17,6 +17,7 @@ package cn.stylefeng.guns.modular.system.transfer;
 
 import org.springframework.format.annotation.DateTimeFormat;
 
+import javax.validation.constraints.NotNull;
 import java.util.Date;
 
 /**
@@ -28,9 +29,12 @@ import java.util.Date;
 public class UserDto {
 
     private Integer id;
+
     private String account;
+
     private String password;
     private String salt;
+
     private String name;
 
     @DateTimeFormat(pattern = "yyyy-MM-dd")
@@ -44,7 +48,17 @@ public class UserDto {
     private Date createtime;
     private Integer version;
     private String avatar;
+    //平台角色
 
+    private Integer sparkRole;
+
+    public Integer getSparkRole() {
+        return sparkRole;
+    }
+
+    public void setSparkRole(Integer sparkRole) {
+        this.sparkRole = sparkRole;
+    }
 
     public Integer getId() {
         return id;

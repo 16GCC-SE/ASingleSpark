@@ -27,8 +27,8 @@ public class StudentAuthentication {
     private String saveBaseURL = "C:/Users/Administrator/Desktop/test/";
     private String save_img_url = saveBaseURL + "img.gif";
     private String save_head_img_url = saveBaseURL + "head.jpg";
-    private String studentID = "201606110062";
-    private String studentPassword = "llg1997729";
+    private String studentID = "201606110064";
+    private String studentPassword = "13798676084cheng";
     private String classTableGnmkdm = "N121601";
     private String personInfoGnmkdm = "N121501";
     private Map<Integer, byte[]> captchaImg = new HashMap<>();
@@ -39,6 +39,9 @@ public class StudentAuthentication {
     private String Location;
     private String[][] classTable = new String[8][13];
 
+    public static void main(String[] args) {
+        new StudentAuthentication().launch();
+    }
 
     public void launch() {
         try {
