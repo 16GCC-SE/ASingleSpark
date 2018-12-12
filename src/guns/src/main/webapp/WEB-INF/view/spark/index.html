@@ -92,11 +92,16 @@
                     <li class="mouseHover" style="margin-left: 15px"><a href="#"><span style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="#">首页</a></li>
+                    <li ><a href="/spark/index">首页</a></li>
                     <li ><a href="#">申请社区赞助</a></li>
                     <li><a href="#">企业服务</a></li>
-                    <li><a href="/spark/register">注册</a></li>
-                    <li style="margin-right: 15px"><a href="#" >登录</a></li>
+                    @if(shiro.getUser() == null){
+                        <li><a href="/spark/register">注册</a></li>
+                        <li style="margin-right: 15px"><a href="/spark/login" >登录</a></li>
+                    @}else{
+                        <li><a href="">欢迎您，${shiro.getUser().name}</a></li>
+                        <li><a href="/spark/logout">退出</a></li>
+                    @}
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
@@ -107,21 +112,21 @@
 
         <div id="top">
             <div id="top-top" class="row">
-                <a href="#" class="pull-left"><img style="height: 73.150px;width: 197.100px;margin-top: 10px;" src="/static/img/spark/9999.png"></a>
-                <div class="col-lg-6 " style="margin-top: 38px">
+                <a href="#" class="pull-left"><img style="height: 65px;width: 200px;margin-top: 10px;" src="/static/img/spark/9999.png"></a>
+                <div class="col-lg-5 col-md-offset-1 " style="margin-top: 28px">
                     <div class="input-group">
-                        <input type="text" class="form-control" style="left: 50px;">
+                        <input type="text" class="form-control" >
                         <span class="input-group-btn">
                        <button class="btn btn-warning" type="button">搜索</button>
                     </span>
                     </div>
                 </div>
-                <div style="margin-top:36px ">
+                <div style="margin-top:28px ">
                     <button type="button"  class="btn btn-warning btn-lg pull-right"
                             style="padding: 6px 12px">进入兼职管理
                     </button>
                     <button type="button" class="btn btn-success btn-lg pull-right"
-                            style="padding: 6px 12px ;margin-right: 10px">发布兼职
+                            style="padding: 6px 12px ;margin-right: 10px" onclick="window.location='/spark/release'">发布兼职
                     </button>
                 </div>
             </div>
@@ -131,7 +136,7 @@
             </div>
         </div>
 
-        <div id="middle" style="margin-top: 20px">
+        <div id="middle" style="margin-top: 28px">
             <div class="panel panel-success row">
                 <div class="panel-heading">
                     <h3 class="panel-title">最新兼职</h3>
