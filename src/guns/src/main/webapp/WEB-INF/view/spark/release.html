@@ -23,6 +23,47 @@
             height: 150px;
         }
     </style>
+    <script type="text/javascript">
+        function checkusrn() {
+            var check = false;
+            var  PartTimTitle = document.getElementById("PartTimTitle").value;
+            if (PartTimTitle.length > 10) {
+                document.getElementById("checktext1").innerHTML = " × 不要多于10位";
+                check = false;
+            } else {
+                document.getElementById("checktext1").innerHTML = " √";
+                check = true;
+            }
+            return check;
+        }
+
+        function population() {
+            var check = false;
+            var population = document.getElementById("population").value;
+            if (population.length < 0 || population.length >11 ) {
+                document.getElementById("checktext2").innerHTML = " × 请输入正确号码";
+                check = false;
+            } else {
+                document.getElementById("checktext2").innerHTML = " √";
+                check = true;
+            }
+            return check;
+        }
+
+        function TelephoneNumber() {
+            var check = false;
+            var TelephoneNumber = document.getElementById("TelephoneNumber").value;
+            if (TelephoneNumber.length = 11 ) {
+                document.getElementById("checktext3").innerHTML = " √";
+                check = true;
+
+            } else {
+                document.getElementById("checktext3").innerHTML = " × 请输入正确号码";
+                check = false;
+            }
+            return check;
+        }
+    </script>
 
 
 </head>
@@ -123,13 +164,15 @@
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
             <label class="col-sm-2 control-label">&nbsp;*兼职标题:</label>
             <div class="col-sm-4">
-                <input type="text" name="" class="form-control" placeholder="请输入文本">
+                <input type="text" id="PartTimTitle" name="PartTimTitle" onchange="checkusrn()"class="form-control" placeholder="请输入文本">
+                <span id="checktext1"></span>
             </div>
         </div>
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
             <label class="col-sm-2 control-label">&nbsp;*招聘人数:</label>
             <div class="col-sm-4">
-                <input type="text" name="" class="form-control" placeholder="请输入文本">
+                <input type="text" id="population" name="population" onchange="population()" class="form-control" placeholder="请输入文本">
+                <span id="checktext2"></span>
             </div>
         </div>
         <div class="form-group draggable" style="padding-bottom:40px">
@@ -187,7 +230,7 @@
             </div>
         </div>
 
-        <div class="form-group draggable" style="padding-bottom:40px">
+        <div class="form-group draggable">
             <label class="col-sm-2 control-label">&nbsp;*兼职类型:</label>
 
                 <div>
@@ -201,7 +244,7 @@
 
     <section class="container">
         <div class="clearfix"
-             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">工作对接
+             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:50px;margin-bottom:20px">工作对接
         </div>
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
             <label class="col-sm-2 control-label">&nbsp;*简历邮箱:</label>
@@ -212,7 +255,8 @@
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
             <label class="col-sm-2 control-label">&nbsp;*咨询电话:</label>
             <div class="col-sm-4">
-                <input type="text" name="" class="form-control" placeholder="请输入文本">
+                <input type="text" id="TelephoneNumber" name="TelephoneNumber" onchange="TelephoneNumber()" class="form-control" placeholder="请输入文本">
+                <span id="checktext3"></span>
             </div>
         </div>
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
