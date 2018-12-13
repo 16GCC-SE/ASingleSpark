@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="登录页面">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/aop/PermissionAop.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/aop/PermissionAop.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/BlackboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/BlackboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/transfer/UserDto.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/transfer/UserDto.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/DictTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/DictTest.class" afterDir="false" />
+    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="Default Changelist">
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/src/guns/guns.iml" afterPath="$PROJECT_DIR$/src/guns/guns.iml" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/PartTimeDetail.sql" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeDetailController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/PartTimeDetailMapper.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/PartTimeDetailMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTimeDetail.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IPartTimeDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/PartTimeDetailServiceImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_add.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_edit.html" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail_info.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/system/user/user_add.html" afterPath="$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/system/user/user_add.html" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/css/login.css" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/css/login.css" />
     </list>
     <ignored path="$PROJECT_DIR$/src/guns/target/" />
     <ignored path="$PROJECT_DIR$/src/guns-generator/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +35,18 @@
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
   </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
@@ -100,132 +125,62 @@
         </counts>
       </usages-collector>
     </session>
-    <session id="-1632951168">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="html" value="4" />
-          <entry key="java" value="1" />
-          <entry key="sql" value="1" />
-          <entry key="xml" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="HTML" value="4" />
-          <entry key="JAVA" value="1" />
-          <entry key="SQL" value="1" />
-          <entry key="XML" value="1" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="html" value="149" />
-          <entry key="txt" value="28" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="HTML" value="149" />
-          <entry key="PLAIN_TEXT" value="28" />
-        </counts>
-      </usages-collector>
-    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/_fstyle.css">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css">
+      <file leaf-file-name="PartTimeController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-824">
-              <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+            <state relative-caret-position="39">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/pom.xml">
+      <file leaf-file-name="PartTime.sql" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/PartTime.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-13">
-              <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="n#style#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#select#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#div#7;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#0;n#div#8;n#section#2;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#textarea#0;n#div#0;n#div#9;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#8764#8770#0" expanded="true" />
-                <element signature="n#style#0;n#div#3;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <marker date="1544693420443" expanded="true" signature="0:272" ph="INSERT INTO `guns`.`sys_menu`... " />
+                <marker date="1544693420443" expanded="true" signature="274:577" ph="INSERT INTO `guns`.`sys_menu`... " />
+                <marker date="1544693420443" expanded="true" signature="579:880" ph="INSERT INTO `guns`.`sys_menu`... " />
+                <marker date="1544693420443" expanded="true" signature="882:1189" ph="INSERT INTO `guns`.`sys_menu`... " />
+                <marker date="1544693420443" expanded="true" signature="1191:1498" ph="INSERT INTO `guns`.`sys_menu`... " />
+                <marker date="1544693420443" expanded="true" signature="1500:1807" ph="INSERT INTO `guns`.`sys_menu`... " />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
+      <file leaf-file-name="partTime.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2250" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="260">
-              <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+            <state relative-caret-position="-302">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html">
+      <file leaf-file-name="partTime_add.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="314" column="13" lean-forward="true" selection-start-line="314" selection-start-column="13" selection-end-line="314" selection-end-column="13" />
-              <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="496">
+              <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/StudentUserDetail.sql">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/GunsApplication.java">
+      <file leaf-file-name="partTime_edit.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_edit.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+            <state relative-caret-position="1026">
+              <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="27" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -270,6 +225,9 @@
       <find>kapt</find>
       <find>session</find>
       <find>${context.bizEnName}</find>
+      <find>Date</find>
+      <find>addsubmit</find>
+      <find>birthday</find>
     </findStrings>
     <replaceStrings>
       <replace>39.108.158.15</replace>
@@ -279,6 +237,12 @@
   <component name="Git.Settings">
     <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="MIXED" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -294,7 +258,7 @@
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/IndexService.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/datasource/TestDBInterceptor.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/datasource/SingleDataSourceConfig.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/service/impl/DeptServiceImpl.java" />
@@ -314,6 +278,7 @@
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/StudentAuthentication.java" />
         <option value="$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/modular/factory/DefaultTemplateFactory.java" />
+        <option value="$PROJECT_DIR$/src/guns/pom.xml" />
         <option value="$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/config/ContextConfig.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail.html" />
         <option value="$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page.html.btl" />
@@ -323,17 +288,17 @@
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java" />
         <option value="$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/Controller.java.btl" />
-        <option value="$PROJECT_DIR$/src/guns/pom.xml" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeDetailController.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail.js" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTimeDetail.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_add.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_edit.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_add.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_edit.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java" />
       </list>
     </option>
-  </component>
-  <component name="InvalidFacetManager">
-    <ignored-facets>
-      <facet id="guns/invalid/Spring" />
-      <facet id="guns/invalid/Web" />
-    </ignored-facets>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -350,58 +315,176 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="guns-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="guns-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="10" />
-    <option name="y" value="20" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="668" />
+    <option name="y" value="-2" />
+    <option name="width" value="864" />
+    <option name="height" value="788" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>SqlDialectInspection</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -409,8 +492,8 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -419,8 +502,8 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
@@ -430,18 +513,21 @@
               <item name="spark" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="hyf" type="b2602c69:ProjectViewProjectNode" />
-              <item name="hyf" type="462c0819:PsiDirectoryNode" />
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="partTime" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -454,23 +540,26 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544623773999" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/guns-generator" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544533861648" />
+    <property name="last_opened_file_path" value="C:/Program Files/Git/bin/git.exe" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="SearchEverywhereHistoryKey" value="partTimeDetail_info.js&#9;FILE&#9;file://E:/JavaWorkSpace/ASingleSpark/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail_info.js" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\JavaWorkSpace\ASingleSpark\src\guns\src\main\webapp\static\css\spark" />
+      <recent name="E:\JavaWorkSpace\ASingleSpark\src\guns\src\main\webapp\WEB-INF\view\spark" />
       <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\webapp\static\img\spark" />
       <recent name="E:\a_llg_idea_project\ASingleSpark\docs\测试" />
       <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\webapp\static\js" />
-      <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\webapp\static\img" />
-      <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\webapp\WEB-INF\view\spark" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.stylefeng.guns.modular.spark.util" />
@@ -491,7 +580,225 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.GunsApplication">
+  <component name="RunManager" selected="Spring Boot.GunsApplication">
+    <configuration name="StudentAuthentication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.student.StudentAuthentication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="guns" />
+      <envs />
+    </configuration>
+    <configuration name="UserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="guns" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration name="UserTest.userTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="guns" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.stylefeng.guns.system" />
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
+      <option name="METHOD_NAME" value="userTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="UserTest.userTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="guns" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="cn.stylefeng.guns.system" />
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
+      <option name="METHOD_NAME" value="userTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GunsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.stylefeng.guns.GunsApplication" />
+      <module name="guns" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method>
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -534,136 +841,10 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="JarApplication" factoryName="JAR 应用程序">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <envs />
       <method />
-    </configuration>
-    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
-      <node-interpreter>project</node-interpreter>
-      <node-options />
-      <gulpfile />
-      <tasks />
-      <arguments />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="GunsApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.GunsApplication" />
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentAuthentication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.student.StudentAuthentication" />
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.userTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.stylefeng.guns.system" />
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
-      <option name="METHOD_NAME" value="userTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.userTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.stylefeng.guns.system" />
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
-      <option name="METHOD_NAME" value="userTests" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
       <option name="filePath" />
@@ -699,38 +880,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GunsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="guns" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.stylefeng.guns.GunsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
     </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="JUnit.UserTest.userTest" />
-      <item itemvalue="JUnit.UserTest.userTests" />
-      <item itemvalue="Application.UserTest" />
-      <item itemvalue="Application.StudentAuthentication" />
-      <item itemvalue="Application.GunsApplication" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.GunsApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Application.StudentAuthentication" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.UserTest.userTest" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UserTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.UserTest.userTests" />
     </list>
     <recent_temporary>
-      <list>
-        <item itemvalue="Application.GunsApplication" />
-        <item itemvalue="Application.StudentAuthentication" />
-        <item itemvalue="Application.UserTest" />
-        <item itemvalue="JUnit.UserTest.userTest" />
-        <item itemvalue="JUnit.UserTest.userTests" />
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.UserTest.userTests" />
+        <item index="1" class="java.lang.String" itemvalue="Application.UserTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.UserTest.userTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.StudentAuthentication" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -754,6 +929,13 @@
       <workItem from="1543925674138" duration="63320000" />
       <workItem from="1544358451222" duration="11568000" />
       <workItem from="1544404782835" duration="2507000" />
+      <workItem from="1544591073507" duration="3632000" />
+      <workItem from="1544610313338" duration="3422000" />
+      <workItem from="1544615642603" duration="1435000" />
+      <workItem from="1544617745653" duration="8217000" />
+      <workItem from="1544626404249" duration="270000" />
+      <workItem from="1544683424990" duration="7993000" />
+      <workItem from="1544692788940" duration="2051000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -881,21 +1063,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544533826141</updated>
     </task>
-    <task id="LOCAL-00019" summary="修复生成器导致启动失败问题">
-      <created>1544610609396</created>
+    <task id="LOCAL-00019" summary="详情页面更改">
+      <created>1544624989874</created>
       <option name="number" value="00019" />
       <option name="presentableId" value="LOCAL-00019" />
       <option name="project" value="LOCAL" />
-      <updated>1544610609397</updated>
+      <updated>1544624989874</updated>
     </task>
-    <task id="LOCAL-00020" summary="兼职发布页面">
-      <created>1544623444332</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1544623444332</updated>
-    </task>
-    <option name="localTasksCounter" value="21" />
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -931,7 +1106,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126421000" />
+    <option name="totallyTimeSpent" value="153441000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -946,51 +1121,68 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.1860817" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Nl-Palette" order="5" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info id="设计师" order="7" />
-      <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info id="Designer" order="9" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49924356" visible="true" weight="0.947541" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.5418024" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32786885" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50075644" side_tool="true" weight="0.947541" />
-      <window_info anchor="bottom" id="消息" order="10" weight="0.30552423" />
-      <window_info anchor="bottom" id="运行" order="11" visible="true" weight="0.52311164" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" weight="0.32733223" />
-      <window_info anchor="bottom" id="调试" order="14" weight="0.33295324" />
-      <window_info anchor="bottom" id="找到" order="15" />
-      <window_info anchor="bottom" id="Problems" order="16" />
-      <window_info anchor="bottom" id="Database Changes" order="17" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="18" weight="0.7327869" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="控制板" order="3" />
-      <window_info anchor="right" id="Properties" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Maven Projects" order="6" weight="0.031770047" />
-      <window_info anchor="right" id="Database" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="right" id="Palette" order="11" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5060514" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.98630136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81164384" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -1012,9 +1204,9 @@
     <MESSAGE value="完善学生认证" />
     <MESSAGE value="修复" />
     <MESSAGE value="登录页面" />
-    <MESSAGE value="修复生成器导致启动失败问题" />
-    <MESSAGE value="兼职发布页面" />
-    <option name="LAST_COMMIT_MESSAGE" value="兼职发布页面" />
+    <MESSAGE value="详情页面更改" />
+    <MESSAGE value="更改详情界面" />
+    <option name="LAST_COMMIT_MESSAGE" value="更改详情界面" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1026,6 +1218,7 @@
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -1039,307 +1232,495 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" selection-start-line="4" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/config/ControllerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-54">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/executor/model/GenQo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/executor/GunsCodeGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/modular/entity/CodeDbInfo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/modular/service/TableService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/sparkStudentUserDetail/sparkStudentUserDetail.html" />
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/modular/controller/CodeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1269">
-          <caret line="58" column="1" selection-start-line="58" selection-start-column="1" selection-end-line="58" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/stylefeng/roses/kernel-core/1.1.0/kernel-core-1.1.0-sources.jar!/cn/stylefeng/roses/core/base/controller/BaseController.java" />
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/404.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-263" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="655">
-          <caret line="36" column="44" selection-start-line="36" selection-start-column="39" selection-end-line="36" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="972">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/sparkStudentUserDetail/sparkStudentUserDetail.js" />
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page_edit.html.btl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="39" column="82" selection-start-line="39" selection-start-column="62" selection-end-line="39" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page_add.html.btl">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page.js.btl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="98" column="84" selection-start-line="98" selection-start-column="64" selection-end-line="98" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/menu_sql.sql.btl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="12" column="40" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/aa.java" />
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/aa.java" />
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/aa.java" />
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/aa.java" />
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="290">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/config/SqlConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/config/DaoConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/base/AbstractTemplateEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1100">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/db/DbInfoInitializer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/SimpleTemplateEngine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="18" column="62" selection-start-line="18" selection-start-column="62" selection-end-line="18" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/config/ContextConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="587">
-          <caret line="39" column="38" lean-forward="true" selection-start-line="39" selection-start-column="38" selection-end-line="39" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/StudentUserDetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="54" selection-start-line="16" selection-start-column="54" selection-end-line="16" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="12" column="3" lean-forward="true" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/IndexController.java" />
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
-          <caret line="57" column="13" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="24" column="29" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page.html.btl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
-          <caret line="36" column="103" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="103" />
+          <caret line="36" column="103" lean-forward="false" selection-start-line="36" selection-start-column="83" selection-end-line="36" selection-end-column="103" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page_info.js.btl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1894">
-          <caret line="84" column="66" selection-start-line="84" selection-start-column="46" selection-end-line="84" selection-end-column="66" />
+          <caret line="84" column="66" lean-forward="false" selection-start-line="84" selection-start-column="46" selection-end-line="84" selection-end-column="66" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/Controller.java.btl">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        <state relative-caret-position="418">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/bootstrap.min.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="4" column="2349" selection-start-line="4" selection-start-column="2349" selection-end-line="4" selection-end-column="2349" />
+        <state relative-caret-position="0">
+          <caret line="4" column="2349" lean-forward="false" selection-start-line="4" selection-start-column="2349" selection-end-line="4" selection-end-column="2349" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/_fstyle.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-824">
-          <caret line="4" column="33" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/StudentUserDetail.sql">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/_fstyle.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/GunsApplication.java">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/BlackboardController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="39" column="13" lean-forward="false" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3.jar!/com/baomidou/mybatisplus/service/IService.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3.jar!/com/baomidou/mybatisplus/service/impl/ServiceImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="38" column="28" lean-forward="false" selection-start-line="38" selection-start-column="28" selection-end-line="38" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3.jar!/com/baomidou/mybatisplus/mapper/SqlHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="874">
+          <caret line="64" column="25" lean-forward="false" selection-start-line="64" selection-start-column="18" selection-end-line="64" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/DeptMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="33" column="42" lean-forward="false" selection-start-line="33" selection-start-column="42" selection-end-line="33" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="15" column="11" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/service/impl/DeptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="38" column="45" lean-forward="false" selection-start-line="38" selection-start-column="45" selection-end-line="38" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/DeptController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-170">
+          <caret line="61" column="14" lean-forward="false" selection-start-line="61" selection-start-column="14" selection-end-line="61" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IPartTimeDetailService.java" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/PartTimeDetailMapper.java" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail.js" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/PartTimeDetail.sql" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/transfer/UserDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="39" column="1" lean-forward="false" selection-start-line="39" selection-start-column="1" selection-end-line="39" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTimeDetail.java" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="494">
+          <caret line="26" column="75" lean-forward="false" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1083">
+          <caret line="57" column="0" lean-forward="false" selection-start-line="57" selection-start-column="0" selection-end-line="61" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail_info.js" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/spark/job_detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/stylefeng/roses/kernel-core/1.1.0/kernel-core-1.1.0.jar!/cn/stylefeng/roses/core/base/controller/BaseController.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="160">
-          <caret line="31" column="13" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
+          <caret line="31" column="41" lean-forward="false" selection-start-line="31" selection-start-column="41" selection-end-line="31" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/role/role_add.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="45" column="58" lean-forward="false" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/role/role_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="41" column="14" lean-forward="true" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user_roleassign.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1044">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/dept/dept_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="22" column="48" lean-forward="false" selection-start-line="22" selection-start-column="48" selection-end-line="22" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/dict/dict_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1234">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/menu/menu_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_add.html" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeDetailController.java" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_edit.html" />
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail.html" />
+    <entry file="file://$PROJECT_DIR$/src/guns/sql/guns.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6270">
+          <caret line="330" column="45" lean-forward="false" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
+          <folding>
+            <marker date="1544591054609" expanded="true" signature="0:284" ph="/* Navicat M... " />
+            <marker date="1544591054609" expanded="true" signature="532:563" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="565:1088" ph="CREATE TABLE... sys_dept" />
+            <marker date="1544591054609" expanded="true" signature="1178:1256" ph="INSERT INTO `sys_dept`... " />
+            <marker date="1544591054609" expanded="true" signature="1258:1342" ph="INSERT INTO `sys_dept`... " />
+            <marker date="1544591054609" expanded="true" signature="1344:1428" ph="INSERT INTO `sys_dept`... " />
+            <marker date="1544591054609" expanded="true" signature="1430:1514" ph="INSERT INTO `sys_dept`... " />
+            <marker date="1544591054609" expanded="true" signature="1613:1644" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="1646:2090" ph="CREATE TABLE... sys_dict" />
+            <marker date="1544591054609" expanded="true" signature="2180:2249" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2251:2314" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2316:2379" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2381:2452" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2454:2518" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2520:2584" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2586:2663" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2665:2729" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2731:2795" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2797:2862" ph="INSERT INTO `sys_dict`... " />
+            <marker date="1544591054609" expanded="true" signature="2964:2998" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="3000:3490" ph="CREATE TABLE... sys_expense" />
+            <marker date="1544591054609" expanded="true" signature="3685:3721" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="3723:4192" ph="CREATE TABLE... sys_login_log" />
+            <marker date="1544591054609" expanded="true" signature="4384:4415" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="4417:5241" ph="CREATE TABLE... sys_menu" />
+            <marker date="1544591054609" expanded="true" signature="5331:5446" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="5448:5570" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="5572:5707" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="5709:5846" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="5848:5989" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="5991:6130" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="6132:6273" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="6275:6422" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="6424:6567" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="6569:6695" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="6697:6836" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="6838:6979" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="6981:7126" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="7128:7285" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="7287:7413" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="7415:7554" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="7556:7697" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="7699:7844" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="7846:7970" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="7972:8101" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="8103:8230" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="8232:8359" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="8361:8496" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="8498:8639" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="8641:8781" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="8783:8929" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="8931:9077" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="9079:9219" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="9221:9367" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="9369:9515" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="9517:9648" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="9650:9798" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="9800:9954" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="9956:10110" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="10112:10239" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="10241:10359" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="10361:10493" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="10495:10645" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="10647:10787" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="10789:10943" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="10945:11085" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="11087:11231" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="11233:11383" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="11385:11525" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="11527:11671" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="11673:11809" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="11811:11951" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="11953:12118" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="12120:12279" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="12281:12431" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="12433:12587" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="12589:12729" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="12731:12882" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="12884:13031" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="13033:13170" ph="INSERT INTO `sys_menu`... " />
+            <marker date="1544591054609" expanded="true" signature="13271:13304" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="13306:13701" ph="CREATE TABLE... sys_notice" />
+            <marker date="1544591054609" expanded="true" signature="13793:13886" ph="INSERT INTO `sys_notice`... " />
+            <marker date="1544591054609" expanded="true" signature="13888:13971" ph="INSERT INTO `sys_notice`... " />
+            <marker date="1544591054609" expanded="true" signature="14079:14119" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="14121:14681" ph="CREATE TABLE... sys_operation_log" />
+            <marker date="1544591054609" expanded="true" signature="14881:14916" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="14918:15196" ph="CREATE TABLE... sys_relation" />
+            <marker date="1544591054609" expanded="true" signature="15290:15344" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15346:15400" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15402:15456" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15458:15512" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15514:15568" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15570:15624" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15626:15680" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15682:15736" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15738:15792" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15794:15848" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15850:15904" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15906:15960" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="15962:16016" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16018:16072" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16074:16128" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16130:16184" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16186:16240" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16242:16296" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16298:16352" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16354:16408" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16410:16464" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16466:16520" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16522:16576" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16578:16632" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16634:16688" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16690:16744" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16746:16800" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16802:16856" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16858:16912" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16914:16968" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="16970:17024" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17026:17080" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17082:17136" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17138:17192" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17194:17248" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17250:17304" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17306:17360" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17362:17416" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17418:17472" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17474:17528" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17530:17584" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17586:17640" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17642:17696" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17698:17752" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17754:17808" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17810:17864" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17866:17920" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17922:17976" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="17978:18032" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18034:18088" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18090:18144" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18146:18200" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18202:18256" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18258:18312" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18314:18368" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18370:18424" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18426:18480" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18482:18536" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18538:18592" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18594:18648" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18650:18704" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18706:18760" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18762:18816" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18818:18872" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18874:18928" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18930:18984" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="18986:19040" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19042:19096" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19098:19152" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19154:19208" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19210:19264" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19266:19320" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19322:19376" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19378:19432" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19434:19488" ph="INSERT INTO `sys_relation`... " />
+            <marker date="1544591054609" expanded="true" signature="19587:19618" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="19620:20081" ph="CREATE TABLE... sys_role" />
+            <marker date="1544591054609" expanded="true" signature="20171:20253" ph="INSERT INTO `sys_role`... " />
+            <marker date="1544591054609" expanded="true" signature="20255:20326" ph="INSERT INTO `sys_role`... " />
+            <marker date="1544591054609" expanded="true" signature="20425:20456" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="20458:21351" ph="CREATE TABLE... sys_user" />
+            <marker date="1544591054609" expanded="true" signature="21441:21651" ph="INSERT INTO `sys_user`... " />
+            <marker date="1544591054609" expanded="true" signature="21653:21848" ph="INSERT INTO `sys_user`... " />
+            <marker date="1544591054609" expanded="true" signature="21850:22032" ph="INSERT INTO `sys_user`... " />
+            <marker date="1544591054609" expanded="true" signature="22034:22219" ph="INSERT INTO `sys_user`... " />
+            <marker date="1544591054609" expanded="true" signature="22223:22250" ph="DROP TABLE I... " />
+            <marker date="1544591054609" expanded="true" signature="22252:22457" ph="CREATE TABLE... test" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/config/GeneratorAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/Controller.java.btl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="20" column="3" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="20" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/modular/controller/CodeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns-generator/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="48" column="28" lean-forward="true" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+        <state relative-caret-position="-627">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_edit.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="61" column="33" lean-forward="true" selection-start-line="61" selection-start-column="33" selection-end-line="61" selection-end-column="33" />
+        <state relative-caret-position="1026">
+          <caret line="54" column="27" lean-forward="false" selection-start-line="54" selection-start-column="16" selection-end-line="54" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2250" />
+        <state relative-caret-position="496">
+          <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="314" column="13" lean-forward="true" selection-start-line="314" selection-start-column="13" selection-end-line="314" selection-end-column="13" />
+        <state relative-caret-position="-302">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/PartTime.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1544693420443" expanded="true" signature="0:272" ph="INSERT INTO `guns`.`sys_menu`... " />
+            <marker date="1544693420443" expanded="true" signature="274:577" ph="INSERT INTO `guns`.`sys_menu`... " />
+            <marker date="1544693420443" expanded="true" signature="579:880" ph="INSERT INTO `guns`.`sys_menu`... " />
+            <marker date="1544693420443" expanded="true" signature="882:1189" ph="INSERT INTO `guns`.`sys_menu`... " />
+            <marker date="1544693420443" expanded="true" signature="1191:1498" ph="INSERT INTO `guns`.`sys_menu`... " />
+            <marker date="1544693420443" expanded="true" signature="1500:1807" ph="INSERT INTO `guns`.`sys_menu`... " />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="25" column="35" lean-forward="true" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#select#0;n#div#0;n#div#1;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#div#7;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#0;n#div#8;n#section#2;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#textarea#0;n#div#0;n#div#9;n#section#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#8764#8770#0" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#section#3;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="39">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1360,7 +1741,7 @@
       </state>
       <state key="FacetStructureConfigurable.UI">
         <settings>
-          <last-edited>Invalid</last-edited>
+          <last-edited>Spring</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1395,7 +1776,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>guns</last-edited>
+          <last-edited>guns-generator</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
