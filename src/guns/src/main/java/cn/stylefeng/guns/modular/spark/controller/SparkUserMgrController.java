@@ -25,7 +25,9 @@ import cn.stylefeng.guns.core.common.constant.dictmap.UserDict;
 import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
 import cn.stylefeng.guns.core.common.constant.state.ManagerStatus;
 import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.core.log.LogManager;
 import cn.stylefeng.guns.core.log.LogObjectHolder;
+import cn.stylefeng.guns.core.log.factory.LogTaskFactory;
 import cn.stylefeng.guns.core.shiro.ShiroKit;
 import cn.stylefeng.guns.core.shiro.ShiroUser;
 import cn.stylefeng.guns.modular.system.factory.UserFactory;
@@ -43,6 +45,8 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -57,6 +61,8 @@ import java.util.Date;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
+
+import static cn.stylefeng.roses.core.util.HttpContext.getIp;
 
 /**
  * 系统管理员控制器
@@ -75,12 +81,13 @@ public class SparkUserMgrController extends BaseController {
      * 添加平台用户
      */
     @RequestMapping("/add")
+    @ResponseBody
     @BussinessLog(value = "添加管理员", key = "account", dict = UserDict.class)
     @ApiOperation(value = "注册兼职平台新用户", httpMethod = "POST", notes = "注册兼职平台新用户", response = ResponseData.class)
     @ApiImplicitParams({
             @ApiImplicitParam(paramType = "form",name = "sparkRole",value = "平台用户角色",dataType = "Integer" ),
     })
-    public String add(@Valid @ModelAttribute UserDto user, BindingResult result) {
+    public ResponseData add(@Valid @ModelAttribute UserDto user, BindingResult result) {
 
         if (result.hasErrors()) {
             throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
@@ -98,12 +105,25 @@ public class SparkUserMgrController extends BaseController {
         }else if(user.getSparkRole()==3){
             user.setRoleid(Integer.toString(10));
         }
+        //保存登陆所需的用户名和密码
+        String username=user.getAccount();
+        String password=user.getPassword();
         // 完善账号信息
         user.setSalt(ShiroKit.getRandomSalt(5));
         user.setPassword(ShiroKit.md5(user.getPassword(), user.getSalt()));
         user.setStatus(ManagerStatus.OK.getCode());
         user.setCreatetime(new Date());
         this.userService.insert(UserFactory.createUser(user));
-        return REDIRECT+"/spark/index";
+        //完成登陆操作
+        Subject currentUser = ShiroKit.getSubject();
+        UsernamePasswordToken token = new UsernamePasswordToken(username, password.toCharArray());
+        currentUser.login(token);
+        ShiroUser shiroUser = ShiroKit.getUser();
+        super.getSession().setAttribute("shiroUser", shiroUser);
+        super.getSession().setAttribute("username", shiroUser.getAccount());
+        LogManager.me().executeLog(LogTaskFactory.loginLog(shiroUser.getId(), getIp()));
+        ShiroKit.getSession().setAttribute("sessionFlag", true);
+
+        return SUCCESS_TIP;
     }
 }
