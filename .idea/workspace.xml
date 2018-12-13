@@ -2,27 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="Default Changelist">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/guns/guns.iml" afterPath="$PROJECT_DIR$/src/guns/guns.iml" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/PartTimeDetail.sql" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeDetailController.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/PartTimeDetailMapper.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/PartTimeDetailMapper.xml" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTimeDetail.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IPartTimeDetailService.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/PartTimeDetailServiceImpl.java" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_add.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_edit.html" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail_info.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/system/user/user_add.html" afterPath="$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/system/user/user_add.html" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/css/login.css" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/css/login.css" />
     </list>
     <ignored path="$PROJECT_DIR$/src/guns/target/" />
     <ignored path="$PROJECT_DIR$/src/guns-generator/target/" />
@@ -128,21 +108,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PartTimeController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PartTimeController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+            <state relative-caret-position="19">
+              <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartTime.sql" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PartTime.sql" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/PartTime.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="114">
+              <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding>
                 <marker date="1544693420443" expanded="true" signature="0:272" ph="INSERT INTO `guns`.`sys_menu`... " />
                 <marker date="1544693420443" expanded="true" signature="274:577" ph="INSERT INTO `guns`.`sys_menu`... " />
@@ -158,7 +138,7 @@
       <file leaf-file-name="partTime.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-302">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -168,7 +148,7 @@
       <file leaf-file-name="partTime_add.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_add.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="496">
+            <state relative-caret-position="1064">
               <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding />
             </state>
@@ -370,9 +350,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -529,6 +508,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -935,7 +915,8 @@
       <workItem from="1544617745653" duration="8217000" />
       <workItem from="1544626404249" duration="270000" />
       <workItem from="1544683424990" duration="7993000" />
-      <workItem from="1544692788940" duration="2051000" />
+      <workItem from="1544692788940" duration="2350000" />
+      <workItem from="1544698465983" duration="1136000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -1070,7 +1051,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544624989874</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Default Changelist">
+      <created>1544694897178</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1544694897178</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1106,7 +1094,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="153441000" />
+    <option name="totallyTimeSpent" value="154876000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1137,11 +1125,11 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.98630136" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.81164384" sideWeight="0.49394855" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="1.0" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2632375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26701966" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1206,7 +1194,8 @@
     <MESSAGE value="登录页面" />
     <MESSAGE value="详情页面更改" />
     <MESSAGE value="更改详情界面" />
-    <option name="LAST_COMMIT_MESSAGE" value="更改详情界面" />
+    <MESSAGE value="Default Changelist" />
+    <option name="LAST_COMMIT_MESSAGE" value="Default Changelist" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1232,13 +1221,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="55">
-          <caret line="57" column="13" lean-forward="false" selection-start-line="57" selection-start-column="13" selection-end-line="57" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page.html.btl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="891">
@@ -1449,183 +1431,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="6270">
           <caret line="330" column="45" lean-forward="false" selection-start-line="330" selection-start-column="45" selection-end-line="330" selection-end-column="45" />
-          <folding>
-            <marker date="1544591054609" expanded="true" signature="0:284" ph="/* Navicat M... " />
-            <marker date="1544591054609" expanded="true" signature="532:563" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="565:1088" ph="CREATE TABLE... sys_dept" />
-            <marker date="1544591054609" expanded="true" signature="1178:1256" ph="INSERT INTO `sys_dept`... " />
-            <marker date="1544591054609" expanded="true" signature="1258:1342" ph="INSERT INTO `sys_dept`... " />
-            <marker date="1544591054609" expanded="true" signature="1344:1428" ph="INSERT INTO `sys_dept`... " />
-            <marker date="1544591054609" expanded="true" signature="1430:1514" ph="INSERT INTO `sys_dept`... " />
-            <marker date="1544591054609" expanded="true" signature="1613:1644" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="1646:2090" ph="CREATE TABLE... sys_dict" />
-            <marker date="1544591054609" expanded="true" signature="2180:2249" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2251:2314" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2316:2379" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2381:2452" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2454:2518" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2520:2584" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2586:2663" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2665:2729" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2731:2795" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2797:2862" ph="INSERT INTO `sys_dict`... " />
-            <marker date="1544591054609" expanded="true" signature="2964:2998" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="3000:3490" ph="CREATE TABLE... sys_expense" />
-            <marker date="1544591054609" expanded="true" signature="3685:3721" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="3723:4192" ph="CREATE TABLE... sys_login_log" />
-            <marker date="1544591054609" expanded="true" signature="4384:4415" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="4417:5241" ph="CREATE TABLE... sys_menu" />
-            <marker date="1544591054609" expanded="true" signature="5331:5446" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="5448:5570" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="5572:5707" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="5709:5846" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="5848:5989" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="5991:6130" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="6132:6273" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="6275:6422" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="6424:6567" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="6569:6695" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="6697:6836" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="6838:6979" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="6981:7126" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="7128:7285" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="7287:7413" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="7415:7554" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="7556:7697" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="7699:7844" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="7846:7970" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="7972:8101" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="8103:8230" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="8232:8359" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="8361:8496" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="8498:8639" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="8641:8781" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="8783:8929" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="8931:9077" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="9079:9219" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="9221:9367" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="9369:9515" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="9517:9648" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="9650:9798" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="9800:9954" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="9956:10110" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="10112:10239" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="10241:10359" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="10361:10493" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="10495:10645" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="10647:10787" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="10789:10943" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="10945:11085" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="11087:11231" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="11233:11383" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="11385:11525" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="11527:11671" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="11673:11809" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="11811:11951" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="11953:12118" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="12120:12279" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="12281:12431" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="12433:12587" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="12589:12729" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="12731:12882" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="12884:13031" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="13033:13170" ph="INSERT INTO `sys_menu`... " />
-            <marker date="1544591054609" expanded="true" signature="13271:13304" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="13306:13701" ph="CREATE TABLE... sys_notice" />
-            <marker date="1544591054609" expanded="true" signature="13793:13886" ph="INSERT INTO `sys_notice`... " />
-            <marker date="1544591054609" expanded="true" signature="13888:13971" ph="INSERT INTO `sys_notice`... " />
-            <marker date="1544591054609" expanded="true" signature="14079:14119" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="14121:14681" ph="CREATE TABLE... sys_operation_log" />
-            <marker date="1544591054609" expanded="true" signature="14881:14916" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="14918:15196" ph="CREATE TABLE... sys_relation" />
-            <marker date="1544591054609" expanded="true" signature="15290:15344" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15346:15400" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15402:15456" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15458:15512" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15514:15568" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15570:15624" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15626:15680" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15682:15736" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15738:15792" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15794:15848" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15850:15904" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15906:15960" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="15962:16016" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16018:16072" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16074:16128" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16130:16184" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16186:16240" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16242:16296" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16298:16352" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16354:16408" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16410:16464" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16466:16520" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16522:16576" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16578:16632" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16634:16688" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16690:16744" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16746:16800" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16802:16856" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16858:16912" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16914:16968" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="16970:17024" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17026:17080" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17082:17136" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17138:17192" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17194:17248" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17250:17304" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17306:17360" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17362:17416" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17418:17472" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17474:17528" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17530:17584" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17586:17640" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17642:17696" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17698:17752" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17754:17808" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17810:17864" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17866:17920" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17922:17976" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="17978:18032" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18034:18088" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18090:18144" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18146:18200" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18202:18256" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18258:18312" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18314:18368" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18370:18424" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18426:18480" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18482:18536" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18538:18592" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18594:18648" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18650:18704" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18706:18760" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18762:18816" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18818:18872" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18874:18928" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18930:18984" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="18986:19040" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19042:19096" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19098:19152" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19154:19208" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19210:19264" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19266:19320" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19322:19376" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19378:19432" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19434:19488" ph="INSERT INTO `sys_relation`... " />
-            <marker date="1544591054609" expanded="true" signature="19587:19618" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="19620:20081" ph="CREATE TABLE... sys_role" />
-            <marker date="1544591054609" expanded="true" signature="20171:20253" ph="INSERT INTO `sys_role`... " />
-            <marker date="1544591054609" expanded="true" signature="20255:20326" ph="INSERT INTO `sys_role`... " />
-            <marker date="1544591054609" expanded="true" signature="20425:20456" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="20458:21351" ph="CREATE TABLE... sys_user" />
-            <marker date="1544591054609" expanded="true" signature="21441:21651" ph="INSERT INTO `sys_user`... " />
-            <marker date="1544591054609" expanded="true" signature="21653:21848" ph="INSERT INTO `sys_user`... " />
-            <marker date="1544591054609" expanded="true" signature="21850:22032" ph="INSERT INTO `sys_user`... " />
-            <marker date="1544591054609" expanded="true" signature="22034:22219" ph="INSERT INTO `sys_user`... " />
-            <marker date="1544591054609" expanded="true" signature="22223:22250" ph="DROP TABLE I... " />
-            <marker date="1544591054609" expanded="true" signature="22252:22457" ph="CREATE TABLE... test" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1633,7 +1438,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="16" column="13" lean-forward="false" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1641,7 +1445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
           <caret line="9" column="22" lean-forward="false" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1657,7 +1460,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
           <caret line="22" column="22" lean-forward="false" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1665,7 +1467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
           <caret line="5" column="40" lean-forward="true" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1687,7 +1488,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_add.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="496">
+        <state relative-caret-position="1064">
           <caret line="56" column="9" lean-forward="false" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
           <folding />
         </state>
@@ -1695,16 +1496,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="244">
+          <caret line="41" column="37" lean-forward="true" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="98" column="0" lean-forward="false" selection-start-line="98" selection-start-column="0" selection-end-line="98" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/PartTime.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="114">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding>
             <marker date="1544693420443" expanded="true" signature="0:272" ph="INSERT INTO `guns`.`sys_menu`... " />
             <marker date="1544693420443" expanded="true" signature="274:577" ph="INSERT INTO `guns`.`sys_menu`... " />
@@ -1713,14 +1530,6 @@
             <marker date="1544693420443" expanded="true" signature="1191:1498" ph="INSERT INTO `guns`.`sys_menu`... " />
             <marker date="1544693420443" expanded="true" signature="1500:1807" ph="INSERT INTO `guns`.`sys_menu`... " />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
