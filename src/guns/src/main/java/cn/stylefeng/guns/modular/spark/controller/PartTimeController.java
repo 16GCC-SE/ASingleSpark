@@ -1,7 +1,12 @@
 package cn.stylefeng.guns.modular.spark.controller;
 
+import cn.stylefeng.guns.core.common.annotion.BussinessLog;
+import cn.stylefeng.guns.core.common.annotion.Permission;
+import cn.stylefeng.guns.core.common.constant.dictmap.DeptDict;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
+import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import org.springframework.stereotype.Controller;
@@ -96,7 +101,7 @@ public class PartTimeController extends BaseController {
     @RequestMapping(value = "/delete")
     @ResponseBody
     public Object delete(@RequestParam Integer partTimeId) {
-        partTimeService.deleteById(partTimeId);
+        partTimeService.deleteById(partTimeId.longValue());
         return SUCCESS_TIP;
     }
 

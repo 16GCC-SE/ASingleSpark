@@ -6,6 +6,8 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
+import org.springframework.format.annotation.DateTimeFormat;
+
 import java.io.Serializable;
 
 /**
@@ -52,11 +54,13 @@ public class PartTime extends Model<PartTime> {
      * 工作开始时间
      */
     @TableField("work_start_time")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date workStartTime;
     /**
      * 工作结束时间
      */
     @TableField("work_end_time")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date workEndTime;
     /**
      * 工作时间范围，一天可能有多个非连续时间段，用‘ ，’分割
@@ -107,11 +111,13 @@ public class PartTime extends Model<PartTime> {
      * 数据创建时间
      */
     @TableField("gmt_create")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtCreate;
     /**
      * 数据修改时间
      */
     @TableField("gmt_modified")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtModified;
 
 
