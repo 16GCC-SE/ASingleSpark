@@ -16,10 +16,10 @@ import java.io.Serializable;
  * </p>
  *
  * @author 周志勇
- * @since 2018-12-12
+ * @since 2018-12-13
  */
-@TableName("spark_part_time_detail")
-public class PartTimeDetail extends Model<PartTimeDetail> {
+@TableName("spark_part_time")
+public class PartTime extends Model<PartTime> {
 
     private static final long serialVersionUID = 1L;
 
@@ -87,6 +87,16 @@ public class PartTimeDetail extends Model<PartTimeDetail> {
      */
     @TableField("settlement_cycle")
     private Integer settlementCycle;
+    /**
+     * 发布的学校对象
+     */
+    @TableField("publish_school")
+    private String publishSchool;
+    /**
+     * 发布者id
+     */
+    @TableField("pubish_id")
+    private Integer pubishId;
     /**
      * 发布兼职者的个人邮箱
      */
@@ -215,6 +225,22 @@ public class PartTimeDetail extends Model<PartTimeDetail> {
         this.settlementCycle = settlementCycle;
     }
 
+    public String getPublishSchool() {
+        return publishSchool;
+    }
+
+    public void setPublishSchool(String publishSchool) {
+        this.publishSchool = publishSchool;
+    }
+
+    public Integer getPubishId() {
+        return pubishId;
+    }
+
+    public void setPubishId(Integer pubishId) {
+        this.pubishId = pubishId;
+    }
+
     public String getPublishEmail() {
         return publishEmail;
     }
@@ -254,7 +280,7 @@ public class PartTimeDetail extends Model<PartTimeDetail> {
 
     @Override
     public String toString() {
-        return "PartTimeDetail{" +
+        return "PartTime{" +
         ", id=" + id +
         ", partTimeTitle=" + partTimeTitle +
         ", partTimeContent=" + partTimeContent +
@@ -268,6 +294,8 @@ public class PartTimeDetail extends Model<PartTimeDetail> {
         ", workWelfare=" + workWelfare +
         ", workPlace=" + workPlace +
         ", settlementCycle=" + settlementCycle +
+        ", publishSchool=" + publishSchool +
+        ", pubishId=" + pubishId +
         ", publishEmail=" + publishEmail +
         ", publishPhone=" + publishPhone +
         ", gmtCreate=" + gmtCreate +

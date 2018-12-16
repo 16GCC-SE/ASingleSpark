@@ -13,14 +13,16 @@
                             <#input id="workType" name="工作种类 0 短招 1长招" value="${item.workType}" underline="true"/>
                             <#input id="workStartTime" name="工作开始时间" value="${item.workStartTime}" underline="true"/>
                             <#input id="workEndTime" name="工作结束时间" value="${item.workEndTime}" underline="true"/>
-                            <#input id="workTimeRange" name="工作时间范围，一天可能有多个非连续时间段，用‘ ，’分割" value="${item.workTimeRange}" />
+                            <#input id="workTimeRange" name="工作时间范围，一天可能有多个非连续时间段，用‘ ，’分割" value="${item.workTimeRange}" underline="true"/>
+                            <#input id="genderRequirement" name="性别要求（1：男 2：女 3: 男+女）" value="${item.genderRequirement}" />
                 </div>
 
                 <div class="col-sm-6">
-                            <#input id="genderRequirement" name="性别要求（1：男 2：女 3: 男+女）" value="${item.genderRequirement}" underline="true"/>
                             <#input id="workWelfare" name="工作福利，每项福利用逗号分隔" value="${item.workWelfare}" underline="true"/>
                             <#input id="workPlace" name="工作地点" value="${item.workPlace}" underline="true"/>
                             <#input id="settlementCycle" name="结算周期 1.日结 2.周结 3.月结 4.完工结" value="${item.settlementCycle}" underline="true"/>
+                            <#input id="publishSchool" name="发布的学校对象" value="${item.publishSchool}" underline="true"/>
+                            <#input id="pubishId" name="发布者id" value="${item.pubishId}" underline="true"/>
                             <#input id="publishEmail" name="发布兼职者的个人邮箱" value="${item.publishEmail}" underline="true"/>
                             <#input id="publishPhone" name="发布兼职者的电话号码" value="${item.publishPhone}" underline="true"/>
                             <#input id="gmtCreate" name="数据创建时间" value="${item.gmtCreate}" underline="true"/>
@@ -30,13 +32,27 @@
 
             <div class="row btn-group-m-t">
                 <div class="col-sm-10">
-                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="PartTimeDetailInfoDlg.editSubmit()"/>
-                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="PartTimeDetailInfoDlg.close()"/>
+                    <#button btnCss="info" name="提交" id="ensure" icon="fa-check" clickFun="PartTimeInfoDlg.editSubmit()"/>
+                    <#button btnCss="danger" name="取消" id="cancel" icon="fa-eraser" clickFun="PartTimeInfoDlg.close()"/>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
-<script src="${ctxPath}/static/modular/spark/partTimeDetail/partTimeDetail_info.js"></script>
+<script src="${ctxPath}/static/modular/spark/partTime/partTime_info.js"></script>
+<script>
+    laydate.render({
+        elem: '#workStartTime'
+    });
+    laydate.render({
+        elem: '#workEndTime'
+    });
+    laydate.render({
+        elem: '#gmtCreate'
+    });
+    laydate.render({
+        elem: '#gmtModified'
+    });
+</script>
 @}

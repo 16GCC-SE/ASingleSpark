@@ -1,15 +1,15 @@
 /**
- * 初始化兼职详情详情对话框
+ * 初始化兼职详情数据操作详情对话框
  */
-var PartTimeDetailInfoDlg = {
-    partTimeDetailInfoData : {}
+var PartTimeInfoDlg = {
+    partTimeInfoData : {}
 };
 
 /**
  * 清除数据
  */
-PartTimeDetailInfoDlg.clearData = function() {
-    this.partTimeDetailInfoData = {};
+PartTimeInfoDlg.clearData = function() {
+    this.partTimeInfoData = {};
 }
 
 /**
@@ -18,8 +18,8 @@ PartTimeDetailInfoDlg.clearData = function() {
  * @param key 数据的名称
  * @param val 数据的具体值
  */
-PartTimeDetailInfoDlg.set = function(key, val) {
-    this.partTimeDetailInfoData[key] = (typeof val == "undefined") ? $("#" + key).val() : val;
+PartTimeInfoDlg.set = function(key, val) {
+    this.partTimeInfoData[key] = (typeof val == "undefined") ? $("#" + key).val() : val;
     return this;
 }
 
@@ -29,21 +29,21 @@ PartTimeDetailInfoDlg.set = function(key, val) {
  * @param key 数据的名称
  * @param val 数据的具体值
  */
-PartTimeDetailInfoDlg.get = function(key) {
+PartTimeInfoDlg.get = function(key) {
     return $("#" + key).val();
 }
 
 /**
  * 关闭此对话框
  */
-PartTimeDetailInfoDlg.close = function() {
-    parent.layer.close(window.parent.PartTimeDetail.layerIndex);
+PartTimeInfoDlg.close = function() {
+    parent.layer.close(window.parent.PartTime.layerIndex);
 }
 
 /**
  * 收集数据
  */
-PartTimeDetailInfoDlg.collectData = function() {
+PartTimeInfoDlg.collectData = function() {
     this
     .set('id')
     .set('partTimeTitle')
@@ -58,6 +58,8 @@ PartTimeDetailInfoDlg.collectData = function() {
     .set('workWelfare')
     .set('workPlace')
     .set('settlementCycle')
+    .set('publishSchool')
+    .set('pubishId')
     .set('publishEmail')
     .set('publishPhone')
     .set('gmtCreate')
@@ -67,40 +69,40 @@ PartTimeDetailInfoDlg.collectData = function() {
 /**
  * 提交添加
  */
-PartTimeDetailInfoDlg.addSubmit = function() {
+PartTimeInfoDlg.addSubmit = function() {
 
     this.clearData();
     this.collectData();
 
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/spark/partTimeDetail/add", function(data){
+    var ajax = new $ax(Feng.ctxPath + "/spark/partTime/add", function(data){
         Feng.success("添加成功!");
-        window.parent.PartTimeDetail.table.refresh();
-        PartTimeDetailInfoDlg.close();
+        window.parent.PartTime.table.refresh();
+        PartTimeInfoDlg.close();
     },function(data){
         Feng.error("添加失败!" + data.responseJSON.message + "!");
     });
-    ajax.set(this.partTimeDetailInfoData);
+    ajax.set(this.partTimeInfoData);
     ajax.start();
 }
 
 /**
  * 提交修改
  */
-PartTimeDetailInfoDlg.editSubmit = function() {
+PartTimeInfoDlg.editSubmit = function() {
 
     this.clearData();
     this.collectData();
 
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/spark/partTimeDetail/update", function(data){
+    var ajax = new $ax(Feng.ctxPath + "/spark/partTime/update", function(data){
         Feng.success("修改成功!");
-        window.parent.PartTimeDetail.table.refresh();
-        PartTimeDetailInfoDlg.close();
+        window.parent.PartTime.table.refresh();
+        PartTimeInfoDlg.close();
     },function(data){
         Feng.error("修改失败!" + data.responseJSON.message + "!");
     });
-    ajax.set(this.partTimeDetailInfoData);
+    ajax.set(this.partTimeInfoData);
     ajax.start();
 }
 
