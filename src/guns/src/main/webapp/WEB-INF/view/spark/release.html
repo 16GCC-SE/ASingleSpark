@@ -164,7 +164,7 @@
         <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
             <label class="col-sm-2 control-label">&nbsp;*兼职标题:</label>
             <div class="col-sm-4">
-                <input type="text" id="PartTimTitle" name="PartTimTitle" onchange="checkusrn()"class="form-control" placeholder="请输入文本">
+                <#input type="text" id="PartTimTitle" name="PartTimTitle" class="form-control" placeholder="请输入文本"/>
                 <span id="checktext1"></span>
             </div>
         </div>
@@ -448,7 +448,7 @@
                         href="#" id="xieyi_btn" class="blue" style="text-decoration: underline;">兼职猫发布兼职协议</a>。</label>
             </div>
             <div>
-                <button type="button" class="btn btn-warning">点击发布</button>
+                <button type="button" class="btn btn-warning" onclick="addSubmit()">点击发布</button>
             </div>
             <p>&nbsp;</p>
 
@@ -462,6 +462,7 @@
 <script src="${ctxPath}/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="${ctxPath}/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <script src="${ctxPath}/static/js/plugins/layer/layer.js"></script>
+<script src="${ctxPath}/static/js/plugins/validate/bootstrapValidator.min.js"></script>
 
 <!-- 自定义js -->
 <script src="${ctxPath}/static/js/hplus.js?v=4.1.0"></script>
@@ -469,5 +470,14 @@
 
 <!-- 第三方插件 -->
 <script src="${ctxPath}/static/js/plugins/pace/pace.min.js"></script>
+
+
+<script>
+   function addSubmit() {
+        if (!this.validate()) {
+            return;
+        }
+    };
+</script>
 </body>
 </html>

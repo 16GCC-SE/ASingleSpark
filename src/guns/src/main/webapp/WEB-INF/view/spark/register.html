@@ -217,12 +217,12 @@
 
 
     <div class="inside-border">
-        <form method="post" action="#">
+        <form method="post" action="/spark/mgr/add" >
             <div class="input">
-                <span><h>用户名</h></span><input onblur="doCheck()" placeholder="以字母开头和数字组成的4-16位字符" id="username" type="text">
+                <span><h>用户名</h></span><input onblur="doCheck()" placeholder="以字母开头和数字组成的4-16位字符" id="username" name="account" type="text">
             </div>
             <div class="input">
-                <span><h>密码</h></span><input onblur="doCheck()" id="password" type="password" placeholder="只能包含字母、数字和下划线的6-12位字符">
+                <span><h>密码</h></span><input onblur="doCheck()" id="password" name="password" type="password" placeholder="只能包含字母、数字和下划线的6-12位字符">
             </div>
 
             <div class="input">
@@ -232,7 +232,7 @@
 
             <div class="input">
                 <span><h>角色</h></span>
-                <select id="hf-sel" name="hf-sel"
+                <select id="hf-sel" name="sparkRole"
                         style="width: 254px;height: 36px;padding-top: 1px;padding-bottom: 1px;">
                     <option value="1">学生</option>
                     <option value="2">商家</option>
@@ -240,7 +240,7 @@
                 </select>
             </div>
             <div class="input">
-                <span><h>手机号</h></span><input onblur="doCheck()" id="phone" type="text">
+                <span><h>手机号</h></span><input onblur="doCheck()" id="phone" name="phone" type="text">
 
             </div>
             <div class="input">
@@ -320,10 +320,10 @@
         }
 
         $.ajax({
-            url:"/checkUser", //用户名地址
+            url:"/spark/mgr/repeatAccount", //用户名地址
             data:{"username":username},
             success:function (data) {
-                if(data.trim()=="true"){
+                if(data==true){
                     $(".toast-message").html("用户名已存在");
                     $("input").removeAttr("class");
                      $("#username").attr("class","error");
@@ -398,7 +398,7 @@
                 }
 
             }
-        })
+        });
         if(!$("input[type='checkbox']").is(':checked')){
             $(".toast-message").html("请同意用户协议和隐私协议");
             $("#toast-container").show();
