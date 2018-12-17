@@ -4,9 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-
-
     <title>注册</title>
     <style>
 
@@ -198,8 +195,6 @@
 
 
     </style>
-
-
 </head>
 <body>
 
@@ -241,21 +236,20 @@
             </div>
             <div class="input">
                 <span><h>手机号</h></span><input onblur="doCheck()" id="phone" name="phone" type="text">
-
             </div>
             <div class="input">
                 <span><h>验证码</h></span>
                 <input onblur="doCheck()" id="code" style="width: 150px;
             height: 30px;  border-bottom-right-radius: 0px;
             border-top-right-radius: 0px;" type="text">
-                <button id="btn-getcode" onclick="setCodeTimer()">获取验证码</button>
+                <button id="btn-getcode" type="button" onclick="setCodeTimer()">获取验证码</button>
             </div>
             <div id="dentifying-code" style="height: 20px" class="dentifying-code">
                 <a id="getCode"></a>
 
             </div>
             <div class="input">
-                <button id="btn-register" onclick="return doCheck()">注册</button>
+                <button id="btn-register" type="submit" onclick="return doCheck()">注册</button>
             </div>
             <div class="agreement">
                 <input onblur="doCheck()" id="checkbox" type="checkbox"/><span>注册帐号即表示您同意并愿意遵守PartTime  <a href="#">用户协议</a> 和 <a
@@ -275,7 +269,7 @@
 
     function reduceTime() {
         document.getElementById("getCode").innerHTML = time + "S重新获取验证码";
-        document.getElementById("btn-getcode").setAttribute("disabled", true);
+        document.getElementById("btn-getcode").setAute("disabled", true);
         time--;
         if (time < 0) {
             document.getElementById("getCode").innerHTML = "";
@@ -285,7 +279,7 @@
             document.getElementById("getCode").setAttribute("onclick", "setCodeTimer ()");
             document.getElementById("getCode").setAttribute("href", "#");
             clearInterval(timer);
-        }
+        }ttrib
     }
 
     function setCodeTimer() {
@@ -294,7 +288,6 @@
         document.getElementById("getCode").removeAttribute("href");
 
     }
-
 
     function doCheck() {
         $("#toast-container").hide();
@@ -332,7 +325,7 @@
                 }
 
             }
-        })
+        });
 
 
         var patrn = /^[\w]{6,12}$/;
@@ -396,7 +389,6 @@
 
                        return false;
                 }
-
             }
         });
         if(!$("input[type='checkbox']").is(':checked')){

@@ -18,7 +18,7 @@
             border: 1px solid #ccc;
         }
             .textarea:focus, .textarea:active{
-            height: 150px;
+            height: 250px;
         }
         .col-sm-4{
             padding-right: 0px;
@@ -98,7 +98,7 @@
     <div class="clearfix">
         <section class="container">
             <div class="pull-left" style="margin-top: 30px;margin-bottom: 10px;">
-                <a class="logo left"> <img src="/static/img/spark/9999.png" style=" width: 210px;height: 75px;"></a>
+                <a class="logo left"> <img src="/static/img/spark/9999.png" style=" width: 180px;height: 65px;"></a>
                 <!--<font size="6" color="#FF8000">发布兼职</font>-->
             </div>
             <!--<div class="pull-right" style="margin-top: 40px; margin-left: 20px;margin-right:40px">-->
@@ -137,7 +137,7 @@
 </section>
 
 
-<form method="POST" action="#" id="releaseInfoForm">
+<form method="POST" action="/spark/partTime/publish" id="releaseInfoForm">
     <section class="container">
         <div class="clearfix"
              style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:40px;margin-bottom:20px">填写详情
@@ -171,7 +171,7 @@
         <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*兼职标题:</label>
             <div class="col-sm-4">
-                <input  type="text" id="PartTimTitle" name="PartTimTitle" class="form-control" placeholder="请输入文本"/>
+                <input  type="text" id="partTimeTitle" name="partTimeTitle" class="form-control" placeholder="请输入文本"/>
                 <span id="checktext1"></span>
             </div>
         </div>
@@ -215,8 +215,26 @@
                     <option value="1">男</option>
                     <option value="2">女</option>
                     <option value="3" selected="">男女不限</option>
-
                 </select>
+            </div>
+        </div>
+
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
+            <label class="col-sm-2 control-label">&nbsp;*工作开始:</label>
+            <div class="col-sm-4">
+                <input   type="text" id="workStartTime" name="workStartTime" class="form-control" placeholder="请输入開始時間"/>
+            </div>
+        </div>
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
+            <label class="col-sm-2 control-label">&nbsp;*工作结束:</label>
+            <div class="col-sm-4">
+                <input   type="text" id="workEndTime" name="workEndTime" class="form-control" placeholder="请输入結束時間"/>
+            </div>
+        </div>
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
+            <label class="col-sm-2 control-label">&nbsp;*工作范围:</label>
+            <div class="col-sm-4">
+                <input  type="text" id="workTimeRange" name="workTimeRange" class="form-control" placeholder="请输入兼职时间段(12:00-15:00)，多个则用' , '分隔"/>
             </div>
         </div>
         <div class="form-group draggable" style="padding-bottom:60px">
@@ -235,11 +253,13 @@
                     <input type="checkbox" name="workWelfares" value="免费培训" id="inlineCheckbox5">免费培训</label>
             </div>
         </div>
-        <div class="form-group draggable">
+        <div class="form-group">
             <label class="col-sm-2 control-label">&nbsp;*兼职内容:</label>
 
-                <div>
-                    <textarea class="textarea" id="descp" rows="10" name="partTimeContent" maxlength="2000" placeholder="请对工作内容、要求、时间、地址、福利、薪资计算及结算方式，进行详细描述" style="width: 375px;margin-left: 15px"></textarea>
+                <div class="col-sm-4" >
+                    <textarea class="textarea form-control" id="descp" rows="10" name="partTimeContent" maxlength="2000"
+                              placeholder="请对工作内容、要求、时间、地址、福利、薪资计算及结算方式，进行详细描述"
+                              style="width: 375px"></textarea>
                 </div>
 
         </div>
@@ -260,6 +280,18 @@
             <div class="col-sm-4">
                 <input type="text" id="TelephoneNumber" name="publishPhone"  class="form-control" placeholder="请输入文本">
                 <span id="checktext3"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="clearfix"
+             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:50px;margin-bottom:20px">学校对接
+        </div>
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
+            <label class="col-sm-2 control-label">&nbsp;*发布学校:</label>
+            <div class="col-sm-4">
+                <input type="text" id="publishSchool" name="publishSchool" class="form-control" placeholder="请输入学校名称">
             </div>
         </div>
     </section>
@@ -319,31 +351,6 @@
 
                     <li><a href="#">山东</a></li>
 
-                    <li><a href="#">江西</a></li>
-
-                    <li><a href="#">山西</a></li>
-
-                    <li><a href="#">辽宁</a></li>
-
-                    <li><a href="#">吉林</a></li>
-
-                    <li><a href="#">黑龙江</a></li>
-
-                    <li><a href="#">福建</a></li>
-
-                    <li><a href="#">香港</a></li>
-
-                    <li><a href="#">新疆</a></li>
-
-                    <li><a href="#">四川</a></li>
-
-                    <li><a href="#">广西</a></li>
-
-                    <li><a href="#">天津市</a></li>
-
-                    <li><a href="#">贵州</a></li>
-
-                    <li><a href="#">海南</a></li>
 
 
                 </ul>
@@ -377,23 +384,6 @@
 
                     <li><a href="#">惠州</a></li>
 
-                    <li><a href="#">韶关</a></li>
-
-                    <li><a href="#">珠海</a></li>
-
-                    <li><a href="#">云浮</a></li>
-
-                    <li><a href="#">江门</a></li>
-
-                    <li><a href="#">湛江</a></li>
-
-                    <li><a href="#">茂名</a></li>
-
-                    <li><a href="#">潮州</a></li>
-
-                    <li><a href="#">肇庆</a></li>
-
-                    <li><a href="#">东莞</a></li>
                 </ul>
             </li>
 
@@ -432,11 +422,11 @@
     <section class="container">
         <div class="row" style="margin-left: 100px;margin-bottom: 50px">
             <div>
-                <label class="checkbox">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" id="agreementId" checked="checked"> 我已阅读并同意<a
-                        href="#" id="xieyi_btn" class="blue" style="text-decoration: underline;">兼职猫发布兼职协议</a>。</label>
+                <label class="checkbox"><input type="checkbox" id="agreementId" checked="checked"> 我已阅读并同意<a
+                        href="#" id="xieyi_btn" class="blue" style="text-decoration: underline;">巧兼职发布兼职协议</a>。</label>
             </div>
             <div>
-                <button type="button" class="btn btn-warning" onclick="return ReleaseInfo.addsubmit()">点击发布</button>
+                <button type="submit" class="btn btn-warning" onclick="return ReleaseInfo.addsubmit()">点击发布</button>
             </div>
             <p>&nbsp;</p>
 
@@ -454,6 +444,7 @@
 <script src="${ctxPath}/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <script src="${ctxPath}/static/js/plugins/layer/layer.js"></script>
 <script src="${ctxPath}/static/js/plugins/validate/bootstrapValidator.min.js"></script>
+<script src="${ctxPath}/static/js/plugins/laydate/laydate.js"></script>
 
 <!-- 自定义js -->
 <script src="${ctxPath}/static/js/hplus.js?v=4.1.0"></script>
@@ -469,17 +460,136 @@
     var ReleaseInfo = {
         userInfoData: {},
         validateFields: {
-            PartTimTitle: {
+            partTimeType: {
+                validators: {
+                    notEmpty: {
+                        message: '兼职类型不能为空'
+                    }
+                }
+            },
+            partTimeTitle: {
                 validators: {
                     notEmpty: {
                         message: '兼职标题不能为空'
                     }
                 }
             },
+            recruiterNumber: {
+                validators: {
+                    notEmpty: {
+                        message: '兼职人数不能为空'
+                    },
+                    integer: {
+                        message: '兼职人数只能为整数且必須大于0',
+                    },
+                    // callback: {
+                    //     message:'',
+                    //     callback: function(input) {
+                    //         return parseInt(input)>0;
+                    //     }
+                    // },
+                }
+            },
+            settlementCycle: {
+                validators: {
+                    notEmpty: {
+                        message: '结算周期不能为空'
+                    }
+                }
+            },
+            workType: {
+                validators: {
+                    notEmpty: {
+                        message: '工作种类不能为空'
+                    }
+                }
+            },
+            workHours: {
+                validators: {
+                    notEmpty: {
+                        message: '基本工资(时薪)不能为空'
+                    },
+                    integer: {
+                        message: '兼职人数只能为整数且必須大于0',
+                    },
+
+                }
+            },
+            genderRequirement: {
+                validators: {
+                    notEmpty: {
+                        message: '性别要求不能为空'
+                    }
+                }
+            },
+            partTimeContent: {
+                validators: {
+                    notEmpty: {
+                        message: '兼职内容不能为空'
+                    }
+                }
+            },
+            publishEmail: {
+                validators: {
+                    notEmpty: {
+                        message: '个人邮箱不能为空'
+                    },
+                    emailAddress: {
+                        message: '邮箱地址格式有误'
+                    }
+                }
+            },
+            publishPhone: {
+                validators: {
+                    notEmpty: {
+                        message: '兼职内容不能为空'
+                    },
+                    phone:{
+                        country:'CN',
+                        message: '号码填写不正确'
+                    }
+                }
+            },
+            workPlace: {
+                validators: {
+                    notEmpty: {
+                        message: '兼职内容不能为空'
+                    }
+                }
+            },
+            workTimeRange: {
+                validators: {
+                    notEmpty: {
+                        message: '兼职内容不能为空'
+                    }
+                }
+            },
+            workStartTime: {
+                validators: {
+                    notEmpty: {
+                        message: '工作开始时间不能为空'
+                    },
+                }
+            },
+            workEndTime: {
+                validators: {
+                    notEmpty: {
+                        message: '工作结束时间不能为空'
+                    },
+                }
+            },
+            publishSchool: {
+                validators: {
+                    notEmpty: {
+                        message: '发布学校不能为空'
+                    },
+                }
+            },
+
+
+
         }
     };
-
-
 
    /**
     * 验证数据是否为空
@@ -491,13 +601,16 @@
    };
 
     ReleaseInfo.addsubmit = function () {
-
         if (!this.validate()) {
             return;
         }
-
     };
-
+    laydate.render({
+        elem: '#workStartTime'
+    });
+    laydate.render({
+        elem: '#workEndTime'
+    });
 
     $(function () {
         Feng.initValidator("releaseInfoForm", ReleaseInfo.validateFields);

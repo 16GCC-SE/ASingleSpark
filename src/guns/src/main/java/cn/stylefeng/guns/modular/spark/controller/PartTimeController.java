@@ -77,6 +77,8 @@ public class PartTimeController extends BaseController {
             EntityWrapper<PartTime> partTimeDetailEntityWrapper = new EntityWrapper<>();
             Wrapper<PartTime> type = partTimeDetailEntityWrapper.like("part_time_type","%"+condition+"%");
             List<PartTime> partTime = partTimeService.selectList(type);
+
+
             return partTime;
         }else {
             List<PartTime> partTimeDetails = partTimeService.selectList(null);
@@ -105,6 +107,24 @@ public class PartTimeController extends BaseController {
 //        }
         partTimeService.insert(partTime);
         return SUCCESS_TIP;
+    }
+
+    /**
+     * 新增兼职详情数据操作
+     */
+    @RequestMapping(value = "/publish")
+    public String publish(PartTime partTime,String[] workWelfares) {
+        //填充剩余数据
+        StringBuffer workWelf=new StringBuffer();
+        for(int i=0;i<workWelfares.length;i++){
+            workWelf.append(workWelfares[i]);
+            if(i<workWelfares.length-1) workWelf.append(",");
+        }
+        partTime.setWorkWelfare(workWelf.toString());
+        partTime.setGmtCreate(new Date());
+        partTime.setGmtModified(new Date());
+        partTimeService.insert(partTime);
+        return "/spark/index.html";
     }
 
     /**
