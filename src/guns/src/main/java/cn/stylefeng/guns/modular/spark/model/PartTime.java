@@ -54,13 +54,13 @@ public class PartTime extends Model<PartTime> {
      * 工作开始时间
      */
     @TableField("work_start_time")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy年-MM月-dd日")
     private Date workStartTime;
     /**
      * 工作结束时间
      */
     @TableField("work_end_time")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    @DateTimeFormat(pattern = "yyyy年-MM月-dd日")
     private Date workEndTime;
     /**
      * 工作时间范围，一天可能有多个非连续时间段，用‘ ，’分割
@@ -72,6 +72,11 @@ public class PartTime extends Model<PartTime> {
      */
     @TableField("gender_requirement")
     private Integer genderRequirement;
+    /**
+     * 工资
+     */
+    @TableField("work_salary")
+    private String workSalary;
     /**
      * 工作福利，每项福利用逗号分隔
      */
@@ -201,6 +206,14 @@ public class PartTime extends Model<PartTime> {
         this.genderRequirement = genderRequirement;
     }
 
+    public String getWorkSalary() {
+        return workSalary;
+    }
+
+    public void setWorkSalary(String workSalary) {
+        this.workSalary = workSalary;
+    }
+
     public String getWorkWelfare() {
         return workWelfare;
     }
@@ -291,6 +304,7 @@ public class PartTime extends Model<PartTime> {
         ", workEndTime=" + workEndTime +
         ", workTimeRange=" + workTimeRange +
         ", genderRequirement=" + genderRequirement +
+        ", workSalary=" + workSalary +
         ", workWelfare=" + workWelfare +
         ", workPlace=" + workPlace +
         ", settlementCycle=" + settlementCycle +
