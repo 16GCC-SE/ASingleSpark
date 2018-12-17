@@ -205,7 +205,7 @@
                 </ul>
                 <table class="table table-hover table-striped" style="margin-top: 10px;">
 
-                    <tr v-for="(item, index) in items">
+                    <tr v-for="(item, index) in items" \@click="forward(item.id)">
                         <td>
                             <div class="job-type" style="background-color: deeppink;">
                                 <span>{{item.partTimeType}}</span>
@@ -218,7 +218,7 @@
                             <span ><i class="glyphicon glyphicon-map-marker"></i>&nbsp;{{item.workPlace}}</span>
                         </td>
                         <td>
-                            <span ><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;{{item.workWelfare}}</span>
+                            <span ><i class="glyphicon glyphicon-user" aria-hidden="true"></i>&nbsp;{{item.recruiterNumber}}</span>
                         </td>
                         <td>
                             <i class="glyphicon glyphicon-time"></i> {{item.gmtCreate}}
@@ -543,13 +543,13 @@
                 "1","2","3","...","10","11","12"
             ],
             items: [
-                {partTimeTile: "卢大雨1", gmtCreate: "2018-10-01", partTimeType: "学生", workWelfare: "11",workPlace:"花都"},
-                {partTimeTile: "卢大雨2", gmtCreate: "2018-10-01", partTimeType: "学生", workWelfare: "11",workPlace:"花都"},
-                {partTimeTile: "卢大雨3", gmtCreate: "2018-10-01", partTimeType: "学生", workWelfare: "22",workPlace:"花都"},
-                {partTimeTile: "卢大雨4", gmtCreate: "2018-10-01", partTimeType: "学生", workWelfare: "33",workPlace:"花都"},
-                {partTimeTile: "卢大雨5", gmtCreate: "2018-10-01", partTimeType: "学生", workWelfare: "22",workPlace:"花都"},
-                {partTimeTile: "卢大雨6", gmtCreate: "2018-10-01", partTimeType: "学生", workWelfare: "33",workPlace:"花都"},
-                {partTimeTile: "卢大雨7", gmtCreate: "2018-10-01", partTimeType: "学生", workWelfare: "44",workPlace:"花都"},
+                {partTimeTile: "卢大雨1", gmtCreate: "2018-10-01", partTimeType: "学生", recruiterNumber: "11",workPlace:"花都"},
+                {partTimeTile: "卢大雨2", gmtCreate: "2018-10-01", partTimeType: "学生", recruiterNumber: "11",workPlace:"花都"},
+                {partTimeTile: "卢大雨3", gmtCreate: "2018-10-01", partTimeType: "学生", recruiterNumber: "22",workPlace:"花都"},
+                {partTimeTile: "卢大雨4", gmtCreate: "2018-10-01", partTimeType: "学生", recruiterNumber: "33",workPlace:"花都"},
+                {partTimeTile: "卢大雨5", gmtCreate: "2018-10-01", partTimeType: "学生", recruiterNumber: "22",workPlace:"花都"},
+                {partTimeTile: "卢大雨6", gmtCreate: "2018-10-01", partTimeType: "学生", recruiterNumber: "33",workPlace:"花都"},
+                {partTimeTile: "卢大雨7", gmtCreate: "2018-10-01", partTimeType: "学生", recruiterNumber: "44",workPlace:"花都"},
 
             ],
 
@@ -586,6 +586,9 @@
                     }
 
                 });
+            },
+            forward:function (id) {
+                window.location.href="/spark/partTime/partTimeDetail/"+id;
             }
         },
         mounted:function(){

@@ -170,7 +170,7 @@ public class PartTimeController extends BaseController {
             workWelf.append(workWelfares[i]);
             if(i<workWelfares.length-1) workWelf.append(",");
         }
-        partTime.setWorkWelfare(workWelf.toString());
+         partTime.setWorkWelfare(workWelf.toString());
         partTime.setGmtCreate(new Date());
         partTime.setGmtModified(new Date());
         partTimeService.insert(partTime);
