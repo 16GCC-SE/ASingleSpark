@@ -5,6 +5,10 @@ import cn.stylefeng.guns.core.common.annotion.Permission;
 import cn.stylefeng.guns.core.common.constant.dictmap.DeptDict;
 import cn.stylefeng.guns.core.common.constant.factory.PageFactory;
 import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.core.common.node.MenuNode;
+import cn.stylefeng.guns.core.shiro.ShiroKit;
+import cn.stylefeng.guns.core.util.ApiMenuFilter;
+import cn.stylefeng.guns.modular.system.model.User;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
@@ -12,16 +16,15 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.beans.factory.annotation.Autowired;
 import cn.stylefeng.guns.core.log.LogObjectHolder;
-import org.springframework.web.bind.annotation.RequestParam;
 import cn.stylefeng.guns.modular.spark.model.PartTime;
 import cn.stylefeng.guns.modular.spark.service.IPartTimeService;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 
@@ -39,6 +42,53 @@ public class PartTimeController extends BaseController {
 
     @Autowired
     private IPartTimeService partTimeService;
+
+    @RequestMapping("/partTimeDetail/{id}")
+    public String getDetailsPartTimeId(Model model,@PathVariable String id) {
+        Date date = null;
+        PartTime partTime = partTimeService.selectById(id);
+        model.addAttribute("partTime",partTime);//key-value
+
+        DateFormat dFormat = new SimpleDateFormat("yyyy-MM-dd");
+        date = partTime.getWorkStartTime();
+        String wst = dFormat.format(date);
+        model.addAttribute("workStartTime",wst);
+        date = partTime.getWorkEndTime();
+        String wet = dFormat.format(date);
+        model.addAttribute("workEndTime",wet);
+        date = partTime.getGmtCreate();
+        String gc = dFormat.format(date);
+        model.addAttribute("gmtCreate",gc);
+
+        int wt = partTime.getWorkType();
+        if(wt == 0){
+            model.addAttribute("workType","短招");
+        }else if(wt == 1){
+            model.addAttribute("workType","长招");
+        }
+
+        int gr = partTime.getGenderRequirement();
+        if(gr == 1){
+            model.addAttribute("genderRequirement","男生优先");
+        }else if(gr == 2){
+            model.addAttribute("genderRequirement","女生优先");
+        }else if(gr == 3){
+            model.addAttribute("genderRequirement","男、女都招");
+        }
+
+        int sc = partTime.getSettlementCycle();
+        if(sc == 1){
+            model.addAttribute("settlementCycle","日结");
+        }else if(sc == 2){
+            model.addAttribute("settlementCycle","周结");
+        }else if(sc == 3){
+            model.addAttribute("settlementCycle","月结");
+        }else if(sc == 4){
+            model.addAttribute("settlementCycle","完工结算");
+        }
+        return "/spark/details_of_job.html";
+    }
+
 
     /**
      * 跳转到兼职详情数据操作首页
