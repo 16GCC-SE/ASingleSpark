@@ -3,12 +3,14 @@ package cn.stylefeng.guns.modular.spark.controller;
 import cn.stylefeng.guns.core.common.annotion.BussinessLog;
 import cn.stylefeng.guns.core.common.annotion.Permission;
 import cn.stylefeng.guns.core.common.constant.dictmap.DeptDict;
+import cn.stylefeng.guns.core.common.constant.factory.PageFactory;
 import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
+import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -80,6 +82,16 @@ public class PartTimeController extends BaseController {
             List<PartTime> partTimeDetails = partTimeService.selectList(null);
             return partTimeDetails;
         }
+    }
+
+    /**
+     * 分页获取（和查找）兼职详情数据操作列表
+     */
+    @RequestMapping(value = "/page")
+    @ResponseBody
+    public Object page() {
+        Page<PartTime> page = new PageFactory<PartTime>().defaultPage();
+        return partTimeService.selectPage(page);
     }
 
     /**

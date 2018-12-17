@@ -81,21 +81,15 @@ public class SparkUserMgrController extends BaseController {
      * 添加平台用户
      */
     @RequestMapping("/add")
-    @ResponseBody
     @BussinessLog(value = "添加管理员", key = "account", dict = UserDict.class)
-    @ApiOperation(value = "注册兼职平台新用户", httpMethod = "POST", notes = "注册兼职平台新用户", response = ResponseData.class)
-    @ApiImplicitParams({
-            @ApiImplicitParam(paramType = "form",name = "sparkRole",value = "平台用户角色",dataType = "Integer" ),
-    })
-    public ResponseData add(@Valid @ModelAttribute UserDto user, BindingResult result) {
+//    @ApiOperation(value = "注册兼职平台新用户", httpMethod = "POST", notes = "注册兼职平台新用户", response = ResponseData.class)
+//    @ApiImplicitParams({
+//            @ApiImplicitParam(paramType = "form",name = "sparkRole",value = "平台用户角色",dataType = "Integer" ),
+//    })
+    public String add(@Valid @ModelAttribute UserDto user, BindingResult result) {
 
         if (result.hasErrors()) {
             throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
-        }
-        // 判断账号是否重复（account）
-        User theUser = userService.getByAccount(user.getAccount());
-        if (theUser != null) {
-            throw new ServiceException(BizExceptionEnum.USER_ALREADY_REG);
         }
         //赋予平台角色
         if(user.getSparkRole()==1){
@@ -109,6 +103,7 @@ public class SparkUserMgrController extends BaseController {
         String username=user.getAccount();
         String password=user.getPassword();
         // 完善账号信息
+        user.setName(username);
         user.setSalt(ShiroKit.getRandomSalt(5));
         user.setPassword(ShiroKit.md5(user.getPassword(), user.getSalt()));
         user.setStatus(ManagerStatus.OK.getCode());
@@ -124,6 +119,19 @@ public class SparkUserMgrController extends BaseController {
         LogManager.me().executeLog(LogTaskFactory.loginLog(shiroUser.getId(), getIp()));
         ShiroKit.getSession().setAttribute("sessionFlag", true);
 
-        return SUCCESS_TIP;
+        return REDIRECT+"/spark/index";
+    }
+
+
+    @RequestMapping("/repeatAccount")
+    @ResponseBody
+    public boolean repeatAccount(String username){
+        // 判断账号是否重复（account）
+        User theUser = userService.getByAccount(username);
+        if (theUser != null) {
+//            throw new ServiceException(BizExceptionEnum.USER_ALREADY_REG);
+            return true;
+        }
+        return false;
     }
 }

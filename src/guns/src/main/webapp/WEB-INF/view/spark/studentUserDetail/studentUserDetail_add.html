@@ -1,14 +1,19 @@
 @layout("/common/_container.html"){
 <div class="ibox float-e-margins">
     <div class="ibox-content">
-        <div class="form-horizontal">
+        <div class="form-horizontal" id="userInfoForm">
 
             <div class="row">
                 <div class="col-sm-6 b-r">
                             <#input id="id" name="" underline="true"/>
                             <#input id="studentId" name="学号" underline="true"/>
                             <#input id="studentPassword" name="密码" underline="true"/>
-                            <#input id="name" name="真实姓名" underline="true"/>
+                            <!--<#input id="name"  name="真实姓名" underline="true"/>-->
+                    <div class="form-group">
+
+                            <input  id="name" class="form-control" name="name" underline="true"/>
+
+                    </div>
                             <#input id="avatar" name="真实头像" underline="true"/>
                             <#input id="phone" name="手机号码"/>
                 </div>

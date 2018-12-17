@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>兼职发布</title>
@@ -8,7 +8,6 @@
     <link href="${ctxPath}/static/css/font-awesome.min.css?v=4.4.0" rel="stylesheet">
     <link href="${ctxPath}/static/css/style.css?v=4.1.0" rel="stylesheet">
     <style>
-
             .textarea {
             resize: none;
             width: 400px;
@@ -18,10 +17,13 @@
             margin-top: -5px;
             border: 1px solid #ccc;
         }
-            .textarea:focus,
-        .textarea:active{
+            .textarea:focus, .textarea:active{
             height: 150px;
         }
+        .col-sm-4{
+            padding-right: 0px;
+        }
+
     </style>
     <script type="text/javascript">
         function checkusrn() {
@@ -77,11 +79,16 @@
                     <li class="mouseHover" style="margin-left: 15px"><a href="#"><span style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">首页</a></li>
-                    <li><a href="#">申请社区赞助</a></li>
+                    <li ><a href="/spark/index">首页</a></li>
+                    <li ><a href="#">申请社区赞助</a></li>
                     <li><a href="#">企业服务</a></li>
+                    @if(shiro.getUser() == null){
                     <li><a href="/spark/register">注册</a></li>
-                    <li style="margin-right: 15px"><a href="#">登录</a></li>
+                    <li style="margin-right: 15px"><a href="/spark/login" >登录</a></li>
+                    @}else{
+                    <li><a href="">欢迎您，${shiro.getUser().name}</a></li>
+                    <li><a href="/spark/logout">退出</a></li>
+                    @}
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div>
@@ -90,16 +97,16 @@
 <header class="w_main">
     <div class="clearfix">
         <section class="container">
-            <div class="pull-left" style="margin-top: 40px; margin-left: 20px;margin-bottom: 10px;">
-                <a class="logo left"> <img src="/static/img/spark/777.png" style=" width: 150px;height: 50px;"></a>
-                <font size="6" color="#FF8000">发布兼职</font>
+            <div class="pull-left" style="margin-top: 30px;margin-bottom: 10px;">
+                <a class="logo left"> <img src="/static/img/spark/9999.png" style=" width: 210px;height: 75px;"></a>
+                <!--<font size="6" color="#FF8000">发布兼职</font>-->
             </div>
-            <div class="pull-right" style="margin-top: 40px; margin-left: 20px;margin-right:40px">
-                <button type="button" class="btn btn-warning">申请企业认证</button>
-            </div>
+            <!--<div class="pull-right" style="margin-top: 40px; margin-left: 20px;margin-right:40px">-->
+                <!--<button type="button" class="btn btn-warning">申请企业认证</button>-->
+            <!--</div>-->
         </section>
     </div>
-    <section class="container">
+    <section class="container" style="font-size:14px">
         <hr style="height: 2px;row:1000px; background-color: #F39800">
         <a>巧兼职</a>
         <font> > 发布兼职</font>
@@ -130,15 +137,15 @@
 </section>
 
 
-
+<form method="POST" action="#" id="releaseInfoForm">
     <section class="container">
         <div class="clearfix"
-             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">填写详情
+             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:40px;margin-bottom:20px">填写详情
         </div>
-        <div class="form-group draggable" style="padding-bottom:40px">
+        <div class="form-group draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*兼职类型:</label>
             <div class="col-sm-4">
-                <select class="form-control" name="">
+                <select class="form-control" name="partTimeType">
                     <option>其他</option>
                     <option>销售</option>
                     <option>安保</option>
@@ -161,129 +168,111 @@
                 </select>
             </div>
         </div>
-        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*兼职标题:</label>
             <div class="col-sm-4">
-                <input type="text" id="PartTimTitle" name="PartTimTitle" onchange="checkusrn()"class="form-control" placeholder="请输入文本">
+                <input  type="text" id="PartTimTitle" name="PartTimTitle" class="form-control" placeholder="请输入文本"/>
                 <span id="checktext1"></span>
             </div>
         </div>
-        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*招聘人数:</label>
             <div class="col-sm-4">
-                <input type="text" id="population" name="population" onchange="population()" class="form-control" placeholder="请输入文本">
+                <input type="text" id="population" name="recruiterNumber" onchange="population()" class="form-control" placeholder="请输入文本">
                 <span id="checktext2"></span>
             </div>
         </div>
-        <div class="form-group draggable" style="padding-bottom:40px">
+        <div class="form-group draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*结算周期:</label>
             <div class="col-sm-4">
-                <select class="form-control" name="">
-                    <option value="0" selected="">纯工资结算</option>
-                    <option value="1">纯提成结算</option>
-                    <option value="2">工资+提成结算</option>
+                <select class="form-control" name="settlementCycle">
+                    <option value="1" selected="">日结</option>
+                    <option value="2">周结</option>
+                    <option value="3">月结</option>
+                    <option value="4">完工结</option>
                 </select>
             </div>
         </div>
-        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*基本工资:</label>
             <div class="col-sm-4">
-                <input type="text" name="" class="form-control" placeholder="请输入文本">
+                    <input type="text" name="workHours" class="form-control" placeholder="请输入文本">
             </div>
         </div>
-        <div class="form-group draggable" style="padding-bottom:40px">
+        <div class="form-group draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*工作种类:</label>
             <div class="col-sm-4">
-                <select class="form-control" name="">
+                <select class="form-control" name="workType">
                     <option value="0" selected="">长兼职</option>
                     <option value="1">短兼职</option>
-
                 </select>
             </div>
         </div>
-        <div class="form-group draggable" style="padding-bottom:40px">
+        <div class="form-group draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*性别要求:</label>
             <div class="col-sm-4">
-                <select class="form-control" name="">
-                    <option value="0" selected="">男女不限</option>
+                <select class="form-control" name="genderRequirement">
                     <option value="1">男</option>
                     <option value="2">女</option>
+                    <option value="3" selected="">男女不限</option>
 
                 </select>
             </div>
         </div>
-
-        <div class="form-group draggable" style="padding-bottom:40px">
+        <div class="form-group draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*工作福利:</label>
 
             <div class="col-sm-5">
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option1" id="inlineCheckbox1">包吃</label>
+                    <input type="checkbox" name="workWelfares" value="包吃" id="inlineCheckbox1">包吃</label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option2" id="inlineCheckbox2">包住</label>
+                    <input type="checkbox" name="workWelfares" value="包住" id="inlineCheckbox2">包住</label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option3" id="inlineCheckbox3">交通补贴</label>
+                    <input type="checkbox" name="workWelfares" value="交通补贴" id="inlineCheckbox3">交通补贴</label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option1" id="inlineCheckbox4">有提成</label>
+                    <input type="checkbox" name="workWelfares" value="有提成" id="inlineCheckbox4">有提成</label>
                 <label class="checkbox-inline">
-                    <input type="checkbox" value="option2" id="inlineCheckbox5">免费培训</label>
+                    <input type="checkbox" name="workWelfares" value="免费培训" id="inlineCheckbox5">免费培训</label>
             </div>
         </div>
-
         <div class="form-group draggable">
-            <label class="col-sm-2 control-label">&nbsp;*兼职类型:</label>
+            <label class="col-sm-2 control-label">&nbsp;*兼职内容:</label>
 
                 <div>
-                    <textarea class="textarea" id="descp" rows="10" maxlength="2000" placeholder="请对工作内容、要求、时间、地址、福利、薪资计算及结算方式，进行详细描述" style="width: 375px;margin-left: 15px"></textarea>
+                    <textarea class="textarea" id="descp" rows="10" name="partTimeContent" maxlength="2000" placeholder="请对工作内容、要求、时间、地址、福利、薪资计算及结算方式，进行详细描述" style="width: 375px;margin-left: 15px"></textarea>
                 </div>
 
         </div>
-
-
     </section>
 
     <section class="container">
         <div class="clearfix"
              style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:50px;margin-bottom:20px">工作对接
         </div>
-        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*简历邮箱:</label>
             <div class="col-sm-4">
-                <input type="text" name="" class="form-control" placeholder="请输入文本">
+                <input type="text" name="publishEmail" class="form-control" placeholder="请输入文本">
             </div>
         </div>
-        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
             <label class="col-sm-2 control-label">&nbsp;*咨询电话:</label>
             <div class="col-sm-4">
-                <input type="text" id="TelephoneNumber" name="TelephoneNumber" onchange="TelephoneNumber()" class="form-control" placeholder="请输入文本">
+                <input type="text" id="TelephoneNumber" name="publishPhone"  class="form-control" placeholder="请输入文本">
                 <span id="checktext3"></span>
-            </div>
-        </div>
-        <div class="form-group draggable ui-draggable" style="padding-bottom:40px">
-            <label class="col-sm-2 control-label">&nbsp;*联系人:</label>
-            <div class="col-sm-4">
-                <input type="text" name="" class="form-control" placeholder="请输入文本">
-            </div>
-        </div>
-        <div class="g-b10">
-            <span> * 巧兼职报名: 应聘者直接发送简历至您的“<span class="blue">巧兼职企业账号-&gt;我的发布</span>”，并同步发送邮件通知</span>
-        </div>
-        <div class="form-group draggable ui-draggable">
-            <div class="col-sm-5">
-                <label class="radio-inline">
-                    <input type="radio" value="option1" id="optionsRadios1" name="optionsRadios">默认使用巧兼职报名</label>
-                <label class="radio-inline">
-                    <input type="radio" value="option2" id="optionsRadios2" name="optionsRadios">短信报名</label>
-                <label class="radio-inline">
-                    <input type="radio" value="option3" id="optionsRadios3" name="optionsRadios">电话报名</label>
-
             </div>
         </div>
     </section>
 
     <section class="container" style="margin-bottom: 30px">
+        <div class="form-group draggable ui-draggable" style="padding-bottom:60px">
+            <label class="col-sm-2 control-label">&nbsp;*工作地點:</label>
+            <div class="col-sm-4">
+                <input type="text" id="workPlace" name="workPlace"  class="form-control" placeholder="请输入地址">
+            </div>
+        </div>
         <div class="clearfix"
-             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-top:70px;margin-bottom:20px">工作地点
+             style="background: #F3F3FA;border: 1px solid #000;padding: 10px;margin-bottom:20px">工作地点
         </div>
         <ul class="nav nav-tabs">
             <li class="active"><a href="#">*工作地点:</a></li>
@@ -439,7 +428,6 @@
                 </ul>
             </li>
         </ul>
-
     </section>
     <section class="container">
         <div class="row" style="margin-left: 100px;margin-bottom: 50px">
@@ -448,13 +436,16 @@
                         href="#" id="xieyi_btn" class="blue" style="text-decoration: underline;">兼职猫发布兼职协议</a>。</label>
             </div>
             <div>
-                <button type="button" class="btn btn-warning">点击发布</button>
+                <button type="button" class="btn btn-warning" onclick="return ReleaseInfo.addsubmit()">点击发布</button>
             </div>
             <p>&nbsp;</p>
 
             <p>&nbsp;</p>
         </div>
     </section>
+</form>
+
+
 
 <!-- 全局js -->
 <script src="${ctxPath}/static/js/jquery.min.js?v=2.1.4"></script>
@@ -462,12 +453,55 @@
 <script src="${ctxPath}/static/js/plugins/metisMenu/jquery.metisMenu.js"></script>
 <script src="${ctxPath}/static/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 <script src="${ctxPath}/static/js/plugins/layer/layer.js"></script>
+<script src="${ctxPath}/static/js/plugins/validate/bootstrapValidator.min.js"></script>
 
 <!-- 自定义js -->
 <script src="${ctxPath}/static/js/hplus.js?v=4.1.0"></script>
 <script type="text/javascript" src="${ctxPath}/static/js/contabs.js"></script>
+<script src="${ctxPath}/static/js/common/Feng.js"></script>
 
 <!-- 第三方插件 -->
 <script src="${ctxPath}/static/js/plugins/pace/pace.min.js"></script>
+
+
+<script>
+
+    var ReleaseInfo = {
+        userInfoData: {},
+        validateFields: {
+            PartTimTitle: {
+                validators: {
+                    notEmpty: {
+                        message: '兼职标题不能为空'
+                    }
+                }
+            },
+        }
+    };
+
+
+
+   /**
+    * 验证数据是否为空
+    */
+   ReleaseInfo.validate = function () {
+       $('#releaseInfoForm').data("bootstrapValidator").resetForm();
+       $('#releaseInfoForm').bootstrapValidator('validate');
+       return $("#releaseInfoForm").data('bootstrapValidator').isValid();
+   };
+
+    ReleaseInfo.addsubmit = function () {
+
+        if (!this.validate()) {
+            return;
+        }
+
+    };
+
+
+    $(function () {
+        Feng.initValidator("releaseInfoForm", ReleaseInfo.validateFields);
+    });
+</script>
 </body>
 </html>
