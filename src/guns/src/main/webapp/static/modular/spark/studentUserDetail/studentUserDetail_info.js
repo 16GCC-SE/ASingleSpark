@@ -2,23 +2,7 @@
  * 初始化学生认证详情对话框
  */
 var StudentUserDetailInfoDlg = {
-    studentUserDetailInfoData : {},
-    validateFields: {
-        account: {
-            validators: {
-                notEmpty: {
-                    message: '账户不能为空'
-                }
-            }
-        },
-        name: {
-            validators: {
-                notEmpty: {
-                    message: '姓名不能为空'
-                }
-            }
-        },
-    }
+    studentUserDetailInfoData : {}
 };
 
 /**
@@ -75,25 +59,12 @@ StudentUserDetailInfoDlg.collectData = function() {
 }
 
 /**
- * 验证数据是否为空
- */
-StudentUserDetailInfoDlg.validate = function () {
-    $('#userInfoForm').data("bootstrapValidator").resetForm();
-    $('#userInfoForm').bootstrapValidator('validate');
-    return $("#userInfoForm").data('bootstrapValidator').isValid();
-};
-
-/**
  * 提交添加
  */
 StudentUserDetailInfoDlg.addSubmit = function() {
 
     this.clearData();
     this.collectData();
-
-    if (!this.validate()) {
-        return;
-    }
 
     //提交信息
     var ajax = new $ax(Feng.ctxPath + "/spark/studentUserDetail/add", function(data){
@@ -127,6 +98,6 @@ StudentUserDetailInfoDlg.editSubmit = function() {
     ajax.start();
 }
 
-$(function () {
-    Feng.initValidator("userInfoForm", StudentUserDetailInfoDlg.validateFields);
+$(function() {
+
 });

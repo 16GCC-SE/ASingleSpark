@@ -143,7 +143,7 @@ public class ShiroConfig {
         /**
          * 默认的登陆访问url
          */
-        shiroFilter.setLoginUrl("/login");
+        shiroFilter.setLoginUrl("/spark/login");
         /**
          * 登陆成功后跳转的url
          */

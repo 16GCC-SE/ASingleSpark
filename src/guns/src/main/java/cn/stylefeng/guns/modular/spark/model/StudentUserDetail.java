@@ -6,8 +6,6 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serializable;
 
 /**
@@ -16,7 +14,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author 李利光
- * @since 2018-12-10
+ * @since 2018-12-20
  */
 @TableName("spark_student_user_detail")
 public class StudentUserDetail extends Model<StudentUserDetail> {
@@ -55,7 +53,6 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      * 入学日期
      */
     @TableField("enrollment_date")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date enrollmentDate;
     /**
      * sys_user表的用户id
@@ -66,13 +63,11 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      * 数据创建时间
      */
     @TableField("gmt_create")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtCreate;
     /**
      * 数据修改时间
      */
     @TableField("gmt_modified")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtModified;
 
 

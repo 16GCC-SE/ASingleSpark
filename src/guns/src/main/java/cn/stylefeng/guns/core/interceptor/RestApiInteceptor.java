@@ -69,6 +69,7 @@ public class RestApiInteceptor extends HandlerInterceptorAdapter {
             RenderUtil.renderJson(response, new ErrorResponseData(BizExceptionEnum.TOKEN_ERROR.getCode(), BizExceptionEnum.TOKEN_ERROR.getMessage()));
             return false;
         }
+        request.setAttribute("jwt_user_id",JwtTokenUtil.getClaimFromToken(authToken).getSubject());
         return true;
     }
 

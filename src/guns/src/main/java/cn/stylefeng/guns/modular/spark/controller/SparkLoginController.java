@@ -15,6 +15,8 @@
  */
 package cn.stylefeng.guns.modular.spark.controller;
 
+import cn.stylefeng.guns.config.properties.GunsProperties;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
 import cn.stylefeng.guns.core.common.exception.InvalidKaptchaException;
 import cn.stylefeng.guns.core.common.node.MenuNode;
 import cn.stylefeng.guns.core.log.LogManager;
@@ -28,6 +30,7 @@ import cn.stylefeng.guns.modular.system.service.IMenuService;
 import cn.stylefeng.guns.modular.system.service.IUserService;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
+import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 import com.google.code.kaptcha.Constants;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.subject.Subject;
@@ -36,8 +39,13 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
 import java.util.List;
+import java.util.UUID;
 
 import static cn.stylefeng.roses.core.util.HttpContext.getIp;
 
@@ -56,6 +64,10 @@ public class SparkLoginController extends BaseController {
 
     @Autowired
     private IUserService userService;
+
+
+    @Autowired
+    private GunsProperties gunsProperties;
 
     /**
      * 跳转到主页
@@ -125,4 +137,22 @@ public class SparkLoginController extends BaseController {
         deleteAllCookie();
         return REDIRECT + "/spark/index";
     }
+
+    /**
+     * 上传图片
+     */
+    @RequestMapping(method = RequestMethod.POST, path = "/index/mgr/upload")
+    @ResponseBody
+    public String upload(@RequestPart("file") MultipartFile picture) {
+
+        String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix(picture.getOriginalFilename());
+        try {
+            String fileSavePath = gunsProperties.getFileUploadPath();
+            picture.transferTo(new File(fileSavePath + pictureName));
+        } catch (Exception e) {
+            throw new ServiceException(BizExceptionEnum.UPLOAD_ERROR);
+        }
+        return pictureName;
+    }
+
 }

@@ -16,6 +16,7 @@
 package cn.stylefeng.guns.core.util;
 
 import cn.stylefeng.guns.core.common.constant.JwtConstants;
+import cn.stylefeng.guns.modular.api.ApiController;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import io.jsonwebtoken.*;
 

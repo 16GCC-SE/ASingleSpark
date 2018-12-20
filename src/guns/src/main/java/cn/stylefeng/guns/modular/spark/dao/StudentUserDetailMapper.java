@@ -1,6 +1,5 @@
 package cn.stylefeng.guns.modular.spark.dao;
 
-
 import cn.stylefeng.guns.modular.spark.model.StudentUserDetail;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
@@ -10,7 +9,7 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * </p>
  *
  * @author 李利光
- * @since 2018-12-10
+ * @since 2018-12-20
  */
 public interface StudentUserDetailMapper extends BaseMapper<StudentUserDetail> {
 

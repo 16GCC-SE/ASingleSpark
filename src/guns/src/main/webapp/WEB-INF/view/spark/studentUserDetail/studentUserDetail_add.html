@@ -1,29 +1,24 @@
 @layout("/common/_container.html"){
 <div class="ibox float-e-margins">
     <div class="ibox-content">
-        <div class="form-horizontal" id="userInfoForm">
+        <div class="form-horizontal">
 
             <div class="row">
                 <div class="col-sm-6 b-r">
                             <#input id="id" name="" underline="true"/>
                             <#input id="studentId" name="学号" underline="true"/>
                             <#input id="studentPassword" name="密码" underline="true"/>
-                            <!--<#input id="name"  name="真实姓名" underline="true"/>-->
-                    <div class="form-group">
-
-                            <input  id="name" class="form-control" name="name" underline="true"/>
-
-                    </div>
+                            <#input id="name" name="真实姓名" underline="true"/>
                             <#input id="avatar" name="真实头像" underline="true"/>
                             <#input id="phone" name="手机号码"/>
                 </div>
 
                 <div class="col-sm-6">
                             <#input id="email" name="电子邮箱" underline="true"/>
-                            <#input id="enrollmentDate" type="text" name="入学日期" underline="true"/>
+                            <#input id="enrollmentDate" name="入学日期" underline="true"/>
                             <#input id="sysUserId" name="sys_user表的用户id" underline="true"/>
-                            <#input id="gmtCreate" type="text" name="数据创建时间" underline="true"/>
-                            <#input id="gmtModified" type="text" name="数据修改时间" underline="true"/>
+                            <#input id="gmtCreate" name="数据创建时间" underline="true"/>
+                            <#input id="gmtModified" name="数据修改时间" underline="true"/>
                 </div>
             </div>
 
@@ -38,15 +33,4 @@
     </div>
 </div>
 <script src="${ctxPath}/static/modular/spark/studentUserDetail/studentUserDetail_info.js"></script>
-<script>
-    laydate.render({
-        elem: '#gmtCreate'
-    });
-    laydate.render({
-        elem: '#gmtModified'
-    });
-    laydate.render({
-        elem: '#enrollmentDate'
-    });
-</script>
 @}

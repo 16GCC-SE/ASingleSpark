@@ -1,6 +1,5 @@
 package cn.stylefeng.guns.modular.spark.service;
 
-
 import cn.stylefeng.guns.modular.spark.model.StudentUserDetail;
 import com.baomidou.mybatisplus.service.IService;
 
@@ -10,7 +9,7 @@ import com.baomidou.mybatisplus.service.IService;
  * </p>
  *
  * @author 李利光
- * @since 2018-12-10
+ * @since 2018-12-20
  */
 public interface IStudentUserDetailService extends IService<StudentUserDetail> {
 

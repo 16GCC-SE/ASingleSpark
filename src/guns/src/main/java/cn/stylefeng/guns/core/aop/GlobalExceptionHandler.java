@@ -108,7 +108,7 @@ public class GlobalExceptionHandler {
         String username = getRequest().getParameter("username");
         LogManager.me().executeLog(LogTaskFactory.loginLog(username, "验证码错误", getIp()));
         model.addAttribute("tips", "验证码错误");
-        return "/login.html";
+        return "/spark/login.html";
     }
 
     /**

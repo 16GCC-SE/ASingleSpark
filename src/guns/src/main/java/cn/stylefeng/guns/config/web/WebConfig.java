@@ -19,6 +19,7 @@ import cn.stylefeng.guns.config.properties.GunsProperties;
 import cn.stylefeng.guns.core.common.controller.GunsErrorView;
 import cn.stylefeng.guns.core.interceptor.RestApiInteceptor;
 import cn.stylefeng.guns.core.listener.ConfigListener;
+import cn.stylefeng.guns.modular.system.controller.KaptchaController;
 import cn.stylefeng.roses.core.xss.XssFilter;
 import com.alibaba.druid.pool.DruidDataSource;
 import com.alibaba.druid.support.http.StatViewServlet;
@@ -84,7 +85,7 @@ public class WebConfig implements WebMvcConfigurer {
         if (gunsProperties.getSwaggerOpen()) {
             registry.addResourceHandler("swagger-ui.html").addResourceLocations("classpath:/META-INF/resources/");
             registry.addResourceHandler("/webjars/**").addResourceLocations("classpath:/META-INF/resources/webjars/");
-            registry.addResourceHandler("/**").addResourceLocations(studentKptchaUploadPath);
+            registry.addResourceHandler("/spark/**").addResourceLocations(studentKptchaUploadPath);
         }
     }
 

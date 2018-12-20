@@ -27,8 +27,8 @@ public class StudentAuthentication {
     private String saveBaseURL = "C:/Users/Administrator/Desktop/test/";
     private String save_img_url = saveBaseURL + "img.gif";
     private String save_head_img_url = saveBaseURL + "head.jpg";
-    private String studentID = "201606110064";
-    private String studentPassword = "13798676084cheng";
+    private String studentID = "201606110062";
+    private String studentPassword = "llg1997729";
     private String classTableGnmkdm = "N121601";
     private String personInfoGnmkdm = "N121501";
     private Map<Integer, byte[]> captchaImg = new HashMap<>();
@@ -40,13 +40,13 @@ public class StudentAuthentication {
     private String[][] classTable = new String[8][13];
 
     public static void main(String[] args) {
-        new StudentAuthentication().launch();
+        new StudentAuthentication().launch("","");
     }
 
-    public void launch() {
+    public void launch(String codeSaveUrl,String codeName) {
         try {
             getCookie();
-            SaveImg();
+            SaveImg(codeSaveUrl,codeName);
             load();
             getNameByUrl();
             getKB();
@@ -105,7 +105,7 @@ public class StudentAuthentication {
     /**
      * 存储验证码到本地
      */
-    public void SaveImg() {
+    public void SaveImg(String urls,String fileName) {
 
         try {
             /**
@@ -123,7 +123,7 @@ public class StudentAuthentication {
             byte[] by = new byte[50000];
 
             // 将验证码保存到本地
-            FileOutputStream file = new FileOutputStream(save_img_url);
+            FileOutputStream file = new FileOutputStream(urls+fileName);
             int len = 0;
             while ((len = in.read(by)) != -1) {
                 file.write(by, 0, len);

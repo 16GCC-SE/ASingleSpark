@@ -4,6 +4,7 @@ import cn.stylefeng.guns.base.BaseJunit;
 import cn.stylefeng.guns.modular.system.dao.UserMapper;
 import org.junit.Test;
 import org.junit.internal.runners.statements.RunAfters;
+import org.springframework.util.ClassUtils;
 
 import javax.annotation.Resource;
 import java.io.*;
@@ -43,7 +44,6 @@ public class UserTest {
 
     @Test
     public void userTest() {
-
     }
 
 
