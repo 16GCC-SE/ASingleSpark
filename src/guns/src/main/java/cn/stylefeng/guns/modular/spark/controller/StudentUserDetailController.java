@@ -18,6 +18,7 @@ import cn.stylefeng.guns.modular.spark.model.StudentUserDetail;
 import cn.stylefeng.guns.modular.spark.service.IStudentUserDetailService;
 
 import java.io.File;
+import java.io.IOException;
 import java.util.UUID;
 
 /**
@@ -58,6 +59,41 @@ public class StudentUserDetailController extends BaseController {
             throw new ServiceException(BizExceptionEnum.UPLOAD_ERROR);
         }
 
+    }
+
+    /**
+     * 获取教务系统信息
+     */
+    @RequestMapping("/getStudentInfo")
+    @ResponseBody
+    public String getStudentInfo(String studentID,String studentPassword,String code){
+        try {
+            String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix("jpg");
+            studentAuthentication.save_head_img_url=gunsProperties.getFileUploadPath()+pictureName;
+            studentAuthentication.studentID=studentID;
+            studentAuthentication.studentPassword=studentPassword;
+            studentAuthentication.check=code;
+            studentAuthentication.load();
+            studentAuthentication.getNameByUrl();
+            studentAuthentication.getKB();
+            studentAuthentication.getPersonInfo();
+            StudentUserDetail studentUserDetail=new StudentUserDetail();
+            studentUserDetail.setEmail(studentAuthentication.email);
+            studentUserDetail.setPhone(studentAuthentication.phone);
+            studentUserDetail.setName(studentAuthentication.name);
+            studentUserDetail.setAvatar(pictureName);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+//        String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix("gif");
+//        try {
+//            String fileSavePath = gunsProperties.getFileUploadPath();
+//            studentAuthentication.SaveImg(fileSavePath,pictureName);
+//            return "kaptcha/"+pictureName;
+//        } catch (Exception e) {
+//            throw new ServiceException(BizExceptionEnum.UPLOAD_ERROR);
+//        }
+        return "获取成功";
     }
 
     /**
