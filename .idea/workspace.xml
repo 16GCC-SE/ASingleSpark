@@ -1,40 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="学生认证获取个人信息">
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/student_view.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/student/student_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/beetl/BeetlConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/beetl/BeetlConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/StudentUserDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/StudentUserDetailMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/avatar.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/avatar.tag" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_edit.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/aop/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/aop/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/RestApiInteceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/RestApiInteceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/api/ApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/api/ApiController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/js/common/web-upload-object.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/js/common/web-upload-object.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/modular/spark/AAA/AAA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/modular/spark/BBB/BBB.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/modular/system/user/user_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/modular/system/user/user_info.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/UserTest.class" afterDir="false" />
-    </list>
+    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="完善学生认证功能" />
     <ignored path="$PROJECT_DIR$/src/guns/target/" />
     <ignored path="$PROJECT_DIR$/src/guns-generator/target/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
@@ -154,8 +121,8 @@
       <file leaf-file-name="student_view.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/student_view.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+            <state relative-caret-position="164">
+              <caret line="78" column="15" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -432,19 +399,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,78 +451,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="student" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="user" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
@@ -686,6 +568,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="ChangesTree.GroupingKeys" value="module&#10;directory" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -1296,7 +1179,7 @@
       <workItem from="1543936529479" duration="1734000" />
       <workItem from="1544232801271" duration="37610000" />
       <workItem from="1544344941272" duration="314000" />
-      <workItem from="1544705108777" duration="54418000" />
+      <workItem from="1544705108777" duration="54844000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -1361,11 +1244,18 @@
       <option name="project" value="LOCAL" />
       <updated>1544956703100</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="完善学生认证功能">
+      <created>1545477074879</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1545477074879</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143042000" />
+    <option name="totallyTimeSpent" value="143468000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1402,7 +1292,7 @@
       <window_info anchor="bottom" id="Run" order="2" weight="0.9818182" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8484849" visible="true" weight="0.21459228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8484849" visible="true" weight="0.21459228" />
       <window_info anchor="right" id="Bean Validation" order="3" />
       <window_info id="Web" order="2" sideWeight="0.15151516" side_tool="true" visible="true" weight="0.21459228" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
@@ -1483,7 +1373,8 @@
     <MESSAGE value="添加学生认证功能" />
     <MESSAGE value="学生认证获取个人信息" />
     <MESSAGE value="实现首页交互设计" />
-    <option name="LAST_COMMIT_MESSAGE" value="实现首页交互设计" />
+    <MESSAGE value="完善学生认证功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善学生认证功能" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1894,8 +1785,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/student_view.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+        <state relative-caret-position="164">
+          <caret line="78" column="15" selection-start-line="78" selection-start-column="15" selection-end-line="78" selection-end-column="15" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
