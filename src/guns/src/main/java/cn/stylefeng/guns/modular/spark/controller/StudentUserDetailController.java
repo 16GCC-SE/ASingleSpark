@@ -180,15 +180,17 @@ public class StudentUserDetailController extends BaseController {
         if(users!=null&&users.size()>0) {
             StudentUserDetail user = users.get(0);
             StudentClassTable table=iStudentClassTableService.selectById(user.getStudentClassId());
-            model.addAttribute("user", user);
-            model.addAttribute("monday",table.getMonday().split("#"));
-            model.addAttribute("tuesday",table.getTuesday().split("#"));
-            model.addAttribute("wednesday",table.getWednesday().split("#"));
-            model.addAttribute("thursday",table.getThursday().split("#"));
-            model.addAttribute("friday",table.getFriday().split("#"));
-            model.addAttribute("saturday",table.getSaturday().split("#"));
-            model.addAttribute("sunday",table.getSunday().split("#"));
-            LogObjectHolder.me().set(user);
+            if(table!=null) {
+                model.addAttribute("user", user);
+                model.addAttribute("monday", table.getMonday().split("#"));
+                model.addAttribute("tuesday", table.getTuesday().split("#"));
+                model.addAttribute("wednesday", table.getWednesday().split("#"));
+                model.addAttribute("thursday", table.getThursday().split("#"));
+                model.addAttribute("friday", table.getFriday().split("#"));
+                model.addAttribute("saturday", table.getSaturday().split("#"));
+                model.addAttribute("sunday", table.getSunday().split("#"));
+                LogObjectHolder.me().set(user);
+            }
         }
         return  "spark/student_view.html";
     }

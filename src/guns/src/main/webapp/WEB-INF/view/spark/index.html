@@ -108,10 +108,19 @@
                         </a>
                         <ul class="dropdown-menu">
                             <!---->
+                            @if(shiro.hasPermission("/spark/mgr/user_info")){
                             <li><a href="/spark/mgr/user_info">资料设置</a></li>
+                            @}
+                            @if(shiro.hasPermission("/spark/studentUserDetail/getCookie")){
                             <li><a href="#" onclick="openModal()">课表导入</a></li>
+                            @}
+                            @if(shiro.hasPermission("/spark/studentUserDetail/student_info")){
                             <li><a href="/spark/studentUserDetail/student_info">学生信息</a></li>
+                            @}
+                            <li><a href="/spark/appeal">申诉管理</a></li>
+                            @if(shiro.hasPermission("/spark/mgr/user_chpwd")){
                             <li><a href="/spark/mgr/user_chpwd">修改密码</a></li>
+                            @}
                             <li role="separator" class="divider"></li>
                             <li><a href="/spark/logout">退出</a></li>
                         </ul>
@@ -139,9 +148,11 @@
                     </div>
                 </div>
                 <div style="margin-top:28px ">
+                    @if(shiro.hasPermission("/spark/review_job")){
                     <button type="button"  class="btn btn-warning btn-lg pull-right"
-                            style="padding: 6px 12px">进入兼职管理
+                                style="padding: 6px 12px" onclick="window.location='/spark/review_job'">进入兼职管理
                     </button>
+                    @}
                     <button type="button" class="btn btn-success btn-lg pull-right"
                             style="padding: 6px 12px ;margin-right: 10px" onclick="window.location='/spark/release'">发布兼职
                     </button>

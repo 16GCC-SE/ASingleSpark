@@ -187,6 +187,31 @@ public class SparkUserMgrController extends BaseController {
         return "spark/user_chpwd.html";
     }
 
+    /**
+     * 修改当前用户的密码
+     */
+    @RequestMapping("/changePwd")
+    @ResponseBody
+    public Object changePwd(@RequestParam String oldPwd, @RequestParam String newPwd, @RequestParam String rePwd) {
+        if (!newPwd.equals(rePwd)) {
+            throw new ServiceException(BizExceptionEnum.TWO_PWD_NOT_MATCH);
+        }else{
+            Integer userId = ShiroKit.getUser().getId();
+            User user = userService.selectById(userId);
+            String oldMd5 = ShiroKit.md5(oldPwd, user.getSalt());
+            if (!user.getPassword().equals(oldMd5)) {
+                throw new ServiceException(BizExceptionEnum.OLD_PWD_NOT_RIGHT);
+            } else {
+                String newMd5 = ShiroKit.md5(newPwd, user.getSalt());
+                user.setPassword(newMd5);
+                user.updateById();
+                return SUCCESS_TIP;
+            }
+        }
+
+    }
+
+
 
 
 }
