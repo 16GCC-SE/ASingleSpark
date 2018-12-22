@@ -1,6 +1,6 @@
 package cn.stylefeng.guns.modular.spark.dao;
 
-import cn.stylefeng.guns.modular.spark.model.StudentUserDetail;
+import cn.stylefeng.guns.modular.spark.model.StudentClassTable;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
 
 /**
@@ -11,6 +11,6 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @author 李利光
  * @since 2018-12-21
  */
-public interface StudentUserDetailMapper extends BaseMapper<StudentUserDetail> {
+public interface StudentClassTableMapper extends BaseMapper<StudentClassTable> {
 
 }

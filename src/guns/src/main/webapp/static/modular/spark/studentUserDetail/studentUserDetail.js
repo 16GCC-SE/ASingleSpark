@@ -22,6 +22,7 @@ StudentUserDetail.initColumn = function () {
             {title: '手机号码', field: 'phone', visible: true, align: 'center', valign: 'middle'},
             {title: '电子邮箱', field: 'email', visible: true, align: 'center', valign: 'middle'},
             {title: '入学日期', field: 'enrollmentDate', visible: true, align: 'center', valign: 'middle'},
+            {title: '学生课表', field: 'studentClassId', visible: true, align: 'center', valign: 'middle'},
             {title: 'sys_user表的用户id', field: 'sysUserId', visible: true, align: 'center', valign: 'middle'},
             {title: '数据创建时间', field: 'gmtCreate', visible: true, align: 'center', valign: 'middle'},
             {title: '数据修改时间', field: 'gmtModified', visible: true, align: 'center', valign: 'middle'}

@@ -118,6 +118,13 @@
          */
         setUploadBarId: function (id) {
             this.uploadBarId = id;
+        },
+
+        /**
+         * 设置图片上传的进度条的id
+         */
+        setUploadUrl: function (url) {
+            $WebUpload.uploadUrl = url;
         }
 	};
 

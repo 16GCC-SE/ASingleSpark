@@ -12,6 +12,7 @@
         <result column="phone" property="phone" />
         <result column="email" property="email" />
         <result column="enrollment_date" property="enrollmentDate" />
+        <result column="student_class_id" property="studentClassId" />
         <result column="sys_user_id" property="sysUserId" />
         <result column="gmt_create" property="gmtCreate" />
         <result column="gmt_modified" property="gmtModified" />
@@ -19,7 +20,7 @@
 
     <!-- 通用查询结果列 -->
     <sql id="Base_Column_List">
-        id, student_id, student_password, name, avatar, phone, email, enrollment_date, sys_user_id, gmt_create, gmt_modified
+        id, student_id, student_password, name, avatar, phone, email, enrollment_date, student_class_id, sys_user_id, gmt_create, gmt_modified
     </sql>
 
 </mapper>
