@@ -1,8 +1,15 @@
 package cn.stylefeng.guns.modular.spark.controller;
 
 import cn.stylefeng.guns.config.properties.GunsProperties;
+import cn.stylefeng.guns.core.common.constant.factory.ConstantFactory;
 import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
+import cn.stylefeng.guns.core.shiro.ShiroKit;
+import cn.stylefeng.guns.modular.spark.model.StudentClassTable;
+import cn.stylefeng.guns.modular.spark.service.IStudentClassTableService;
 import cn.stylefeng.guns.modular.spark.util.StudentAuthentication;
+import cn.stylefeng.guns.modular.system.controller.KaptchaController;
+import cn.stylefeng.guns.modular.system.model.User;
+import cn.stylefeng.guns.modular.system.service.IUserService;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
 import cn.stylefeng.roses.kernel.model.exception.ServiceException;
@@ -19,6 +26,9 @@ import cn.stylefeng.guns.modular.spark.service.IStudentUserDetailService;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.UUID;
 
 /**
@@ -36,9 +46,17 @@ public class StudentUserDetailController extends BaseController {
     @Autowired
     private IStudentUserDetailService studentUserDetailService;
 
+    @Autowired
+    private IStudentClassTableService iStudentClassTableService;
+
 
     @Autowired
     private GunsProperties gunsProperties;
+
+    @Autowired
+    private IUserService userService;
+
+
 
     @Autowired
     StudentAuthentication studentAuthentication;
@@ -49,6 +67,7 @@ public class StudentUserDetailController extends BaseController {
     @RequestMapping("/getCookie")
     @ResponseBody
     public String getCookieInfo(){
+
         studentAuthentication.getCookie();
         String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix("gif");
         try {
@@ -67,32 +86,7 @@ public class StudentUserDetailController extends BaseController {
     @RequestMapping("/getStudentInfo")
     @ResponseBody
     public String getStudentInfo(String studentID,String studentPassword,String code){
-        try {
-            String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix("jpg");
-            studentAuthentication.save_head_img_url=gunsProperties.getFileUploadPath()+pictureName;
-            studentAuthentication.studentID=studentID;
-            studentAuthentication.studentPassword=studentPassword;
-            studentAuthentication.check=code;
-            studentAuthentication.load();
-            studentAuthentication.getNameByUrl();
-            studentAuthentication.getKB();
-            studentAuthentication.getPersonInfo();
-            StudentUserDetail studentUserDetail=new StudentUserDetail();
-            studentUserDetail.setEmail(studentAuthentication.email);
-            studentUserDetail.setPhone(studentAuthentication.phone);
-            studentUserDetail.setName(studentAuthentication.name);
-            studentUserDetail.setAvatar(pictureName);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-//        String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix("gif");
-//        try {
-//            String fileSavePath = gunsProperties.getFileUploadPath();
-//            studentAuthentication.SaveImg(fileSavePath,pictureName);
-//            return "kaptcha/"+pictureName;
-//        } catch (Exception e) {
-//            throw new ServiceException(BizExceptionEnum.UPLOAD_ERROR);
-//        }
+        studentUserDetailService.createByAccount(studentID,studentPassword,code,studentAuthentication);
         return "获取成功";
     }
 
@@ -169,5 +163,33 @@ public class StudentUserDetailController extends BaseController {
     @ResponseBody
     public Object detail(@PathVariable("studentUserDetailId") Integer studentUserDetailId) {
         return studentUserDetailService.selectById(studentUserDetailId);
+    }
+
+    /**
+     * 跳转到查看用户详情页面
+     */
+    @RequestMapping("/student_info")
+    public String userInfo(Model model) {
+        Integer userId = ShiroKit.getUser().getId();
+        if (ToolUtil.isEmpty(userId)) {
+            throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
+        }
+        Map map=new HashMap<String,Object>();
+        map.put("sys_user_id",ShiroKit.getUser().id);
+        List<StudentUserDetail> users=studentUserDetailService.selectByMap(map);
+        if(users!=null&&users.size()>0) {
+            StudentUserDetail user = users.get(0);
+            StudentClassTable table=iStudentClassTableService.selectById(user.getStudentClassId());
+            model.addAttribute("user", user);
+            model.addAttribute("monday",table.getMonday().split("#"));
+            model.addAttribute("tuesday",table.getTuesday().split("#"));
+            model.addAttribute("wednesday",table.getWednesday().split("#"));
+            model.addAttribute("thursday",table.getThursday().split("#"));
+            model.addAttribute("friday",table.getFriday().split("#"));
+            model.addAttribute("saturday",table.getSaturday().split("#"));
+            model.addAttribute("sunday",table.getSunday().split("#"));
+            LogObjectHolder.me().set(user);
+        }
+        return  "spark/student_view.html";
     }
 }

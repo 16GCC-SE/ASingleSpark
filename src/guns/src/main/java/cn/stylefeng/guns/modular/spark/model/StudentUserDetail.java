@@ -14,7 +14,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author 李利光
- * @since 2018-12-20
+ * @since 2018-12-21
  */
 @TableName("spark_student_user_detail")
 public class StudentUserDetail extends Model<StudentUserDetail> {
@@ -54,6 +54,11 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      */
     @TableField("enrollment_date")
     private Date enrollmentDate;
+    /**
+     * 学生课表
+     */
+    @TableField("student_class_id")
+    private Long studentClassId;
     /**
      * sys_user表的用户id
      */
@@ -135,6 +140,14 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
         this.enrollmentDate = enrollmentDate;
     }
 
+    public Long getStudentClassId() {
+        return studentClassId;
+    }
+
+    public void setStudentClassId(Long studentClassId) {
+        this.studentClassId = studentClassId;
+    }
+
     public Integer getSysUserId() {
         return sysUserId;
     }
@@ -175,6 +188,7 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
         ", phone=" + phone +
         ", email=" + email +
         ", enrollmentDate=" + enrollmentDate +
+        ", studentClassId=" + studentClassId +
         ", sysUserId=" + sysUserId +
         ", gmtCreate=" + gmtCreate +
         ", gmtModified=" + gmtModified +

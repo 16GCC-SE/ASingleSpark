@@ -1,237 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="修改兼職詳情頁面">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_2_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/SMSUtil.java" afterDir="false" />
+    <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="学生认证获取个人信息">
+      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/student_view.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/student/student_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/guns.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/guns.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkUserMgrController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkUserMgrController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/beetl/BeetlConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/beetl/BeetlConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/StudentUserDetailMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/StudentUserDetailMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/avatar.tag" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/avatar.tag" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/LogController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/LogController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/dao/mapping/ExpenseMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/dao/mapping/ExpenseMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_edit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/ShiroConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/config/web/WebConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/aop/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/aop/GlobalExceptionHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/beetl/BeetlConfiguration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/RestApiInteceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/RestApiInteceptor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/util/JwtTokenUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/api/ApiController.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/api/ApiController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/js/common/web-upload-object.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/js/common/web-upload-object.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/modular/spark/AAA/AAA.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/modular/spark/BBB/BBB.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/classes/static/modular/system/user/user_info.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/classes/static/modular/system/user/user_info.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/UserTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/guns/target/test-classes/cn/stylefeng/guns/system/UserTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/src/guns/target/" />
     <ignored path="$PROJECT_DIR$/src/guns-generator/target/" />
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-  <component name="ErrorTreeViewConfiguration">
-    <option name="autoscrollToSource" value="true" />
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
-  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-2091100891">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="3" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="2" />
           <entry key="project.open.time.39" value="1" />
-          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.open.time.74" value="1" />
-          <entry key="project.opened" value="8" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="btl" value="12" />
-          <entry key="class" value="62" />
-          <entry key="css" value="12" />
-          <entry key="gif" value="7" />
-          <entry key="html" value="114" />
+          <entry key="class" value="16" />
+          <entry key="css" value="1" />
+          <entry key="html" value="2" />
           <entry key="ico" value="1" />
-          <entry key="java" value="462" />
-          <entry key="jpg" value="14" />
-          <entry key="js" value="20" />
+          <entry key="java" value="86" />
+          <entry key="js" value="2" />
           <entry key="md" value="3" />
-          <entry key="png" value="18" />
+          <entry key="png" value="1" />
           <entry key="properties" value="1" />
-          <entry key="sql" value="9" />
-          <entry key="tag" value="9" />
-          <entry key="tag_tips" value="1" />
+          <entry key="sql" value="1" />
           <entry key="txt" value="2" />
-          <entry key="xml" value="60" />
+          <entry key="xml" value="20" />
           <entry key="xxx" value="1" />
-          <entry key="yml" value="11" />
+          <entry key="yml" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="62" />
-          <entry key="CSS" value="12" />
-          <entry key="HTML" value="114" />
-          <entry key="Image" value="40" />
-          <entry key="JAVA" value="462" />
-          <entry key="JSP" value="9" />
-          <entry key="JavaScript" value="20" />
+          <entry key="CLASS" value="16" />
+          <entry key="CSS" value="1" />
+          <entry key="HTML" value="2" />
+          <entry key="Image" value="2" />
+          <entry key="JAVA" value="86" />
+          <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="3" />
-          <entry key="PLAIN_TEXT" value="16" />
+          <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="1" />
-          <entry key="SQL" value="9" />
-          <entry key="XML" value="60" />
-          <entry key="YAML" value="11" />
+          <entry key="SQL" value="1" />
+          <entry key="XML" value="20" />
+          <entry key="YAML" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="btl" value="6" />
-          <entry key="css" value="79" />
-          <entry key="dummy" value="11" />
-          <entry key="html" value="831" />
-          <entry key="java" value="1784" />
-          <entry key="txt" value="338" />
-          <entry key="xml" value="40" />
-          <entry key="yml" value="111" />
+          <entry key="dummy" value="9" />
+          <entry key="java" value="27" />
+          <entry key="txt" value="95" />
+          <entry key="xml" value="7" />
+          <entry key="yml" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="79" />
-          <entry key="HTML" value="831" />
-          <entry key="JAVA" value="1784" />
-          <entry key="PLAIN_TEXT" value="355" />
-          <entry key="XML" value="40" />
-          <entry key="YAML" value="111" />
+          <entry key="JAVA" value="27" />
+          <entry key="PLAIN_TEXT" value="104" />
+          <entry key="XML" value="7" />
+          <entry key="YAML" value="5" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html">
+      <file leaf-file-name="StudentUserDetailController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12447">
-              <caret line="476" column="21" selection-start-line="476" selection-start-column="21" selection-end-line="476" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="214" column="14" lean-forward="true" selection-start-line="214" selection-start-column="14" selection-end-line="214" selection-end-column="14" />
+            <state relative-caret-position="154">
+              <caret line="183" selection-start-line="183" selection-end-line="183" />
               <folding>
-                <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#select#0;n#div#3;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#6;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#3428#3429#0" expanded="true" />
+                <element signature="e#3492#3493#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/SMSUtil.java">
+      <file leaf-file-name="IStudentUserDetailService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-20">
-              <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
+            <state relative-caret-position="238">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StudentUserDetailServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="70" selection-start-line="70" selection-end-line="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user_view.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-7">
+              <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="student_view.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/student_view.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="304">
+              <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkUserMgrController.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+            <state relative-caret-position="190">
+              <caret line="112" column="66" lean-forward="true" selection-start-line="112" selection-start-column="66" selection-end-line="112" selection-end-column="66" />
               <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="imports" expanded="true" />
+                <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkLoginController.java">
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret line="41" column="61" lean-forward="true" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/transfer/UserDto.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="560">
-              <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="106" selection-start-line="106" selection-end-line="106" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_tab.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="37" column="59" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/cn/stylefeng/roses/kernel-core/1.1.0/kernel-core-1.1.0-sources.jar!/cn/stylefeng/roses/core/base/controller/BaseController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="351">
-              <caret line="43" column="35" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="35" />
               <folding>
-                <element signature="e#2629#2630#0" expanded="true" />
-                <element signature="e#2666#2667#0" expanded="true" />
+                <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTime.java">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="31" column="32" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="32" />
+            <state relative-caret-position="406">
+              <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_right.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_right.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-222" />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_tab.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_tab.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -243,48 +219,48 @@
       <list>
         <option value="JavaScript File" />
         <option value="Interface" />
-        <option value="CSS File" />
-        <option value="HTML File" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>dataScopeInterceptor</find>
-      <find>insert</find>
-      <find>logback-spring</find>
-      <find>ehcache.xml</find>
+      <find>User</find>
+      <find>createUser</find>
       <find>UserDto</find>
-      <find>PageFactory</find>
-      <find>MutiStrFac</find>
-      <find>block</find>
-      <find>black</find>
-      <find>fixed-sidebar</find>
-      <find>gray-bg</find>
-      <find>skin-1</find>
-      <find>skin</find>
-      <find>nav</find>
-      <find>navbar-default</find>
-      <find>navbar</find>
-      <find>kapt</find>
-      <find>session</find>
-      <find>${context.bizEnName}</find>
-      <find>menu</find>
-      <find>birthday</find>
-      <find>Permission</find>
-      <find>AbstractDictMap</find>
-      <find>dictClass</find>
-      <find>gunsProperties</find>
-      <find>FORWARD</find>
-      <find>73</find>
-      <find>opa</find>
-      <find>750</find>
-      <find>job_header</find>
+      <find>127.0.0.1</find>
+      <find>DataSourceContextHolder</find>
+      <find>classList</find>
+      <find>classDetailList</find>
+      <find>cookie</find>
+      <find>img</find>
+      <find>base_url</find>
+      <find>viewstate</find>
+      <find>viewState</find>
+      <find>id</find>
+      <find>password</find>
+      <find>index_url</find>
+      <find>Location</find>
+      <find>name</find>
+      <find>gnmkdm</find>
+      <find>indexURL</find>
+      <find>bootstrapValidator</find>
+      <find>EntityWrapper</find>
+      <find>selectByMap</find>
     </findStrings>
     <replaceStrings>
       <replace>39.108.158.15</replace>
       <replace />
+      <replace>base_url</replace>
+      <replace>index_url</replace>
+      <replace>code_img</replace>
+      <replace>viewState</replace>
+      <replace>baseURL</replace>
+      <replace>captchaURL</replace>
+      <replace>submitURL</replace>
+      <replace>studentID</replace>
+      <replace>studentPassword</replace>
+      <replace>indexURL</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -292,62 +268,47 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response33.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response41.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/transfer/XXXDto.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/AAA/AAA.js" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/BBB/BBB.js" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/mapping/OperationLogMapper.xml" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/XXXMapper.xml" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/XXXService.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/XXXServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/DictMapper.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/IndexService.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/datasource/TestDBInterceptor.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/datasource/SingleDataSourceConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/service/impl/DeptServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/test.css" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/html.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/style.css" />
-        <option value="$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/system/UserTest.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/KaptchaController.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/dept/dept.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/student/StudentAuthentication.java" />
-        <option value="$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/modular/factory/DefaultTemplateFactory.java" />
-        <option value="$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/config/ContextConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail.html" />
-        <option value="$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page.html.btl" />
-        <option value="$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page.js.btl" />
-        <option value="$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/page_info.js.btl" />
-        <option value="$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/Controller.java.btl" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/StudentAuthentication.java" />
-        <option value="$PROJECT_DIR$/src/guns-generator/src/main/java/cn/stylefeng/guns/generator/engine/config/SqlConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/model/User.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/StudentUserDetailMapper.xml" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/system/DictTest.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/UserMgrController.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/aop/PermissionAop.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/BlackboardController.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/transfer/UserDto.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login_v2.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/spark/job_detail.css" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user_add.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkLoginController.java" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" />
-        <option value="$PROJECT_DIR$/src/guns/pom.xml" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/SMSUtil.java" />
         <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html" />
-        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkUserMgrController.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/mapping/ExpenseMapper.xml" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/datasource/SingleDataSourceConfig.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/src/guns/pom.xml" />
+        <option value="$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/student/Test.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/student/StrudentAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/student/StudentAuthentication.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail_info.js" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/LogController.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTimeSimple.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentClassTable.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/beetl/BeetlConfiguration.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkLoginController.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/student/student_info.js" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/avatar.tag" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/student_view.html" />
       </list>
     </option>
   </component>
@@ -364,32 +325,13 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="MavenProjectNavigator">
-    <treeState>
-      <expand>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="guns-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="guns-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
-        </path>
-        <path>
-          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
-          <item name="guns-admin" type="9519ce18:MavenProjectsStructure$ProjectNode" />
-          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
-        </path>
-      </expand>
-      <select />
-    </treeState>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1598" />
-    <option name="height" value="858" />
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="797" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -397,7 +339,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -422,6 +363,13 @@
               <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="sql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -497,32 +445,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="spark" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -536,20 +458,7 @@
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="modular" type="462c0819:PsiDirectoryNode" />
               <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="guns" type="462c0819:PsiDirectoryNode" />
-              <item name="modular" type="462c0819:PsiDirectoryNode" />
-              <item name="system" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
@@ -567,7 +476,99 @@
               <item name="guns" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="student" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="modular" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
@@ -590,14 +591,101 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="common" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="tags" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="system" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns-generator" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -605,31 +693,23 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1544971260452" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/guns-generator" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542683521939" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Artifacts" />
-    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.last.edited" value="Facets" />
+    <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\java\cn\stylefeng\guns\modular\spark\dao\mapping" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="cn.stylefeng.guns.modular.spark.controller" />
-      <recent name="cn.stylefeng.guns.modular.spark.util" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\java\cn\stylefeng\guns\modular\spark\util" />
-      <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\webapp\static\img\spark" />
-      <recent name="E:\a_llg_idea_project\ASingleSpark\docs\测试" />
-      <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\webapp\static\js" />
-      <recent name="E:\a_llg_idea_project\ASingleSpark\src\guns\src\main\webapp\static\img" />
+      <recent name="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/student" />
+      <recent name="$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark" />
+      <recent name="$PROJECT_DIR$/src/guns/src/main/webapp/static/js" />
+      <recent name="E:\idea project\ASingleSpark\src\guns\src\main\webapp\static\img\spark" />
+      <recent name="E:\idea project\ASingleSpark\src\guns\src\main\webapp\WEB-INF\view\spark" />
     </key>
   </component>
   <component name="RestClientSettings">
@@ -643,13 +723,13 @@
                 <option name="domain" value="localhost" />
                 <option name="name" value="shiroCookie" />
                 <option name="path" value="/" />
-                <option name="value" value="53d2c5d1-0b01-43bd-827a-f742c7a9e954" />
+                <option name="value" value="ae718e64-1090-49b2-b92e-c1e1c2dc4796" />
               </Biscuit>
             </list>
           </option>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
+          <option name="urlPath" value="/spark/partTime/page" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -665,20 +745,12 @@
           <option name="parameters">
             <list>
               <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
               </KeyValuePair>
               <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="fuckss" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="77897" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="sparkRole" />
-                <option name="value" value="1" />
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
               </KeyValuePair>
             </list>
           </option>
@@ -694,13 +766,13 @@
                 <option name="domain" value="localhost" />
                 <option name="name" value="shiroCookie" />
                 <option name="path" value="/" />
-                <option name="value" value="53d2c5d1-0b01-43bd-827a-f742c7a9e954" />
+                <option name="value" value="a51824ae-41b6-4785-add8-6fa7dff933c5" />
               </Biscuit>
             </list>
           </option>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
+          <option name="urlPath" value="/spark/partTime/page" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -716,20 +788,12 @@
           <option name="parameters">
             <list>
               <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
               </KeyValuePair>
               <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="fuck" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="77897" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="sparkRole" />
-                <option name="value" value="1" />
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
               </KeyValuePair>
             </list>
           </option>
@@ -745,13 +809,13 @@
                 <option name="domain" value="localhost" />
                 <option name="name" value="shiroCookie" />
                 <option name="path" value="/" />
-                <option name="value" value="0148e6d0-0994-4c30-915e-b0b06333630c" />
+                <option name="value" value="cf27ca18-fd6a-4109-971d-d933545b138c" />
               </Biscuit>
             </list>
           </option>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
+          <option name="urlPath" value="/spark/partTime/page" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -767,20 +831,12 @@
           <option name="parameters">
             <list>
               <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
+                <option name="key" value="limit" />
+                <option name="value" value="10" />
               </KeyValuePair>
               <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="fuck" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="77897" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="sparkRole" />
-                <option name="value" value="1" />
+                <option name="key" value="offset" />
+                <option name="value" value="0" />
               </KeyValuePair>
             </list>
           </option>
@@ -796,264 +852,13 @@
                 <option name="domain" value="localhost" />
                 <option name="name" value="shiroCookie" />
                 <option name="path" value="/" />
-                <option name="value" value="0148e6d0-0994-4c30-915e-b0b06333630c" />
+                <option name="value" value="cf27ca18-fd6a-4109-971d-d933545b138c" />
               </Biscuit>
             </list>
           </option>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="789798" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="77897" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="sparkRole" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="6a431c39-3af6-4287-a61e-12f83b71a985" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="789798" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="77897" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="sparlRole" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="9feed47f-fc97-4be7-aaf5-9869d5e73ed7" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="789798" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="77897" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="sparlRole" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="3ecee725-4226-46a4-93b3-46bb1d93458c" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="" />
-                <option name="value" value="" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="789798" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="77897" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="sparlRole" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="58ac9531-d96f-42cd-9fce-764bd18e4ef4" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="" />
-                <option name="value" value="" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="111" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="58ac9531-d96f-42cd-9fce-764bd18e4ef4" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
+          <option name="urlPath" value="/spark/partTime/page" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -1071,20 +876,9 @@
           <option name="filesToSend" value="" />
         </RestClientRequest>
         <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="fa003ce6-742b-447d-bbf2-413160feacb3" />
-              </Biscuit>
-            </list>
-          </option>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
+          <option name="urlPath" value="/spark/partTime" />
           <option name="headers">
             <list>
               <KeyValuePair>
@@ -1094,124 +888,6 @@
               <KeyValuePair>
                 <option name="key" value="Cache-Control" />
                 <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="123456" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="fa003ce6-742b-447d-bbf2-413160feacb3" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="password" />
-                <option name="value" value="123456" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="account" />
-                <option name="value" value="66" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="biscuits">
-            <list>
-              <Biscuit>
-                <option name="date" value="-1" />
-                <option name="domain" value="localhost" />
-                <option name="name" value="shiroCookie" />
-                <option name="path" value="/" />
-                <option name="value" value="fa003ce6-742b-447d-bbf2-413160feacb3" />
-              </Biscuit>
-            </list>
-          </option>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="1" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parametersEnabled" value="true" />
-          <option name="textToSend" value="" />
-          <option name="filesToSend" value="" />
-        </RestClientRequest>
-        <RestClientRequest>
-          <option name="httpMethod" value="POST" />
-          <option name="urlBase" value="http://localhost:8080" />
-          <option name="urlPath" value="spark/mgr/add" />
-          <option name="headers">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="Accept" />
-                <option name="value" value="*/*" />
-              </KeyValuePair>
-              <KeyValuePair>
-                <option name="key" value="Cache-Control" />
-                <option name="value" value="no-cache" />
-              </KeyValuePair>
-            </list>
-          </option>
-          <option name="parameters">
-            <list>
-              <KeyValuePair>
-                <option name="key" value="name" />
-                <option name="value" value="1" />
               </KeyValuePair>
             </list>
           </option>
@@ -1236,20 +912,43 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="UPDATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/modules.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/workspace.xml</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/guns.iml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/LogController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/mapping/ExpenseMapper.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/pom.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/StudentUserDetail.sql</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/aop/GlobalExceptionHandler.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/interceptor/RestApiInteceptor.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/util/JwtTokenUtil.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/api/ApiController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkLoginController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkUserMgrController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTime.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/StudentAuthentication.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/resources/application.yml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/input.tag</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/studentUserDetail/studentUserDetail_add.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/js/common/web-upload-object.js</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/studentUserDetail/studentUserDetail_info.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/system/user/user_add.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/system/user/user_info.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/system/UserTest.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/target/classes/WEB-INF/view/common/tags/input.tag</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/core/interceptor/SessionHolderInterceptor.class</PATH>
           <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/KaptchaController.class</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/target/classes/static/css/login.css</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/controller/LogController.class</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/target/classes/cn/stylefeng/guns/modular/system/dao/mapping/ExpenseMapper.xml</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Created" />
@@ -1257,21 +956,12 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="false" />
           <option name="myId" value="CREATED" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/sqldialects.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/PartTime.sql</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/PartTimeMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/PartTimeMapper.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTime.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTimeSimple.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IPartTimeService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/PartTimeServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_add.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTime/partTime_edit.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/js/vue.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTime/partTime.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTime/partTime_info.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_core_2_1_4.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/libraries/Maven__com_aliyun_aliyun_java_sdk_dysmsapi_1_1_0.xml</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/SMSUtil.java</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_chpwd.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/user/user_info.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Deleted" />
@@ -1279,18 +969,8 @@
           <option name="mySupportsDeletion" value="false" />
           <option name="myCanBeAbsent" value="true" />
           <option name="myId" value="REMOVED_FROM_REPOSITORY" />
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/PartTimeDetail.sql</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeDetailController.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/PartTimeDetailMapper.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/PartTimeDetailMapper.xml</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTimeDetail.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IPartTimeDetailService.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/PartTimeDetailServiceImpl.java</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_add.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/partTimeDetail/partTimeDetail_edit.html</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail.js</PATH>
-          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTimeDetail/partTimeDetail_info.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/AAA/AAA.js</PATH>
+          <PATH vcs="Git" revision="">$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/BBB/BBB.js</PATH>
         </FILE-GROUP>
         <FILE-GROUP>
           <option name="myUpdateName" value="Restored" />
@@ -1385,6 +1065,143 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.GunsApplication">
+    <configuration name="StudentAuthentication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.student.StudentAuthentication" />
+      <module name="guns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.student.Test" />
+      <module name="guns" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.stylefeng.guns.student.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="FlashPlayerDebugger.exe" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="passParentEnv" value="true" />
+      <setting name="launchBrowser" value="true" />
+      <setting name="launchBrowserUrl" value="" />
+      <setting name="depsClasspath" value="false" />
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <module name="" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+    </configuration>
+    <configuration name="GunsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="guns" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.stylefeng.guns.GunsApplication" />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -1432,173 +1249,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="StudentAuthentication (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.modular.spark.util.StudentAuthentication" />
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.modular.spark.util.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentAuthentication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.student.StudentAuthentication" />
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.student.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
-      <setting name="vmparams" value="" />
-      <setting name="cmdLine" value="run-app" />
-      <setting name="passParentEnv" value="true" />
-      <setting name="launchBrowser" value="true" />
-      <setting name="launchBrowserUrl" value="" />
-      <setting name="depsClasspath" value="false" />
-      <method v="2" />
-    </configuration>
-    <configuration name="DictTest.deleteTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.stylefeng.guns.system" />
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.DictTest" />
-      <option name="METHOD_NAME" value="deleteTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest.userTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="guns" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.stylefeng.guns.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.stylefeng.guns.system" />
-      <option name="MAIN_CLASS_NAME" value="cn.stylefeng.guns.system.UserTest" />
-      <option name="METHOD_NAME" value="userTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <module name="" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="GunsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="guns" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.stylefeng.guns.GunsApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="VM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-interpreter>project</node-interpreter>
       <node-options />
@@ -1606,25 +1256,23 @@
       <tasks />
       <arguments />
       <envs />
-      <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Spring Boot.GunsApplication" />
-      <item itemvalue="JUnit.UserTest.userTest" />
-      <item itemvalue="Application.UserTest" />
+      <item itemvalue="Application.Test" />
       <item itemvalue="Application.StudentAuthentication" />
-      <item itemvalue="Application.StudentAuthentication (1)" />
-      <item itemvalue="JUnit.DictTest.deleteTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DictTest.deleteTest" />
-        <item itemvalue="Application.StudentAuthentication (1)" />
         <item itemvalue="Application.StudentAuthentication" />
-        <item itemvalue="Application.UserTest" />
-        <item itemvalue="JUnit.UserTest.userTest" />
+        <item itemvalue="Application.Test" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SpringBootEndpointsTabSettings">
+    <option name="showLiveBeansGraph" value="false" />
+    <option name="showContexts" value="false" />
+    <option name="showFiles" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -1645,10 +1293,10 @@
       <workItem from="1543200089037" duration="11200000" />
       <workItem from="1543464991663" duration="8406000" />
       <workItem from="1543805328103" duration="2887000" />
-      <workItem from="1543925674138" duration="63320000" />
-      <workItem from="1544358451222" duration="11568000" />
-      <workItem from="1544404782835" duration="36825000" />
-      <workItem from="1544513377167" duration="51738000" />
+      <workItem from="1543936529479" duration="1734000" />
+      <workItem from="1544232801271" duration="37610000" />
+      <workItem from="1544344941272" duration="314000" />
+      <workItem from="1544705108777" duration="54418000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -1692,183 +1340,32 @@
       <option name="project" value="LOCAL" />
       <updated>1543752624847</updated>
     </task>
-    <task id="LOCAL-00007" summary="添加html文件到框架上">
-      <created>1543925903042</created>
+    <task id="LOCAL-00007" summary="添加学生认证功能">
+      <created>1544333368145</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1543925903042</updated>
+      <updated>1544333368145</updated>
     </task>
-    <task id="LOCAL-00008" summary="修改兼职不发的css文件路劲位置不对问题">
-      <created>1543929138545</created>
+    <task id="LOCAL-00008" summary="学生认证获取个人信息">
+      <created>1544344806985</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1543929138545</updated>
+      <updated>1544344806985</updated>
     </task>
-    <task id="LOCAL-00009" summary="提交登陆页面以及测试用例（半成品）">
-      <created>1544068279296</created>
+    <task id="LOCAL-00009" summary="实现首页交互设计">
+      <created>1544956703098</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1544068279296</updated>
+      <updated>1544956703100</updated>
     </task>
-    <task id="LOCAL-00010" summary="完善测试用例">
-      <created>1544069091772</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1544069091772</updated>
-    </task>
-    <task id="LOCAL-00011" summary="完善测试用例">
-      <created>1544069392651</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1544069392651</updated>
-    </task>
-    <task id="LOCAL-00012" summary="修改导航条">
-      <created>1544087670006</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1544087670006</updated>
-    </task>
-    <task id="LOCAL-00013" summary="修改导航条">
-      <created>1544088447324</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1544088447324</updated>
-    </task>
-    <task id="LOCAL-00014" summary="修改导航条">
-      <created>1544089517791</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1544089517791</updated>
-    </task>
-    <task id="LOCAL-00015" summary="上傳logo">
-      <created>1544143382520</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1544143382520</updated>
-    </task>
-    <task id="LOCAL-00016" summary="完善学生认证">
-      <created>1544360072289</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1544360072289</updated>
-    </task>
-    <task id="LOCAL-00017" summary="修复">
-      <created>1544366216575</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1544366216575</updated>
-    </task>
-    <task id="LOCAL-00018" summary="修复代码生成器">
-      <created>1544407429118</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1544407429118</updated>
-    </task>
-    <task id="LOCAL-00019" summary="提交半成品注册系统">
-      <created>1544531052057</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1544531052057</updated>
-    </task>
-    <task id="LOCAL-00020" summary="提交半成品注册系统">
-      <created>1544534058565</created>
-      <option name="number" value="00020" />
-      <option name="presentableId" value="LOCAL-00020" />
-      <option name="project" value="LOCAL" />
-      <updated>1544534058566</updated>
-    </task>
-    <task id="LOCAL-00021" summary="提交半成品登陆">
-      <created>1544539578675</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1544539578675</updated>
-    </task>
-    <task id="LOCAL-00022" summary="提交登陆后台">
-      <created>1544582053417</created>
-      <option name="number" value="00022" />
-      <option name="presentableId" value="LOCAL-00022" />
-      <option name="project" value="LOCAL" />
-      <updated>1544582053417</updated>
-    </task>
-    <task id="LOCAL-00023" summary="修改兼職詳情頁面">
-      <created>1544583487571</created>
-      <option name="number" value="00023" />
-      <option name="presentableId" value="LOCAL-00023" />
-      <option name="project" value="LOCAL" />
-      <updated>1544583487571</updated>
-    </task>
-    <task id="LOCAL-00024" summary="整合登陆注册功能到首页">
-      <created>1544621325351</created>
-      <option name="number" value="00024" />
-      <option name="presentableId" value="LOCAL-00024" />
-      <option name="project" value="LOCAL" />
-      <updated>1544621325351</updated>
-    </task>
-    <task id="LOCAL-00025" summary="修改兼職詳情頁面">
-      <created>1544687203618</created>
-      <option name="number" value="00025" />
-      <option name="presentableId" value="LOCAL-00025" />
-      <option name="project" value="LOCAL" />
-      <updated>1544687203618</updated>
-    </task>
-    <task id="LOCAL-00026" summary="修改pom">
-      <created>1544692262544</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1544692262544</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
-  <component name="TestHistory">
-    <history-entry file="UserTest_userTest - 2018.12.06 at 21h 11m 15s.xml">
-      <configuration name="UserTest.userTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_userTest - 2018.12.06 at 21h 11m 19s.xml">
-      <configuration name="UserTest.userTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_userTest - 2018.12.06 at 21h 12m 13s.xml">
-      <configuration name="UserTest.userTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_userTest - 2018.12.06 at 21h 12m 48s.xml">
-      <configuration name="UserTest.userTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_userTest - 2018.12.06 at 21h 14m 38s.xml">
-      <configuration name="UserTest.userTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_userTest - 2018.12.06 at 21h 33m 12s.xml">
-      <configuration name="UserTest.userTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserTest_userTest - 2018.12.06 at 21h 33m 53s.xml">
-      <configuration name="UserTest.userTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictTest_deleteTest - 2018.12.11 at 11h 13m 41s.xml">
-      <configuration name="DictTest.deleteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictTest_deleteTest - 2018.12.11 at 11h 14m 20s.xml">
-      <configuration name="DictTest.deleteTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DictTest_deleteTest - 2018.12.11 at 11h 39m 31s.xml">
-      <configuration name="DictTest.deleteTest" configurationId="JUnit" />
-    </history-entry>
-  </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="212417000" />
+    <option name="totallyTimeSpent" value="143042000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1880,126 +1377,97 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21748401" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Nl-Palette" order="5" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info id="设计师" order="7" />
-      <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info id="Designer" order="9" />
-      <window_info anchor="bottom" id="REST Client" weight="0.5841477" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.9978284" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.52117264" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32919955" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32899022" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50064266" side_tool="true" weight="0.8340081" />
-      <window_info anchor="bottom" id="消息" order="10" weight="0.30552423" />
-      <window_info anchor="bottom" id="运行" order="11" visible="true" weight="0.52311164" />
-      <window_info anchor="bottom" id="Java Enterprise" order="12" />
-      <window_info anchor="bottom" id="Version Control" order="13" sideWeight="0.4993573" weight="0.8340081" />
-      <window_info anchor="bottom" id="调试" order="14" weight="0.33295324" />
-      <window_info anchor="bottom" id="找到" order="15" />
-      <window_info anchor="bottom" id="Problems" order="16" />
-      <window_info anchor="bottom" id="Database Changes" order="17" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="18" weight="0.32464713" />
-      <window_info anchor="right" id="Preview" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.5007153" side_tool="true" weight="0.32969698" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.38545454" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32919955" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.3260606" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="bottom" id="Java Enterprise" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="REST Client" weight="0.6545454" />
+      <window_info anchor="bottom" id="Version Control" order="7" sideWeight="0.49928468" weight="0.32969698" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.9818182" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.8484849" visible="true" weight="0.21459228" />
+      <window_info anchor="right" id="Bean Validation" order="3" />
+      <window_info id="Web" order="2" sideWeight="0.15151516" side_tool="true" visible="true" weight="0.21459228" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32969698" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="right" id="Properties" order="3" />
+      <window_info id="设计师" order="2" />
+      <window_info id="Nl-Palette" order="2" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="调试" order="7" weight="0.33295324" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="控制板" order="3" />
-      <window_info anchor="right" id="Properties" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32969153" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Bean Validation" order="9" />
-      <window_info anchor="right" id="Palette" order="10" />
-      <window_info anchor="right" id="Maven Projects" order="11" weight="0.30383795" />
+      <window_info anchor="bottom" id="运行" order="7" visible="true" weight="0.52311164" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="消息" order="7" weight="0.30552423" />
+      <window_info anchor="bottom" id="找到" order="8" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18070363" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Nl-Palette" order="5" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info id="设计师" order="7" />
-      <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info id="Designer" order="9" />
-      <window_info anchor="bottom" id="REST Client" order="0" weight="0.5841477" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.32899022" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.48425624" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.28230184" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="bottom" id="运行" order="8" visible="true" weight="0.52311164" />
+      <window_info anchor="bottom" id="REST Client" order="0" weight="0.6545454" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.98285717" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32919955" />
-      <window_info anchor="bottom" id="Spring" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="消息" order="11" weight="0.30552423" />
-      <window_info anchor="bottom" id="运行" order="12" visible="true" weight="0.52311164" />
-      <window_info anchor="bottom" id="Java Enterprise" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" weight="0.32899022" />
-      <window_info anchor="bottom" id="调试" order="15" weight="0.33295324" />
-      <window_info anchor="bottom" id="找到" order="16" />
-      <window_info anchor="bottom" id="Problems" order="17" />
-      <window_info anchor="bottom" id="Database Changes" order="18" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="19" weight="0.3257329" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="控制板" order="3" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="right" id="Properties" order="4" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info id="Capture Tool" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Database" order="6" weight="0.32969153" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.30383795" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="right" id="Palette" order="11" />
+      <window_info anchor="bottom" id="消息" order="11" weight="0.30552423" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="bottom" id="Event Log" order="12" sideWeight="0.5007153" side_tool="true" weight="0.32969698" />
+      <window_info anchor="bottom" id="Messages" order="17" weight="0.3260606" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32919955" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="13" />
+      <window_info anchor="bottom" id="找到" order="18" />
+      <window_info anchor="bottom" id="Database Changes" order="14" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="15" sideWeight="0.49928468" weight="0.32969698" />
+      <window_info id="Nl-Palette" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="6" />
+      <window_info anchor="bottom" id="Find" order="2" weight="0.32969698" />
+      <window_info anchor="right" id="控制板" order="7" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26323318" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info id="Web" order="8" side_tool="true" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="调试" order="16" weight="0.33295324" />
+      <window_info id="设计师" order="9" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info active="true" anchor="bottom" id="Debug" order="4" visible="true" weight="0.28848484" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
-              <option name="COLUMN_ORDER">
-                <list>
-                  <option value="0" />
-                  <option value="1" />
-                  <option value="2" />
-                  <option value="3" />
-                </list>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -2012,59 +1480,31 @@
     <MESSAGE value="创建了有关于本次的项目文件夹位置，名字叫做spark。修改了数据库链接为39.108.158.15。" />
     <MESSAGE value="添加了主页面" />
     <MESSAGE value="添加了注册页面" />
-    <MESSAGE value="添加html文件到框架上" />
-    <MESSAGE value="修改兼职不发的css文件路劲位置不对问题" />
-    <MESSAGE value="提交登陆页面以及测试用例（半成品）" />
-    <MESSAGE value="完善测试用例" />
-    <MESSAGE value="修改导航条" />
-    <MESSAGE value="上傳logo" />
-    <MESSAGE value="完善学生认证" />
-    <MESSAGE value="修复" />
-    <MESSAGE value="修复代码生成器" />
-    <MESSAGE value="提交半成品注册系统" />
-    <MESSAGE value="提交半成品登陆" />
-    <MESSAGE value="提交登陆后台" />
-    <MESSAGE value="整合登陆注册功能到首页" />
-    <MESSAGE value="修改兼職詳情頁面" />
-    <MESSAGE value="修改pom" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改pom" />
+    <MESSAGE value="添加学生认证功能" />
+    <MESSAGE value="学生认证获取个人信息" />
+    <MESSAGE value="实现首页交互设计" />
+    <option name="LAST_COMMIT_MESSAGE" value="实现首页交互设计" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="7" />
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html</url>
+          <line>64</line>
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/UserMgrController.java</url>
-          <line>199</line>
+          <url>file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java</url>
+          <line>70</line>
           <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guns/src/test/java/cn/stylefeng/guns/system/DictTest.java</url>
-          <line>43</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkUserMgrController.java</url>
-          <line>90</line>
-          <properties />
-          <option name="timeStamp" value="19" />
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
-      <breakpoints-dialog>
-        <breakpoints-dialog />
-      </breakpoints-dialog>
+      <option name="time" value="44" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
-        <watch expression="classDetailList" />
-        <watch expression="classTable[2]" />
+        <watch expression="element2.childNodes" />
       </configuration>
     </watches-manager>
   </component>
@@ -2073,338 +1513,392 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/index_font.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/pp.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/registerLogo.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/xxx.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/9999.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/spark/companylogo.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/sql/guns.sql">
+    <entry file="file://$PROJECT_DIR$/src/guns-generator/src/main/resources/gunsTemplate/advanced/menu_sql.sql.btl">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/dao/mapping/DictMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/aop/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="47" lean-forward="true" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_right.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-622">
-          <caret line="4" column="100" selection-start-line="4" selection-start-column="100" selection-end-line="4" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6237">
-          <caret line="274" column="16" selection-start-line="274" selection-start-column="16" selection-end-line="274" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/Subject.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="68" column="9" selection-start-line="68" selection-start-column="9" selection-end-line="68" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/bg.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/boy.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/girl.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/icons.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/loading-upload.gif">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/locked.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/login.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/login1.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/login2.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/img/login-background.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/css/login.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1000">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#2;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#3;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#4;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#5;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#5;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#label#0;n#div#0;n#div#5;n#div#0;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#3;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#div#3;n#div#1;n#form#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/details_of_job.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="21" lean-forward="true" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/input.tag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1107">
-          <caret line="41" column="71" lean-forward="true" selection-start-line="41" selection-start-column="71" selection-end-line="41" selection-end-column="71" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeDetailController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-275">
-          <caret line="44" column="16" lean-forward="true" selection-start-line="44" selection-start-column="16" selection-end-line="44" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="16" column="21" lean-forward="true" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/code/gen.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/system/user/user_info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="257">
-          <caret line="190" column="20" selection-start-line="190" selection-start-column="8" selection-end-line="190" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_container.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-203">
-          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user_add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="54" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/partTime/partTime.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/js/common/bootstrap-table-object.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="837">
-          <caret line="130" column="4" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/system/user/user.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="200" column="23" lean-forward="true" selection-start-line="200" selection-start-column="23" selection-end-line="200" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user_view.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="297">
-          <caret line="11" column="74" selection-start-line="11" selection-start-column="57" selection-end-line="11" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1319">
-          <caret line="110" column="54" selection-start-line="110" selection-start-column="54" selection-end-line="110" selection-end-column="54" />
-          <folding>
-            <element signature="n#style#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#4;n#ul#1;n#div#0;n#div#0;n#nav#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#button#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#a#0;n#div#1;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/user/user.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1053">
-          <caret line="78" column="26" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/menu/menu.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/dept/dept.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-243" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_tab.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="37" column="59" selection-start-line="37" selection-start-column="54" selection-end-line="37" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="891">
-          <caret line="80" column="26" selection-start-line="80" selection-start-column="14" selection-end-line="80" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/SMSUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-20">
-          <caret line="39" column="28" lean-forward="true" selection-start-line="39" selection-start-column="28" selection-end-line="39" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.0.5.RELEASE/spring-core-5.0.5.RELEASE.jar!/org/springframework/cglib/proxy/MethodProxy.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="106" selection-start-line="106" selection-end-line="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/transfer/UserDto.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="560">
-          <caret line="53" lean-forward="true" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/release.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12447">
-          <caret line="476" column="21" selection-start-line="476" selection-start-column="21" selection-end-line="476" selection-end-column="21" />
+        <state relative-caret-position="221">
+          <caret line="50" column="13" selection-start-line="50" selection-start-column="13" selection-end-line="50" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/PartTime.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="31" column="32" selection-start-line="31" selection-start-column="19" selection-end-line="31" selection-end-column="32" />
+        <state relative-caret-position="356">
+          <caret line="74" column="7" selection-start-line="74" selection-start-column="7" selection-end-line="74" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkLoginController.java">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/util/StudentAuthentication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="41" column="61" lean-forward="true" selection-start-line="41" selection-start-column="61" selection-end-line="41" selection-end-column="61" />
+        <state relative-caret-position="90">
+          <caret line="160" selection-start-line="160" selection-end-line="160" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/register.html">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentClassTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="214" column="14" lean-forward="true" selection-start-line="214" selection-start-column="14" selection-end-line="214" selection-end-column="14" />
+        <state relative-caret-position="2105">
+          <caret line="138" column="26" selection-start-line="138" selection-start-column="26" selection-end-line="138" selection-end-column="26" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#select#0;n#div#3;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#div#5;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#6;n#form#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#991#992#0" expanded="true" />
+            <element signature="e#1016#1017#0" expanded="true" />
+            <element signature="e#1050#1051#0" expanded="true" />
+            <element signature="e#1078#1079#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+            <element signature="e#1140#1141#0" expanded="true" />
+            <element signature="e#1184#1185#0" expanded="true" />
+            <element signature="e#1220#1221#0" expanded="true" />
+            <element signature="e#1254#1255#0" expanded="true" />
+            <element signature="e#1284#1285#0" expanded="true" />
+            <element signature="e#1330#1331#0" expanded="true" />
+            <element signature="e#1368#1369#0" expanded="true" />
+            <element signature="e#1404#1405#0" expanded="true" />
+            <element signature="e#1436#1437#0" expanded="true" />
+            <element signature="e#1486#1487#0" expanded="true" />
+            <element signature="e#1528#1529#0" expanded="true" />
+            <element signature="e#1563#1564#0" expanded="true" />
+            <element signature="e#1594#1595#0" expanded="true" />
+            <element signature="e#1642#1643#0" expanded="true" />
+            <element signature="e#1682#1683#0" expanded="true" />
+            <element signature="e#1715#1716#0" expanded="true" />
+            <element signature="e#1744#1745#0" expanded="true" />
+            <element signature="e#1788#1789#0" expanded="true" />
+            <element signature="e#1824#1825#0" expanded="true" />
+            <element signature="e#1859#1860#0" expanded="true" />
+            <element signature="e#1890#1891#0" expanded="true" />
+            <element signature="e#1938#1939#0" expanded="true" />
+            <element signature="e#1978#1979#0" expanded="true" />
+            <element signature="e#2011#2012#0" expanded="true" />
+            <element signature="e#2040#2041#0" expanded="true" />
+            <element signature="e#2084#2085#0" expanded="true" />
+            <element signature="e#2120#2121#0" expanded="true" />
+            <element signature="e#2026#2027#0" expanded="true" />
+            <element signature="e#2056#2057#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/cn/stylefeng/roses/kernel-core/1.1.0/kernel-core-1.1.0-sources.jar!/cn/stylefeng/roses/core/base/controller/BaseController.java">
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IPartTimeService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="351">
-          <caret line="43" column="35" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="35" />
+        <state relative-caret-position="204">
+          <caret line="13" column="49" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/properties/GunsProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/properties/BeetlProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-632">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/util/KaptchaUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/beetl/ShiroExt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1897">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/cn/stylefeng/roses/kernel-core/1.1.0/kernel-core-1.1.0.jar!/cn/stylefeng/roses/core/util/ToolUtil.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="112" column="5" lean-forward="true" selection-start-line="112" selection-start-column="5" selection-end-line="112" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/common/annotion/Permission.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="28" column="18" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/UserMgrController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-227">
+          <caret line="301" column="11" lean-forward="true" selection-start-line="301" selection-start-column="11" selection-end-line="301" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/beetl/BeetlConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="45" column="64" selection-start-line="45" selection-start-column="64" selection-end-line="45" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/BeetlConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="42" column="21" lean-forward="true" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/core/shiro/ShiroUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_171.jdk/Contents/Home/src.zip!/java/util/Date.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="195" column="46" selection-start-line="195" selection-start-column="16" selection-end-line="195" selection-end-column="46" />
           <folding>
-            <element signature="e#2629#2630#0" expanded="true" />
-            <element signature="e#2666#2667#0" expanded="true" />
+            <element signature="e#6390#6391#0" expanded="true" />
+            <element signature="e#6438#6439#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/config/web/WebConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="56" column="13" selection-start-line="56" selection-start-column="13" selection-end-line="56" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3-sources.jar!/com/baomidou/mybatisplus/mapper/Wrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="46" column="22" selection-start-line="46" selection-start-column="22" selection-end-line="46" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3-sources.jar!/com/baomidou/mybatisplus/mapper/Condition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="86" column="27" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3-sources.jar!/com/baomidou/mybatisplus/mapper/EntityWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="28" column="26" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/StudentUserDetailMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="13" column="54" selection-start-line="13" selection-start-column="54" selection-end-line="13" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3-sources.jar!/com/baomidou/mybatisplus/mapper/BaseMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="86">
+          <caret line="150" column="7" lean-forward="true" selection-start-line="150" selection-start-column="7" selection-end-line="150" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/baomidou/mybatis-plus-support/2.3/mybatis-plus-support-2.3-sources.jar!/com/baomidou/mybatisplus/service/impl/ServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="41" selection-end-line="50" selection-end-column="41" />
+          <folding>
+            <element signature="e#12341#12342#0" expanded="true" />
+            <element signature="e#12397#12398#0" expanded="true" />
+            <element signature="e#12457#12458#0" expanded="true" />
+            <element signature="e#12531#12532#0" expanded="true" />
+            <element signature="e#13141#13142#0" expanded="true" />
+            <element signature="e#13197#13198#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1558" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/StudentClassTable.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/LoginLogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="45" column="13" selection-start-line="45" selection-start-column="13" selection-end-line="45" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/support/DelegatingSubject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-153">
+          <caret line="182" column="16" selection-start-line="182" selection-start-column="16" selection-end-line="182" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/subject/Subject.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/system/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="484">
+          <caret line="125" column="23" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentClassTableController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="676">
+          <caret line="104" lean-forward="true" selection-start-line="104" selection-end-line="104" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkUserMgrController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="121" column="31" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="31" />
+        <state relative-caret-position="140">
+          <caret line="148" column="31" selection-start-line="148" selection-start-column="27" selection-end-line="148" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/SparkLoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-804">
+          <caret line="59" column="13" selection-start-line="59" selection-start-column="13" selection-end-line="59" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/input.tag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/student/student_info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4794">
+          <caret line="282" column="15" lean-forward="true" selection-start-line="282" selection-start-column="15" selection-end-line="282" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/StudentUserDetail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="15" column="14" lean-forward="true" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_container.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/tags/avatar.tag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="46" selection-start-line="9" selection-start-column="46" selection-end-line="9" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/menu/menu_add.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/system/menu/menu.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="imports" expanded="true" />
+            <element signature="n#style#0;n#div#3;n#form#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_right.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-222" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="112" column="66" lean-forward="true" selection-start-line="112" selection-start-column="66" selection-end-line="112" selection-end-column="66" />
+          <folding>
+            <element signature="n#style#0;n#head#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/IStudentUserDetailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="70" selection-start-line="70" selection-end-line="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/StudentUserDetailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="183" selection-start-line="183" selection-end-line="183" />
+          <folding>
+            <element signature="e#3428#3429#0" expanded="true" />
+            <element signature="e#3492#3493#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="406">
+          <caret line="31" column="32" selection-start-line="31" selection-start-column="32" selection-end-line="31" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/common/_tab.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="32" column="34" lean-forward="true" selection-start-line="32" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/user_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="96" column="44" lean-forward="true" selection-start-line="96" selection-start-column="44" selection-end-line="96" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/student_view.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="74" column="24" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -2415,7 +1909,6 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>guns:war exploded</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -2462,7 +1955,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>guns-generator</last-edited>
+          <last-edited>guns</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -36,6 +36,7 @@ mybatis-plus:
 log:
   path: guns-logs
 
+#配置spark项目的具体路径
 spark:
   student:
     kptcha:

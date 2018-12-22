@@ -53,6 +53,7 @@ StudentUserDetailInfoDlg.collectData = function() {
     .set('phone')
     .set('email')
     .set('enrollmentDate')
+    .set('studentClassId')
     .set('sysUserId')
     .set('gmtCreate')
     .set('gmtModified');
