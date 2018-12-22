@@ -3,13 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="448b7a31-bc9a-48eb-beb7-9cd268426878" name="Default Changelist" comment="兼职审核页面功能实现及页面交互实现">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/java/Audit.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/java/AuditDetail.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/java/SysUser.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/audit/audit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/audit/audit_info.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/auditDetail/auditDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/guns/src/main/webapp/static/modular/spark/auditDetail/auditDetail_info.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_core_4_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_core_4_1_2.xml" afterDir="false" />
@@ -300,44 +293,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/AuditController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="169" column="5" lean-forward="true" selection-start-line="169" selection-start-column="5" selection-end-line="169" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/AuditDetailController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="224">
               <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/review_job.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="74" column="17" lean-forward="true" selection-start-line="74" selection-start-column="17" selection-end-line="79" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/model/ReviewJob.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="31" column="23" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#792#793#0" expanded="true" />
-                <element signature="e#819#820#0" expanded="true" />
-                <element signature="e#857#858#0" expanded="true" />
-                <element signature="e#889#890#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -365,9 +324,30 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/sysUser/sysUser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-84" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/sysUser/sysUser_add.html">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/sysUser/sysUser_edit.html">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/audit/audit.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -748,6 +728,30 @@
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="audit" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
+              <item name="auditDetail" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ASingleSpark" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ASingleSpark" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="guns" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="view" type="462c0819:PsiDirectoryNode" />
+              <item name="spark" type="462c0819:PsiDirectoryNode" />
               <item name="partTime" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -976,7 +980,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545468102006" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545469628487" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../WebSpringBoot" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -1282,7 +1286,7 @@
       <workItem from="1545012700821" duration="54157000" />
       <workItem from="1545439994782" duration="1535000" />
       <workItem from="1545441747862" duration="14852000" />
-      <workItem from="1545465509756" duration="2570000" />
+      <workItem from="1545465509756" duration="3890000" />
     </task>
     <task id="LOCAL-00001" summary="初次上传项目，里面包括了部分说明文档和guns框架。">
       <created>1542452776382</created>
@@ -1445,7 +1449,14 @@
       <option name="project" value="LOCAL" />
       <updated>1545467611849</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="兼职审核页面功能实现及页面交互实现">
+      <created>1545468196408</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1545468196408</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1481,7 +1492,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="227789000" />
+    <option name="totallyTimeSpent" value="229109000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -1494,7 +1505,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49858356" visible="true" weight="0.3230563" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -1509,7 +1519,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3286119" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49924356" weight="0.09206799" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798927" visible="true" weight="0.1529745" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49798927" weight="0.1529745" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" sideWeight="0.49924356" weight="0.32719547" />
@@ -1683,21 +1693,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/service/impl/StudentUserDetailServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/AuditDetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/dao/mapping/PartTimeMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-469" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/java/cn/stylefeng/guns/modular/spark/controller/PartTimeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
@@ -2159,7 +2154,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/audit/audit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/sysUser/sysUser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/sysUser/sysUser_edit.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/guns/src/main/webapp/WEB-INF/view/spark/sysUser/sysUser_add.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
