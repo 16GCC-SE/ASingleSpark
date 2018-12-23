@@ -146,58 +146,53 @@ public class StudentAuthentication {
         }
     }
 
-    /**
-     * 登陆
-     *
-     * @throws IOException
-     */
-    public void load() throws IOException {
-//        System.out.print("请输入验证码:");
-//        Scanner in = new Scanner(System.in);
-//        String check = in.nextLine();
-        //输入保存到本地的验证码图片上的验证码
-        System.out.println("check = " + check);
-        //拼接请求字符串
-        String str = "__VIEWSTATE=" + URLEncoder.encode(viewState, "gb2312") + "&txtUserName=" + studentID + "&TextBox2="
-                + studentPassword + "&txtSecretCode=" + check + "&RadioButtonList1=" + URLEncoder.encode("学生", "gb2312")
-                + "&Button1=&lbLanguage=&hidPdrs=&hidsc=";
-        ;
-        System.out.println("参数列表:" + str);
-        //登录提交的网址
-        URL url = new URL(submitURL);
-        HttpURLConnection conn = (HttpURLConnection) url.openConnection();
-        //Post提交
-        conn.setRequestMethod("POST");
-        conn.setReadTimeout(5000);
-        conn.setUseCaches(false);
-        //禁止程序自己跳转到目标网址，必须设置，不然程序会自己响应
-        //302返回码，自己请求跳转后的网址，出现Object Had Moved!错误
-        conn.setInstanceFollowRedirects(false);
-        // 写入cookie
-        conn.setRequestProperty("Cookie", cookie);
-        conn.setDoOutput(true);
-        OutputStream out = conn.getOutputStream();
-        //写入参数
-        out.write(str.getBytes());
-        out.close();
-        //打印返回码
-        System.out.println("返回码:" + conn.getResponseCode());
-        //打印服务器返回的跳转网址
-        Location = conn.getHeaderField("Location");
-        System.out.println("Location :" + Location);
-        BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream()));
-        String temp;
-        //读取页面源码
-        StringBuffer ab = new StringBuffer();
-        while ((temp = read.readLine()) != null) {
-            ab.append(temp);
+        /**
+         * 登陆
+         * @throws IOException
+         */
+        public void load() throws IOException {
+            System.out.println("check = " + check);
+            //拼接请求字符串
+            String str = "__VIEWSTATE=" + URLEncoder.encode(viewState, "gb2312") + "&txtUserName=" + studentID + "&TextBox2="
+                    + studentPassword + "&txtSecretCode=" + check + "&RadioButtonList1=" + URLEncoder.encode("学生", "gb2312")
+                    + "&Button1=&lbLanguage=&hidPdrs=&hidsc=";
+            ;
+            System.out.println("参数列表:" + str);
+            //登录提交的网址
+            URL url = new URL(submitURL);
+            HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+            //Post提交
+            conn.setRequestMethod("POST");
+            conn.setReadTimeout(5000);
+            conn.setUseCaches(false);
+            //禁止程序自己跳转到目标网址，必须设置，不然程序会自己响应
+            //302返回码，自己请求跳转后的网址，出现Object Had Moved!错误
+            conn.setInstanceFollowRedirects(false);
+            // 写入cookie
+            conn.setRequestProperty("Cookie", cookie);
+            conn.setDoOutput(true);
+            OutputStream out = conn.getOutputStream();
+            //写入参数
+            out.write(str.getBytes());
+            out.close();
+            //打印返回码
+            System.out.println("返回码:" + conn.getResponseCode());
+            //打印服务器返回的跳转网址
+            Location = conn.getHeaderField("Location");
+            System.out.println("Location :" + Location);
+            BufferedReader read = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+            String temp;
+            //读取页面源码
+            StringBuffer ab = new StringBuffer();
+            while ((temp = read.readLine()) != null) {
+                ab.append(temp);
+            }
+            if (conn.getResponseCode() != 302) {
+                //getError为自定义函数，提取出错误信息
+                System.out.println("错误");
+                return;
+            }
         }
-        if (conn.getResponseCode() != 302) {
-            //getError为自定义函数，提取出错误信息
-            System.out.println("错误");
-            return;
-        }
-    }
 
     /**
      * 获取名字
