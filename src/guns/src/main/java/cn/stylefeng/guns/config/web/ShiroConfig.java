@@ -180,6 +180,7 @@ public class ShiroConfig {
         hashMap.put("/spark/login", "anon");
         hashMap.put("/spark/register", "anon");
         hashMap.put("/spark/mgr/add", "anon");
+        hashMap.put("/spark/partTime/page", "anon");
         hashMap.put("/gunsApi/**", "anon");
         hashMap.put("/login", "anon");
         hashMap.put("/global/sessionError", "anon");
