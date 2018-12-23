@@ -30,4 +30,8 @@
         id, part_time_title, part_time_content, part_time_type, recruiter_number, work_type, work_start_time, work_end_time, work_time_range, gender_requirement, work_welfare, work_place, settlement_cycle, publish_school, pubish_id, publish_email, publish_phone, gmt_create, gmt_modified
     </sql>
 
+    <select id="getAuditPartTime" resultMap="BaseResultMap">
+        select spark_part_time.* from spark_part_time,spark_audit WHERE spark_audit.part_time_id=spark_part_time.id and spark_audit.`status`=3
+    </select>
+
 </mapper>

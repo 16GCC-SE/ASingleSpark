@@ -235,7 +235,7 @@ UserInfoDlg.editSubmit = function () {
     }
 
     //提交信息
-    var ajax = new $ax(Feng.ctxPath + "/mgr/edit", function (data) {
+    var ajax = new $ax(Feng.ctxPath + "/spark/mgr/edit", function (data) {
         Feng.success("修改成功!");
         if (window.parent.MgrUser != undefined) {
             window.parent.MgrUser.table.refresh();
@@ -252,7 +252,7 @@ UserInfoDlg.editSubmit = function () {
  * 修改密码
  */
 UserInfoDlg.chPwd = function () {
-    var ajax = new $ax(Feng.ctxPath + "/mgr/changePwd", function (data) {
+    var ajax = new $ax(Feng.ctxPath + "/spark/mgr/changePwd", function (data) {
         Feng.success("修改成功!");
     }, function (data) {
         Feng.error("修改失败!" + data.responseJSON.message + "!");
@@ -277,10 +277,10 @@ $(function () {
     //初始化性别选项
     $("#sex").val($("#sexValue").val());
 
-    var ztree = new $ZTree("treeDemo", "/dept/tree");
-    ztree.bindOnClick(UserInfoDlg.onClickDept);
-    ztree.init();
-    instance = ztree;
+    // var ztree = new $ZTree("treeDemo", "/dept/tree");
+    // ztree.bindOnClick(UserInfoDlg.onClickDept);
+    // ztree.init();
+    // instance = ztree;
 
     // 初始化头像上传
     var avatarUp = new $WebUpload("avatar");

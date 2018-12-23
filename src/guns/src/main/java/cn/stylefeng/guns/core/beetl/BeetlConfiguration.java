@@ -47,7 +47,6 @@ public class BeetlConfiguration extends BeetlGroupUtilConfiguration {
         groupTemplate.registerFunctionPackage("tool", new ToolUtil());
         groupTemplate.registerFunctionPackage("kaptcha", new KaptchaUtil());
         groupTemplate.registerTagFactory("dictSelector", () -> dictSelectorTag);
-
         groupTemplate.registerFunction("env", new Function() {
             @Override
             public String call(Object[] paras, Context ctx) {

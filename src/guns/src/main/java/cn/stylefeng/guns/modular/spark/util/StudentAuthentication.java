@@ -26,27 +26,33 @@ public class StudentAuthentication {
     private String submitURL = baseURL + "default2.aspx";
     private String saveBaseURL = "C:/Users/Administrator/Desktop/test/";
     private String save_img_url = saveBaseURL + "img.gif";
-    private String save_head_img_url = saveBaseURL + "head.jpg";
-    private String studentID = "201606110064";
-    private String studentPassword = "13798676084cheng";
+    public String save_head_img_url = saveBaseURL + "head.jpg";
+    public String save_head_img_name;
+    public String studentID = "201606110062";
+    public String studentPassword = "llg1997729";
+    public String check;
     private String classTableGnmkdm = "N121601";
     private String personInfoGnmkdm = "N121501";
     private Map<Integer, byte[]> captchaImg = new HashMap<>();
     private String viewState;
     private String indexURL;
     private String cookie;
-    private String name;
+    public String name;
     private String Location;
-    private String[][] classTable = new String[8][13];
+    public String[][] classTable = new String[8][13];
+    public String phone;
+    public String email;
+    public String schoolDate ;
+    public String imgSrc ;
 
     public static void main(String[] args) {
-        new StudentAuthentication().launch();
+        new StudentAuthentication().launch("","");
     }
 
-    public void launch() {
+    public void launch(String codeSaveUrl,String codeName) {
         try {
             getCookie();
-            SaveImg();
+            SaveImg(codeSaveUrl,codeName);
             load();
             getNameByUrl();
             getKB();
@@ -105,7 +111,7 @@ public class StudentAuthentication {
     /**
      * 存储验证码到本地
      */
-    public void SaveImg() {
+    public void SaveImg(String urls,String fileName) {
 
         try {
             /**
@@ -123,7 +129,7 @@ public class StudentAuthentication {
             byte[] by = new byte[50000];
 
             // 将验证码保存到本地
-            FileOutputStream file = new FileOutputStream(save_img_url);
+            FileOutputStream file = new FileOutputStream(urls+fileName);
             int len = 0;
             while ((len = in.read(by)) != -1) {
                 file.write(by, 0, len);
@@ -146,9 +152,9 @@ public class StudentAuthentication {
      * @throws IOException
      */
     public void load() throws IOException {
-        System.out.print("请输入验证码:");
-        Scanner in = new Scanner(System.in);
-        String check = in.nextLine();
+//        System.out.print("请输入验证码:");
+//        Scanner in = new Scanner(System.in);
+//        String check = in.nextLine();
         //输入保存到本地的验证码图片上的验证码
         System.out.println("check = " + check);
         //拼接请求字符串
@@ -347,10 +353,10 @@ public class StudentAuthentication {
             //打印出含有课表的网页源码
             Document document = Jsoup.parse(sb.toString());
             //获取到tobdy包含信息的标签
-            String phone = document.select("#TELNUMBER").first().val();
-            String email = document.select("#dzyxdz").first().val();
-            String schoolDate = document.select("#lbl_rxrq").first().val();
-            String imgSrc = document.select("#xszp").first().attr("src");
+             phone = document.select("#TELNUMBER").first().val();
+             email = document.select("#dzyxdz").first().val();
+             schoolDate = document.select("#lbl_rxrq").text();
+             imgSrc = document.select("#xszp").first().attr("src");
             System.out.println(phone);
             //存取头像
             URL urls = new URL(baseURL + imgSrc);

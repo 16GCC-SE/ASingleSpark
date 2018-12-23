@@ -6,8 +6,6 @@ import com.baomidou.mybatisplus.annotations.TableId;
 import com.baomidou.mybatisplus.annotations.TableField;
 import com.baomidou.mybatisplus.activerecord.Model;
 import com.baomidou.mybatisplus.annotations.TableName;
-import org.springframework.format.annotation.DateTimeFormat;
-
 import java.io.Serializable;
 
 /**
@@ -16,7 +14,7 @@ import java.io.Serializable;
  * </p>
  *
  * @author 李利光
- * @since 2018-12-10
+ * @since 2018-12-21
  */
 @TableName("spark_student_user_detail")
 public class StudentUserDetail extends Model<StudentUserDetail> {
@@ -55,8 +53,12 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      * 入学日期
      */
     @TableField("enrollment_date")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date enrollmentDate;
+    /**
+     * 学生课表
+     */
+    @TableField("student_class_id")
+    private Long studentClassId;
     /**
      * sys_user表的用户id
      */
@@ -66,13 +68,11 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
      * 数据创建时间
      */
     @TableField("gmt_create")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtCreate;
     /**
      * 数据修改时间
      */
     @TableField("gmt_modified")
-    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date gmtModified;
 
 
@@ -140,6 +140,14 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
         this.enrollmentDate = enrollmentDate;
     }
 
+    public Long getStudentClassId() {
+        return studentClassId;
+    }
+
+    public void setStudentClassId(Long studentClassId) {
+        this.studentClassId = studentClassId;
+    }
+
     public Integer getSysUserId() {
         return sysUserId;
     }
@@ -180,6 +188,7 @@ public class StudentUserDetail extends Model<StudentUserDetail> {
         ", phone=" + phone +
         ", email=" + email +
         ", enrollmentDate=" + enrollmentDate +
+        ", studentClassId=" + studentClassId +
         ", sysUserId=" + sysUserId +
         ", gmtCreate=" + gmtCreate +
         ", gmtModified=" + gmtModified +

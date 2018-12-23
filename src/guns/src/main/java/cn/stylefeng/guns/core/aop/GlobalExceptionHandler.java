@@ -72,7 +72,7 @@ public class GlobalExceptionHandler {
     @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public String unAuth(AuthenticationException e) {
         log.error("用户未登陆：", e);
-        return "/login.html";
+        return "/spark/login.html";
     }
 
     /**
@@ -84,7 +84,7 @@ public class GlobalExceptionHandler {
         String username = getRequest().getParameter("username");
         LogManager.me().executeLog(LogTaskFactory.loginLog(username, "账号被冻结", getIp()));
         model.addAttribute("tips", "账号被冻结");
-        return "/login.html";
+        return "/spark/login.html";
     }
 
     /**
@@ -96,7 +96,7 @@ public class GlobalExceptionHandler {
         String username = getRequest().getParameter("username");
         LogManager.me().executeLog(LogTaskFactory.loginLog(username, "账号密码错误", getIp()));
         model.addAttribute("tips", "账号密码错误");
-        return "/login.html";
+        return "/spark/login.html";
     }
 
     /**
@@ -108,7 +108,7 @@ public class GlobalExceptionHandler {
         String username = getRequest().getParameter("username");
         LogManager.me().executeLog(LogTaskFactory.loginLog(username, "验证码错误", getIp()));
         model.addAttribute("tips", "验证码错误");
-        return "/login.html";
+        return "/spark/login.html";
     }
 
     /**

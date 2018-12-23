@@ -143,11 +143,11 @@ public class ShiroConfig {
         /**
          * 默认的登陆访问url
          */
-        shiroFilter.setLoginUrl("/login");
+        shiroFilter.setLoginUrl("/spark/login");
         /**
          * 登陆成功后跳转的url
          */
-        shiroFilter.setSuccessUrl("/");
+        shiroFilter.setSuccessUrl("/spark/index");
         /**
          * 没有权限跳转的url
          */
@@ -176,7 +176,11 @@ public class ShiroConfig {
          */
         Map<String, String> hashMap = new LinkedHashMap<>();
         hashMap.put("/static/**", "anon");
-        hashMap.put("/spark/**", "anon");
+        hashMap.put("/spark/index", "anon");
+        hashMap.put("/spark/login", "anon");
+        hashMap.put("/spark/register", "anon");
+        hashMap.put("/spark/mgr/add", "anon");
+        hashMap.put("/spark/partTime/page", "anon");
         hashMap.put("/gunsApi/**", "anon");
         hashMap.put("/login", "anon");
         hashMap.put("/global/sessionError", "anon");

@@ -1,7 +1,12 @@
 package cn.stylefeng.guns.modular.spark.dao;
 
 import cn.stylefeng.guns.modular.spark.model.PartTime;
+import cn.stylefeng.guns.modular.system.model.LoginLog;
 import com.baomidou.mybatisplus.mapper.BaseMapper;
+import com.baomidou.mybatisplus.plugins.Page;
+import org.apache.ibatis.annotations.Param;
+
+import java.util.List;
 
 /**
  * <p>
@@ -12,5 +17,5 @@ import com.baomidou.mybatisplus.mapper.BaseMapper;
  * @since 2018-12-13
  */
 public interface PartTimeMapper extends BaseMapper<PartTime> {
-
+    List<PartTime>  getAuditPartTime(@Param("page") Page<PartTime> page);
 }

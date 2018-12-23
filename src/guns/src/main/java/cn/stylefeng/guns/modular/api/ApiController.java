@@ -22,16 +22,14 @@ import cn.stylefeng.guns.modular.system.dao.UserMapper;
 import cn.stylefeng.guns.modular.system.model.User;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.reqres.response.ErrorResponseData;
+import cn.stylefeng.roses.core.reqres.response.SuccessResponseData;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 
@@ -87,8 +85,17 @@ public class ApiController extends BaseController {
      * 测试接口是否走鉴权
      */
     @RequestMapping(value = "/test", method = RequestMethod.POST)
-    public Object test() {
+    public Object test(@RequestAttribute String jwt_user_id) {
         return SUCCESS_TIP;
+    }
+
+    /**
+     * 测试接口是否走鉴权
+     */
+    @RequestMapping(value = "/userInfo", method = RequestMethod.GET)
+    public Object getUserInfo(@RequestAttribute String jwt_user_id) {
+        User user=userMapper.selectById(jwt_user_id);
+        return new SuccessResponseData(user);
     }
 
 }

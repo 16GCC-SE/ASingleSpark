@@ -8,6 +8,8 @@ import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
 import cn.stylefeng.guns.core.common.node.MenuNode;
 import cn.stylefeng.guns.core.shiro.ShiroKit;
 import cn.stylefeng.guns.core.util.ApiMenuFilter;
+import cn.stylefeng.guns.modular.spark.model.Audit;
+import cn.stylefeng.guns.modular.spark.service.IAuditService;
 import cn.stylefeng.guns.modular.system.model.User;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.util.ToolUtil;
@@ -16,6 +18,7 @@ import com.baomidou.mybatisplus.mapper.EntityWrapper;
 import com.baomidou.mybatisplus.mapper.Wrapper;
 import com.baomidou.mybatisplus.plugins.Page;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.ui.Model;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -42,6 +45,9 @@ public class PartTimeController extends BaseController {
 
     @Autowired
     private IPartTimeService partTimeService;
+
+    @Autowired
+    private IAuditService iAuditService;
 
     @RequestMapping("/partTimeDetail/{id}")
     public String getDetailsPartTimeId(Model model,@PathVariable String id) {
@@ -143,7 +149,7 @@ public class PartTimeController extends BaseController {
     @ResponseBody
     public Object page() {
         Page<PartTime> page = new PageFactory<PartTime>().defaultPage();
-        return partTimeService.selectPage(page);
+        return page.setRecords(partTimeService.getAuditPartTime(page));
     }
 
     /**
@@ -163,6 +169,8 @@ public class PartTimeController extends BaseController {
      * 新增兼职详情数据操作
      */
     @RequestMapping(value = "/publish")
+    @Transactional
+    @ResponseBody
     public String publish(PartTime partTime,String[] workWelfares) {
         //填充剩余数据
         StringBuffer workWelf=new StringBuffer();
@@ -170,10 +178,17 @@ public class PartTimeController extends BaseController {
             workWelf.append(workWelfares[i]);
             if(i<workWelfares.length-1) workWelf.append(",");
         }
-         partTime.setWorkWelfare(workWelf.toString());
+        partTime.setWorkWelfare(workWelf.toString());
         partTime.setGmtCreate(new Date());
         partTime.setGmtModified(new Date());
+        partTime.setPubishId(ShiroKit.getUser().id);
         partTimeService.insert(partTime);
+        Audit audit=new Audit();
+        audit.setStatus(1);
+        audit.setPartTimeId(partTime.getId());
+        audit.setGmtCreate(new Date());
+        audit.setGmtModified(new Date());
+        iAuditService.insert(audit);
         return "/spark/index.html";
     }
 

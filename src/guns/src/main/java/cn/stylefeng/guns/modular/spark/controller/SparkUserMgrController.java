@@ -30,6 +30,7 @@ import cn.stylefeng.guns.core.log.LogObjectHolder;
 import cn.stylefeng.guns.core.log.factory.LogTaskFactory;
 import cn.stylefeng.guns.core.shiro.ShiroKit;
 import cn.stylefeng.guns.core.shiro.ShiroUser;
+import cn.stylefeng.guns.modular.system.controller.KaptchaController;
 import cn.stylefeng.guns.modular.system.factory.UserFactory;
 import cn.stylefeng.guns.modular.system.model.Role;
 import cn.stylefeng.guns.modular.system.model.User;
@@ -134,4 +135,83 @@ public class SparkUserMgrController extends BaseController {
         }
         return false;
     }
+
+    /**
+     * 跳转到查看用户详情页面
+     */
+    @RequestMapping("/user_info")
+    public String userInfo(Model model) {
+        Integer userId = ShiroKit.getUser().getId();
+        if (ToolUtil.isEmpty(userId)) {
+            throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
+        }
+        User user = this.userService.selectById(userId);
+        model.addAttribute(user);
+        model.addAttribute("roleName", ConstantFactory.me().getRoleName(user.getRoleid()));
+        model.addAttribute("deptName", ConstantFactory.me().getDeptName(user.getDeptid()));
+        LogObjectHolder.me().set(user);
+        return  "spark/user_view.html";
+    }
+
+    /**
+     * 修改管理员
+     *
+     * @throws NoPermissionException
+     */
+    @RequestMapping("/edit")
+    @BussinessLog(value = "修改管理员", key = "account", dict = UserDict.class)
+    @ResponseBody
+    public ResponseData edit(@Valid UserDto user, BindingResult result) throws NoPermissionException {
+        if (result.hasErrors()) {
+            throw new ServiceException(BizExceptionEnum.REQUEST_NULL);
+        }
+
+        User oldUser = userService.selectById(user.getId());
+        ShiroUser shiroUser = ShiroKit.getUser();
+        if (shiroUser.getId().equals(user.getId())) {
+                this.userService.updateById(UserFactory.editUser(user, oldUser));
+                return SUCCESS_TIP;
+        } else {
+                throw new ServiceException(BizExceptionEnum.NO_PERMITION);
+        }
+
+    }
+
+
+
+    /**
+     * 跳转到修改密码界面
+     */
+    @RequestMapping("/user_chpwd")
+    public String chPwd() {
+        return "spark/user_chpwd.html";
+    }
+
+    /**
+     * 修改当前用户的密码
+     */
+    @RequestMapping("/changePwd")
+    @ResponseBody
+    public Object changePwd(@RequestParam String oldPwd, @RequestParam String newPwd, @RequestParam String rePwd) {
+        if (!newPwd.equals(rePwd)) {
+            throw new ServiceException(BizExceptionEnum.TWO_PWD_NOT_MATCH);
+        }else{
+            Integer userId = ShiroKit.getUser().getId();
+            User user = userService.selectById(userId);
+            String oldMd5 = ShiroKit.md5(oldPwd, user.getSalt());
+            if (!user.getPassword().equals(oldMd5)) {
+                throw new ServiceException(BizExceptionEnum.OLD_PWD_NOT_RIGHT);
+            } else {
+                String newMd5 = ShiroKit.md5(newPwd, user.getSalt());
+                user.setPassword(newMd5);
+                user.updateById();
+                return SUCCESS_TIP;
+            }
+        }
+
+    }
+
+
+
+
 }
