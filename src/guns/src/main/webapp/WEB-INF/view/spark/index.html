@@ -235,7 +235,61 @@
 
                     <tr v-for="(item, index) in items" \@click="forward(item.id)">
                         <td>
-                            <div class="job-type" style="background-color: deeppink;">
+                            <div v-if="item.partTimeType=='其他'" class="job-type" style="background-color: deeppink;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='销售'" class="job-type" style="background-color: gold">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='安保'" class="job-type" style="background-color: fuchsia;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='礼仪'" class="job-type" style="background-color: blue;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='促销'" class="job-type" style="background-color: lightblue;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='翻译'" class="job-type" style="background-color: firebrick;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='客服'" class="job-type" style="background-color: #f0ad4e;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='演出'" class="job-type" style="background-color: darkcyan;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='家教'" class="job-type" style="background-color: chartreuse;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='模特'" class="job-type" style="background-color: red;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='派单'" class="job-type" style="background-color: lime;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='文员'" class="job-type" style="background-color: darkmagenta;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='设计'" class="job-type" style="background-color: orangered;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='校内'" class="job-type" style="background-color: orange;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='临时工'" class="job-type" style="background-color: hotpink;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='服务员'" class="job-type" style="background-color: deepskyblue;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='送餐员'" class="job-type" style="background-color: goldenrod;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='实习'" class="job-type" style="background-color: blue;">
+                                <span>{{item.partTimeType}}</span>
+                            </div>
+                            <div v-if="item.partTimeType=='调研'" class="job-type" style="background-color:yellowgreen">
                                 <span>{{item.partTimeType}}</span>
                             </div>
                         </td>

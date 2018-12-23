@@ -8,134 +8,275 @@
     <link href="${ctxPath}/static/css/style.css?v=4.1.0" rel="stylesheet">
 
     <style type="text/css">
-        .ibox-content{border: 1px solid;}
 
-        /*.appeal_progress{float: left;margin-bottom: 15px;padding: 0px;}*/
-        /*.appeal_progress li{width:200px;height:30px;border:1px solid;list-style: none;float: left;text-align: center;}*/
-        /*.appeal_progress li a:hover{background-color: orange;color: #FFFFFF;display:block;}*/
+        body {
+            font-size: 12px;
+            color: #333;
+            background: #fff url(/static/img/spark/bg.png) repeat;
+            font-family: '微软雅黑', '宋体';
+            line-height: 1;
+        }
 
-        .btn{padding: 15px 60px;border: 1px solid;}
+        .title {
+            border-bottom: 1px solid #ccc;
+            height: 120px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
 
-        #appeal_start{padding-left: 20px;}
-        textarea{padding:10px;margin-left:95px;}
-        #appeal_start span{color:red;}
+        .title span {
+            float: left;
+            font: normal 12px/20px 'SimSun';
+            padding-top: 24px;
+            color: #666;
+        }
+
+        .footer {
+            width: 100%;
+            height: 30px;
+            padding: 10px 0;
+            background: #ff923a;
+            text-align: center;
+            position: fixed;
+            bottom:0;
+        }
+
+        #appealInfoForm {
+            height: auto;
+            margin-bottom: 30px;
+        }
+
+        .appeal_content span {
+            font-size: 14px;
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+
+        #submit_btn {
+            text-align: center;
+        }
+
+        .ibox-content {
+            border: 1px solid #d5d5d5;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .btn {
+            padding: 15px 60px;
+            border: 1px solid;
+        }
+        .page-content{
+            clear:both;
+            border: 1px solid #d5d5d5;
+            height: auto;
+        }
+
+        .btn-outline-secondary:hover {
+            background-color: #a4cfff;
+        }
+        #appealInfoForm label em {
+            color: #f00;
+            padding-right: 10px;
+        }
     </style>
+<script>
+window.onload= function () {
+    // 选项栏
+    var btn1 = document.getElementById('btn_option1');
+    var btn2 = document.getElementById('btn_option2');
+    var btn3 = document.getElementById('btn_option3');
+
+    btn1.addEventListener('click', function () {
+        document.getElementById("content1").style.display = "block";
+        document.getElementById("content2").style.display = "none";
+        document.getElementById("content3").style.display = "none";
+    })
+    btn2.addEventListener('click', function () {
+        document.getElementById("content1").style.display = "none";
+        document.getElementById("content2").style.display = "block";
+        document.getElementById("content3").style.display = "none";
+    })
+    btn3.addEventListener('click', function () {
+        document.getElementById("content1").style.display = "none";
+        document.getElementById("content2").style.display = "none";
+        document.getElementById("content3").style.display = "block";
+    })
+
+    var imgFile = null;
+    //将图片进行编码后发送到后台
+    function getBase64Image(img) {
+        var readImg = new FileReader();
+        readImg.readAsDataURL(img);
+        readImg.onload = function (readEvent){
+            var base64 = readEvent.target.result;
+            //console.log(base64);
+            $("#image").attr("src", base64);
+            $.ajax({
+                type:"post",
+                url:"sendBase",
+                data:{
+                    "bases":base64,
+                    "name":img.name
+                },
+                dataType:"json",
+                success:function(data){
+                    //alert(data);
+                    if(data == "1"){
+                        console.log("上传成功");
+                    }else{
+                        console.log("上传失败");
+                    }
+                }
+            });
+        };
+    }
+    //循环选择的图片
+    function changeImg() {
+        var read = new FileReader();
+        var allFiles = imgFile.files;
+        for(var i=0; i < allFiles.length; i++){
+            var file = allFiles[i];
+            getBase64Image(file);
+        }
+    }
+}
+</script>
+
+
 </head>
 <body>
 <div id="header">
     <nav class="navbar navbar-default" style="background-color: #EAEAEA;font-size: 15px;">
         <div class="container">
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="mouseHover" style="margin-left: 15px"><a href="#"><span style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
+                    <li class="mouseHover" style="margin-left: 15px"><a href="#"><span
+                            style="color: red;font-weight: bold">广州</span>[切换城市]</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                    <li ><a href="#">首页</a></li>
-                    <li ><a href="#">申请社区赞助</a></li>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">申请社区赞助</a></li>
                     <li><a href="#">企业服务</a></li>
                     <li><a href="/spark/register">注册</a></li>
-                    <li style="margin-right: 15px"><a href="#" >登录</a></li>
+                    <li style="margin-right: 15px"><a href="#">登录</a></li>
                 </ul>
-            </div><!-- /.navbar-collapse -->
+            </div>
         </div>
     </nav>
 </div>
-            <!--<img class="img-avatar" src="/static/img/spark/777.png" alt="头像">-->
-            <!--<button class="btn btn-block btn-danger active" type="button" aria-pressed="true">提交</button>-->
 
-
-<div class="container">
-    <div class="col-sm-3 col-sm-push-1">
-        <div class="ibox float-e-margins">
-            <div class="ibox-content text-center p-md" style="background-color:#f0f0f0;">
-
-                <img class="img-circle" src="/static/img/spark/777.png" alt="暂无头像" style="border: 1px red solid;width: 75px;height: 75px">
-                <br>
-                <h4 class="m-b-xxs">校园兼职</h4>
-                <hr style="width: auto;">
-                <button class="btn btn-block btn-danger active" type="button">提交</button>
-            </div>
+<div class="container ibox-content">
+    <div class="ibox float-e-margins">
+        <div class="title">
+            <h1>巧兼职申诉平台</h1>
+            <span> 尊敬的用户您好，网址申诉正常受理时间为9:00-21:00，我们会尽快审核处理！</span>
         </div>
-
-        <div class="ibox float-e-margins">
-            <div class="ibox-content text-center p-md">
-                <button class="btn btn-block btn-primary" type="button">进入论坛</button>
-                <button class="btn btn-block btn-success" type="button">查看案例</button>
-                <br>
-                <h4 class="m-b-xxs">我的申诉</h4>
-                <hr style="width: auto;">
-            </div>
-        </div>
-
-        <div class="ibox float-e-margins">
-            <div class="ibox-content text-center">
-                <h4 class="m-b-xxs">简历库</h4>
-                <hr style="width: auto;">
-                <h4 class="m-b-xxs">升级VIP</h4>
-                <hr style="width: auto;">
-                <h4 class="m-b-xxs">兼职信息验证</h4>
-                <hr style="width: auto;">
-                <h4 class="m-b-xxs">招聘服务</h4>
-                <hr style="width: auto;">
-                <h4 class="m-b-xxs">接入微信</h4>
-                <hr style="width: auto;">
-            </div>
-        </div>
-
-        <div class="ibox float-e-margins">
-            <div class="ibox-content text-center">
-            <h4 class="m-b-xxs">账号设置</h4>
-            </div>
-        </div>
-
     </div>
 
-    <div class="col-sm-9 col-sm-push-1">
-        <div class="ibox float-e-margins">
-            <div class="ibox-content p-md" style="background-color:#0055f0;color:yellow;">
-                <h1 class="m-b-xxs">巧兼职申诉平台</h1>
-            </div>
+    <div class="ibox float-e-margins">
+        <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
+            <label class="btn btn-outline-secondary active" id="btn_option1">
+                <input id="option1" name="options" autocomplete="off" type="radio" value="wait_appeal">准备申诉
+            </label>
+            <label class="btn btn-outline-secondary" id="btn_option2">
+                <input id="option2" name="options" autocomplete="off" checked="checked" type="radio"
+                       value="appealing">正在申诉
+            </label>
+            <label class="btn btn-outline-secondary active" style="border-left:none;" id="btn_option3">
+                <input id="option3" name="options" autocomplete="off" type="radio" value="appeal_result">申诉结果
+            </label>
         </div>
-        <div class="ibox float-e-margins">
-            <!--<div class="ibox-content">-->
-                <!--<ul class="appeal_progress">-->
-                    <!--<li><a>等待申诉</a></li>-->
-                    <!--<li><a>正在申诉</a></li>-->
-                    <!--<li><a>申诉结果</a></li>-->
-                <!--</ul>-->
-            <!--</div>-->
-            <div class="btn-group btn-group-toggle float-right mr-3" data-toggle="buttons">
-                <label class="btn btn-outline-secondary active">
-                    <input id="option1" name="options" autocomplete="off" type="radio" value="wait_appeal">等待申诉
-                </label>
-                <label class="btn btn-outline-secondary">
-                    <input id="option2" name="options" autocomplete="off" checked="checked" type="radio" value="appealing">正在申诉
-                </label>
-                <label class="btn btn-outline-secondary active" style="border-left:none;">
-                    <input id="option3" name="options" autocomplete="off" type="radio" value="appeal_result">申诉结果
-                </label>
+    </div>
 
+    <div class="ibox float-e-margins" id="content1" style="display: block; position:relative;">
+        <div class="page-content p-md">
+           <div id="appealInfoForm">
+            <form class="form-horizontal" enctype="multipart/form-data" method="post">
+
+
+                <div class="form-group">
+                    <label for="inputTitle" class="col-sm-2 control-label"><em>*</em>申诉标题：</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputTitle" placeholder="请输入您的申诉标题">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="inputContent" class="col-sm-2 control-label"><em>*</em>申诉内容：</label>
+                    <div class="col-sm-10">
+                    <textarea class="form-control" id="inputContent" name="appealContent" rows="3"placeholder="请输入您的申诉内容">
+                    </textarea>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-sm-2 control-label"><em>*</em>上传凭证</label>
+                    <div class="col-sm-10">
+                        <input type="file" onchange="show(this)" accept="image/gif,image/jpeg,image/png,image/jpg" id="upload" multiple="multiple">
+                        <script>
+                            function show(img) {
+                                imgFile = img;
+                                var allFiles = imgFile.files;
+                                for (var i = 0; i < allFiles.length; i++) {
+                                    var img = allFiles[i];
+                                    $("img").remove();
+                                    var readImg = new FileReader();
+                                    readImg.readAsDataURL(img);
+                                    readImg.onload = function (readEvent) {
+                                        var base64 = readEvent.target.result;
+                                        var appd = "<img src=\"" + base64 + "\" width=\"200px\" height=\"200px\">";
+                                        $("#image").append(appd);
+                                    };
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div id="image"></div>
+             </form>
+          </div>
+
+            <div id="submit_btn">
+                <button class="btn btn-primary" type="button" style="margin: 0 auto"
+                        onclick="changeImg()" value="上传">提交申诉
+                </button>
             </div>
         </div>
-        <div class="ibox float-e-margins">
-            <div class="ibox-content" style="background-color: #5bc0de">
-                <span>绑定微信实时了解申诉结果，<a href="#" style="color: red;">去绑定</a></span>
-            </div>
-        </div>
-        <div class="ibox float-e-margins">
-            <div class="ibox-content p-md" style="height:600px;">
-                <div id="appeal_start">
-                    <span>*</span>&nbsp;申诉标题&nbsp;&nbsp;<input type="text" name="appeal_title">
-                    <br><br><br><br><br>
-                    <span>*</span>&nbsp;申诉内容&nbsp;&nbsp;<br><textarea name="appeal_contanier" rows="10" cols="50"></textarea>
-                    <br><br><br><br><br>
-                    <span>*</span>&nbsp;上传凭证&nbsp;&nbsp;<input type="button" value="添加图片">
+    </div>
+
+
+    <div class="ibox float-e-margins" id="content2" style="display: none; height: 600px;">
+        <div class="page-content p-md">
+            <div class="card">
+                <div class="card-header">申诉进度
+                    <small>持续更新中</small>
+                </div>
+                <div class="card-body">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"
+                             aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="ibox float-e-margins" id="content3" style="display: none; height: 600px;">
+        <div class="page-content p-md">
+            <div>
+                <h1>恭喜恭喜，申诉成功~~</h1>
+            </div>
+        </div>
+    </div>
+
 </div>
+
+<div class="footer">
+    Copyright©2018 巧兼职平台 jianzhi.com
+</div>
+
+
 
 <!-- 全局js -->
 <script src="${ctxPath}/static/js/jquery.min.js?v=2.1.4"></script>
