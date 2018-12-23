@@ -152,9 +152,9 @@ public class PartTimeController extends BaseController {
     @RequestMapping(value = "/add")
     @ResponseBody
     public Object add(PartTime partTime) {
-//        if(partTime != null){
-//            partTime.setGmtCreate(new Date());
-//        }
+        if(partTime != null){
+            partTime.setGmtCreate(new Date());
+        }
         partTimeService.insert(partTime);
         return SUCCESS_TIP;
     }

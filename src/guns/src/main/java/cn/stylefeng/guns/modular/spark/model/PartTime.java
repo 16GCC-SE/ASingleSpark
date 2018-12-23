@@ -54,13 +54,13 @@ public class PartTime extends Model<PartTime> {
      * 工作开始时间
      */
     @TableField("work_start_time")
-    @DateTimeFormat(pattern = "yyyy年-MM月-dd日")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date workStartTime;
     /**
      * 工作结束时间
      */
     @TableField("work_end_time")
-    @DateTimeFormat(pattern = "yyyy年-MM月-dd日")
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date workEndTime;
     /**
      * 工作时间范围，一天可能有多个非连续时间段，用‘ ，’分割
