@@ -18,6 +18,10 @@ package cn.stylefeng.guns.modular.api;
 import cn.stylefeng.guns.core.shiro.ShiroKit;
 import cn.stylefeng.guns.core.shiro.ShiroUser;
 import cn.stylefeng.guns.core.util.JwtTokenUtil;
+import cn.stylefeng.guns.modular.spark.model.Enroll;
+import cn.stylefeng.guns.modular.spark.model.PartTime;
+import cn.stylefeng.guns.modular.spark.service.IEnrollService;
+import cn.stylefeng.guns.modular.spark.service.IPartTimeService;
 import cn.stylefeng.guns.modular.system.dao.UserMapper;
 import cn.stylefeng.guns.modular.system.model.User;
 import cn.stylefeng.roses.core.base.controller.BaseController;
@@ -31,7 +35,7 @@ import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * 接口控制器提供
@@ -45,6 +49,13 @@ public class ApiController extends BaseController {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private IEnrollService enrollService;
+
+    @Autowired
+    private IPartTimeService iPartTimeService;
+
 
     /**
      * api登录接口，通过账号密码获取token
@@ -96,6 +107,42 @@ public class ApiController extends BaseController {
     public Object getUserInfo(@RequestAttribute String jwt_user_id) {
         User user=userMapper.selectById(jwt_user_id);
         return new SuccessResponseData(user);
+    }
+
+    /**
+     * 新增用户报名
+     */
+    @RequestMapping(value = "/enroll/add")
+    @ResponseBody
+    public Object add(Long partTime,Integer user) {
+        Enroll enroll=new Enroll();
+        enroll.setGmtCreate(new Date());
+        enroll.setGmtModified(new Date());
+        enroll.setPartTimeId(partTime);
+        enroll.setSysUserId(user);
+        enroll.setStatus(1);
+        enrollService.insert(enroll);
+        return SUCCESS_TIP;
+    }
+
+    /**
+     * 获取用户报名列表
+     */
+    @RequestMapping(value = "/enroll/list")
+    @ResponseBody
+    public Object list(Integer user) {
+        Map map=new HashMap<String,Object>();
+        map.put("sys_user_id",user);
+        List<Enroll> enrollList=enrollService.selectByMap(map);
+        List<PartTime> partTimes=new ArrayList<>();
+        for(Enroll enroll:enrollList){
+            PartTime partTime=iPartTimeService.selectById(enroll.getPartTimeId());
+            if(partTime!=null){
+                partTimes.add(partTime);
+            }
+
+        }
+        return  partTimes;
     }
 
 }
