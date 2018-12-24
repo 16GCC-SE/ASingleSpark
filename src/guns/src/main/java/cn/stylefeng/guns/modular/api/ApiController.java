@@ -15,23 +15,43 @@
  */
 package cn.stylefeng.guns.modular.api;
 
+import cn.stylefeng.guns.config.properties.GunsProperties;
+import cn.stylefeng.guns.core.common.annotion.BussinessLog;
+import cn.stylefeng.guns.core.common.constant.dictmap.UserDict;
+import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
 import cn.stylefeng.guns.core.shiro.ShiroKit;
 import cn.stylefeng.guns.core.shiro.ShiroUser;
 import cn.stylefeng.guns.core.util.JwtTokenUtil;
+import cn.stylefeng.guns.modular.spark.model.Enroll;
+import cn.stylefeng.guns.modular.spark.model.PartTime;
+import cn.stylefeng.guns.modular.spark.service.IEnrollService;
+import cn.stylefeng.guns.modular.spark.service.IPartTimeService;
 import cn.stylefeng.guns.modular.system.dao.UserMapper;
+import cn.stylefeng.guns.modular.system.factory.UserFactory;
 import cn.stylefeng.guns.modular.system.model.User;
+import cn.stylefeng.guns.modular.system.service.IUserService;
+import cn.stylefeng.guns.modular.system.transfer.UserDto;
 import cn.stylefeng.roses.core.base.controller.BaseController;
 import cn.stylefeng.roses.core.reqres.response.ErrorResponseData;
+import cn.stylefeng.roses.core.reqres.response.ResponseData;
 import cn.stylefeng.roses.core.reqres.response.SuccessResponseData;
+import cn.stylefeng.roses.core.util.ToolUtil;
+import cn.stylefeng.roses.kernel.model.exception.ServiceException;
 import org.apache.shiro.authc.SimpleAuthenticationInfo;
 import org.apache.shiro.authc.UsernamePasswordToken;
 import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
-import java.util.HashMap;
+import javax.naming.NoPermissionException;
+import javax.validation.Valid;
+import java.io.File;
+import java.util.*;
 
 /**
  * 接口控制器提供
@@ -45,6 +65,19 @@ public class ApiController extends BaseController {
 
     @Autowired
     private UserMapper userMapper;
+
+    @Autowired
+    private IEnrollService enrollService;
+
+    @Autowired
+    private IPartTimeService iPartTimeService;
+
+    @Autowired
+    private IUserService userService;
+
+    @Autowired
+    private GunsProperties gunsProperties;
+
 
     /**
      * api登录接口，通过账号密码获取token
@@ -97,6 +130,77 @@ public class ApiController extends BaseController {
         User user=userMapper.selectById(jwt_user_id);
         return new SuccessResponseData(user);
     }
+
+    /**
+     * 新增用户报名
+     */
+    @RequestMapping(value = "/enroll/add")
+    @ResponseBody
+    public Object add(Long partTime,Integer user) {
+        Enroll enroll=new Enroll();
+        enroll.setGmtCreate(new Date());
+        enroll.setGmtModified(new Date());
+        enroll.setPartTimeId(partTime);
+        enroll.setSysUserId(user);
+        enroll.setStatus(1);
+        enrollService.insert(enroll);
+        return SUCCESS_TIP;
+    }
+
+    /**
+     * 获取用户报名列表
+     */
+    @RequestMapping(value = "/enroll/list")
+    @ResponseBody
+    public Object list(Integer user) {
+        Map map=new HashMap<String,Object>();
+        map.put("sys_user_id",user);
+        List<Enroll> enrollList=enrollService.selectByMap(map);
+        List<PartTime> partTimes=new ArrayList<>();
+        for(Enroll enroll:enrollList){
+            PartTime partTime=iPartTimeService.selectById(enroll.getPartTimeId());
+            if(partTime!=null){
+                partTimes.add(partTime);
+            }
+
+        }
+        return  partTimes;
+    }
+
+    /**
+     * 修改管理员
+     *
+     * @throws NoPermissionException
+     */
+    @RequestMapping("/user/edit")
+    @ResponseBody
+    public User edit(UserDto user) throws NoPermissionException {
+        User oldUser = userService.selectById(user.getId());
+        User user1=UserFactory.editUser(user, oldUser);
+        this.userService.updateById(user1);
+        return user1;
+
+    }
+
+    /**
+     * 上传图片
+     */
+    @RequestMapping(method = RequestMethod.POST, path = "/upload")
+    @ResponseBody
+    public User upload(@RequestPart("file") MultipartFile picture) {
+        User user=new User();
+        String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix(picture.getOriginalFilename());
+        try {
+            String fileSavePath = gunsProperties.getFileUploadPath();
+            picture.transferTo(new File(fileSavePath + pictureName));
+            user.setAvatar(pictureName);
+        } catch (Exception e) {
+            throw new ServiceException(BizExceptionEnum.UPLOAD_ERROR);
+        }
+        return user;
+    }
+
+
 
 }
 
