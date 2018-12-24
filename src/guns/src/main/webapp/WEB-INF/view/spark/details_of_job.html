@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-	<link rel="stylesheet" href="${ctxPath}/static/css/spark/job_detail.css">
+    <link rel="stylesheet" href="${ctxPath}/static/css/spark/job_detail.css">
     <title>DetailsOfJob</title>
 </head>
 
@@ -11,19 +11,19 @@
 <header class="header">
     <nav class="navigation_box">
         <div class="logo_wrap">
-            <a  href="#" class="logo"><img src="../../../static/img/spark/headlogo.png" alt="兼职logo"></a>
+            <a href="#" class="logo"><img src="../../../static/img/spark/headlogo.png" alt="兼职logo"></a>
         </div>
-		<div class="me">
-			<a target="_blank" href="#" >关于我们</a>
-			<a target="_blank" href="#">加入我们</a>
-			<a target="_blank" href="#">企业推广</a>
-			<a target="_blank" href="#">帮助中心</a>
-		</div>
+        <div class="me">
+            <a target="_blank" href="#">关于我们</a>
+            <a target="_blank" href="#">加入我们</a>
+            <a target="_blank" href="#">企业推广</a>
+            <a target="_blank" href="#">帮助中心</a>
+        </div>
 
         <div class="channel_box">
-            <a rel="nofollow" href="#">首页</a>
+            <a rel="nofollow" href="/spark/index">首页</a>
             <a rel="nofollow" href="#">申请社团赞助</a>
-            <a rel="nofollow" href="#"class="selected">登录</a>
+            <a rel="nofollow" href="/spark/login" class="selected">登录</a>
         </div>
     </nav>
 
@@ -40,20 +40,20 @@
                     <span> > ${partTime.partTimeTitle}</span>
                 </div>
 
-                    <div class="content_wrap">
+                <div class="content_wrap">
                     <div class="job_header">
                         <h1 class="job_title">${partTime.partTimeTitle}</h1>
                         <p class="info"></p>
-                        <div class="job_base"><span class="job_price">${partTime.workSalary}/天</span>
-                            | <a class="job_type"  href="/dbx_qita_0/"  target="blank">其他</a>
+                        <div class="job_base"><span class="job_price">${partTime.workSalary}元/小时</span>
+                            | <a class="job_type" href="/dbx_qita_0/" target="blank">其他</a>
                             | <span class="job_publish">发布时间： ${gmtCreate}</span>
                         </div>
 
-                        <div class="apply_wrap" >
-                            <div class="btn_theme" id="go_to_apply" >报名兼职</div>
+                        <div class="apply_wrap">
+                            <div class="btn_theme" id="go_to_apply">报名兼职</div>
                             <div class="apply_box">
                                 <p>微信扫码快速报名<br>
-                                及时反馈录用情况</p>
+                                    及时反馈录用情况</p>
                                 <div class="qrcode" id="qrcode"></div>
                             </div>
                         </div>
@@ -76,17 +76,17 @@
                             <li><span class="tit">上班时段: </span><span class="con">报名后通知的工作范围</span></li>
                         </ul>
 
-                        <ul class="job_list" >
+                        <ul class="job_list">
                             <li><span class="tit">结算方式: </span><span class="con">${settlementCycle}</span></li>
-                            <li><span class="tit">基本工资: </span><span class="con">${partTime.workSalary}</span></li>
+                            <li><span class="tit">基本工资: </span><span class="con">${partTime.workSalary}元/小时</span></li>
                         </ul>
 
                         <div class="box">
                             <div class="detail_title">工作详情</div>
                             <div class="detail" id="job_detail"><br/><br/>
-								【工作介绍】<br/>&nbsp;&nbsp;&nbsp;&nbsp;${partTime.partTimeContent}<br/><br/>
+                                【工作介绍】<br/>&nbsp;&nbsp;&nbsp;&nbsp;${partTime.partTimeContent}<br/><br/>
                                 【工作时间范围】<br/>&nbsp;&nbsp;&nbsp;&nbsp;${partTime.workTimeRange}<br/><br/>
-								【性别要求】<br/>&nbsp;&nbsp;&nbsp;&nbsp;${genderRequirement}<br/><br/>
+                                【性别要求】<br/>&nbsp;&nbsp;&nbsp;&nbsp;${genderRequirement}<br/><br/>
                                 【工作福利】<br/>&nbsp;&nbsp;&nbsp;&nbsp;${partTime.workWelfare}<br/><br/>
                             </div>
                         </div>
@@ -136,12 +136,14 @@
 
                 <!-- 20170207 你可能感兴趣的兼职end -->
             </div>
-            <div class="p_right">     
-				<div class="app_wrap">
-					<a class="app-download" target="_blank" href="https://mp.weixin.qq.com/s?__biz=MzIwNzA5NjUxOQ==&mid=2650996961&idx=1&sn=cfcf4a890784274bb820317027601d8e&scene=1&srcid=0809HGZJq2BJ6FlZUx8qj7Os&key=8dcebf9e179c9f3a56e9c3f4ede428c30b12573c6c9b779bc4124b819f85275cab1ce55d06e220890b672f138e6dd2d7&ascene=0&uin=M" rel="nofollow" >
-						<img src="../../../static/img/spark/alert.jpg" width="280" alt="兼职防骗指南">
-					</a>
-				</div>
+            <div class="p_right">
+                <div class="app_wrap">
+                    <a class="app-download" target="_blank"
+                       href="https://mp.weixin.qq.com/s?__biz=MzIwNzA5NjUxOQ==&mid=2650996961&idx=1&sn=cfcf4a890784274bb820317027601d8e&scene=1&srcid=0809HGZJq2BJ6FlZUx8qj7Os&key=8dcebf9e179c9f3a56e9c3f4ede428c30b12573c6c9b779bc4124b819f85275cab1ce55d06e220890b672f138e6dd2d7&ascene=0&uin=M"
+                       rel="nofollow">
+                        <img src="../../../static/img/spark/alert.jpg" width="280" alt="兼职防骗指南">
+                    </a>
+                </div>
                 <div class="ad_box" id="ad_box" style="display:none;">
                     <div class="ad_box_imgs" id="ad_box_imgs">
                         <a rel="nofollow" target="_blank" class="selected">
@@ -156,7 +158,7 @@
 
                     <div class="p1">兼职推荐</div>
 
-                    <div class="p2"  style="display:none;">
+                    <div class="p2" style="display:none;">
                         想提高招聘效果，发兼职？<a rel="nofollow" href="#">马上发布</a>
                     </div>
 
@@ -198,7 +200,7 @@
     <div class="container_footer">
         <div class="link_block">
             <div>
-                <h5 >更多类型：</h5>
+                <h5>更多类型：</h5>
                 <p>
 
                     <a target="blank" href="#">广州调研兼职</a>
@@ -214,15 +216,15 @@
         </div>
         <div class="link_block">
             <div>
-                <h5 >其他地区：</h5>
+                <h5>其他地区：</h5>
                 <p>
-                    <a href="#"  target="blank">花都兼职</a>
+                    <a href="#" target="blank">花都兼职</a>
 
-                    <a href="#"  target="blank">萝岗兼职</a>
+                    <a href="#" target="blank">萝岗兼职</a>
 
-                    <a href="#"  target="blank">越秀兼职</a>
+                    <a href="#" target="blank">越秀兼职</a>
 
-                    <a href="#"  target="blank">增城兼职</a>
+                    <a href="#" target="blank">增城兼职</a>
 
                 </p>
             </div>
@@ -230,11 +232,11 @@
 
     </div>
 
-<footer class="footer">
-	<div class="footer1">                  
-		<p class="cp_right"> Copyright©2018 巧兼职平台 jianzhi.com</p>
-	</div>
-</footer>
+    <footer class="footer">
+        <div class="footer1">
+            <p class="cp_right"> Copyright©2018 巧兼职平台 jianzhi.com</p>
+        </div>
+    </footer>
 
 </section>
 

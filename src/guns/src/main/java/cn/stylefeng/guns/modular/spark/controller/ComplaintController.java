@@ -62,7 +62,7 @@ public class ComplaintController extends BaseController {
     }
 
     /**
-     * 获取申诉列表
+     * 查看(获取)申诉列表
      */
     @RequestMapping(value = "/list")
     @ResponseBody
