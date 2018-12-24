@@ -1,5 +1,7 @@
 package cn.stylefeng.guns.modular.spark.controller;
 
+import cn.stylefeng.guns.core.common.annotion.Permission;
+import cn.stylefeng.guns.core.common.constant.Const;
 import cn.stylefeng.guns.modular.spark.model.AuditDetail;
 import cn.stylefeng.guns.modular.spark.model.PartTime;
 import cn.stylefeng.guns.modular.spark.model.ReviewJob;
@@ -120,7 +122,10 @@ public class AuditController extends BaseController {
         return auditService.selectById(auditId);
     }
 
+
+
     @RequestMapping(value="/review_job")
+    @Permission("school")
     @ResponseBody
     public Object findList(){
         List<ReviewJob> reviewJobs=new LinkedList<>();

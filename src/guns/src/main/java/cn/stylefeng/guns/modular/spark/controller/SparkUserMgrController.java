@@ -170,6 +170,7 @@ public class SparkUserMgrController extends BaseController {
         ShiroUser shiroUser = ShiroKit.getUser();
         if (shiroUser.getId().equals(user.getId())) {
                 this.userService.updateById(UserFactory.editUser(user, oldUser));
+                if(user.getName()!=null)shiroUser.setName(user.getName());
                 return SUCCESS_TIP;
         } else {
                 throw new ServiceException(BizExceptionEnum.NO_PERMITION);
