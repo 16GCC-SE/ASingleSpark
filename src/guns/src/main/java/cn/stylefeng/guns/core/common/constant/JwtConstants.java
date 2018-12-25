@@ -31,4 +31,7 @@ public interface JwtConstants {
 
     String AUTH_PATH = "/gunsApi/auth";
 
+    String REGISTER_PATH = "/gunsApi/register";
+
+
 }

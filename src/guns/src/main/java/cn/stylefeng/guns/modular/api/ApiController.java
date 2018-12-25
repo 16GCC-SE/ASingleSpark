@@ -18,6 +18,7 @@ package cn.stylefeng.guns.modular.api;
 import cn.stylefeng.guns.config.properties.GunsProperties;
 import cn.stylefeng.guns.core.common.annotion.BussinessLog;
 import cn.stylefeng.guns.core.common.constant.dictmap.UserDict;
+import cn.stylefeng.guns.core.common.constant.state.ManagerStatus;
 import cn.stylefeng.guns.core.common.exception.BizExceptionEnum;
 import cn.stylefeng.guns.core.shiro.ShiroKit;
 import cn.stylefeng.guns.core.shiro.ShiroUser;
@@ -43,13 +44,10 @@ import org.apache.shiro.authc.credential.HashedCredentialsMatcher;
 import org.apache.shiro.crypto.hash.Md5Hash;
 import org.apache.shiro.util.ByteSource;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.AutoConfigurationPackage;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.naming.NoPermissionException;
-import javax.validation.Valid;
 import java.io.File;
 import java.util.*;
 
@@ -187,18 +185,70 @@ public class ApiController extends BaseController {
      */
     @RequestMapping(method = RequestMethod.POST, path = "/upload")
     @ResponseBody
-    public User upload(@RequestPart("file") MultipartFile picture) {
-        User user=new User();
+    public String upload(@RequestPart("file") MultipartFile picture) {
+
         String pictureName = UUID.randomUUID().toString() + "." + ToolUtil.getFileSuffix(picture.getOriginalFilename());
         try {
             String fileSavePath = gunsProperties.getFileUploadPath();
             picture.transferTo(new File(fileSavePath + pictureName));
-            user.setAvatar(pictureName);
         } catch (Exception e) {
             throw new ServiceException(BizExceptionEnum.UPLOAD_ERROR);
         }
-        return user;
+        return pictureName;
     }
+
+
+    /**
+     * 添加平台用户
+     */
+    @RequestMapping("/register")
+    @BussinessLog(value = "添加管理员", key = "account", dict = UserDict.class)
+    @ResponseBody
+    public ResponseData add(@ModelAttribute UserDto user) {
+        // 判断账号是否重复
+        User theUser = userService.getByAccount(user.getAccount());
+        if (theUser != null) {
+            return new ErrorResponseData("用户名重复");
+        }
+        user.setRoleid(Integer.toString(8));
+        //保存登陆所需的用户名和密码
+        String username=user.getAccount();
+        String password=user.getPassword();
+        // 完善账号信息
+        user.setName(username);
+        user.setSex(1);
+        user.setBirthday(new Date());
+        user.setAvatar("temp.jpg");
+        user.setSalt(ShiroKit.getRandomSalt(5));
+        user.setPassword(ShiroKit.md5(user.getPassword(), user.getSalt()));
+        user.setStatus(ManagerStatus.OK.getCode());
+        user.setCreatetime(new Date());
+        this.userService.insert(UserFactory.createUser(user));
+        return SUCCESS_TIP;
+    }
+
+    /**
+     * 修改当前用户的密码
+     */
+    @RequestMapping("/changePwd")
+    @ResponseBody
+    public Object changePwd(@RequestAttribute String jwt_user_id,@RequestParam String oldPwd, @RequestParam String newPwd, @RequestParam String rePwd) {
+        if (!newPwd.equals(rePwd)) {
+            return new ErrorResponseData("两次新密码不相同");
+        }
+        User user = userService.selectById(jwt_user_id);
+        String oldMd5 = ShiroKit.md5(oldPwd, user.getSalt());
+        if (user.getPassword().equals(oldMd5)) {
+            String newMd5 = ShiroKit.md5(newPwd, user.getSalt());
+            user.setPassword(newMd5);
+            user.updateById();
+            return SUCCESS_TIP;
+        } else {
+            return new ErrorResponseData("旧密码错误");
+        }
+    }
+
+
 
 
 
